@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on tr1x_em : Blogs</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on tr1x_em : Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Sep 2025 13:59:09 +0530</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TODO</title>
+      <link>http://localhost:1313/posts/todo/</link>
+      <pubDate>Sat, 13 Sep 2025 13:59:09 +0530</pubDate>
+      
+      <guid>http://localhost:1313/posts/todo/</guid>
+      <description>&lt;h2 id=&#34;pass-man---to-research-more-about&#34;&gt;Pass-Man - To Research more about&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/roddhjav/pass-import#readme&#34;&gt;pass-import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://git.zx2c4.com/password-store/tree/contrib/dmenu&#34;&gt;demenu script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+use android as a nas&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/android-password-store/Android-Password-Store#readme&#34;&gt;Android-Password-Store&lt;/a&gt; - Deprecated????? - Found a updated ver on F-Droid&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;passwordstore wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/android-password-store/Android-Password-Store/discussions/3260]&#34;&gt;pass store discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ssh-into-android-or-a-home-server&#34;&gt;SSH Into android or a home server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=OBOoDffWF0Y&#34;&gt;I Turned This Broken Phone Into A Home Server &lt;/a&gt; - THIS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Useless:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=PxTnMAuheaw&#34;&gt;DIY HomeLab SERVER using your ANDROID device: SSH &amp;amp; NAS Server &lt;/a&gt; - Require too much thingi&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=IuRWqzfX1ik&#34;&gt;The $0 Home Server &lt;/a&gt; - BS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LinuxDroidMaster/Termux-Projects&#34;&gt;Termux-Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LinuxDroidMaster/Termux-Desktops&#34;&gt;Termux-Desktops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;website---make-it-btw&#34;&gt;Website - Make it btw&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/luxploit/website/&#34;&gt;luxploit source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;suckless---the-manifest&#34;&gt;SUCKLESS - The manifest&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://gasparvardanyan.github.io/coding/&#34;&gt;Gaspar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://suckless.org/philosophy/&#34;&gt;Suckless&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!QUOTE]
+“An idiot admires complexity, a genius admires simplicity,
+a physicist tries to make it simple,
+for an idiot anything the more complicated it is the more he will admire it,
+if you make something so clusterfucked he can&amp;rsquo;t understand it he&amp;rsquo;s gonna think you&amp;rsquo;re a god
+cause you made it so complicated nobody can understand it.
+That&amp;rsquo;s how they write journals in Academics,
+they try to make it so complicated people think you&amp;rsquo;re a genius”
+― Terry Davis, Creator of Temple OS&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;pass-man---to-research-more-about&#34;&gt;Pass-Man - To Research more about&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/roddhjav/pass-import#readme&#34;&gt;pass-import&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://git.zx2c4.com/password-store/tree/contrib/dmenu&#34;&gt;demenu script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+use android as a nas&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/android-password-store/Android-Password-Store#readme&#34;&gt;Android-Password-Store&lt;/a&gt; - Deprecated????? - Found a updated ver on F-Droid&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;passwordstore wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/android-password-store/Android-Password-Store/discussions/3260]&#34;&gt;pass store discussion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ssh-into-android-or-a-home-server&#34;&gt;SSH Into android or a home server&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=OBOoDffWF0Y&#34;&gt;I Turned This Broken Phone Into A Home Server &lt;/a&gt; - THIS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Useless:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=PxTnMAuheaw&#34;&gt;DIY HomeLab SERVER using your ANDROID device: SSH &amp;amp; NAS Server &lt;/a&gt; - Require too much thingi&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=IuRWqzfX1ik&#34;&gt;The $0 Home Server &lt;/a&gt; - BS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LinuxDroidMaster/Termux-Projects&#34;&gt;Termux-Projects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LinuxDroidMaster/Termux-Desktops&#34;&gt;Termux-Desktops&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;website---make-it-btw&#34;&gt;Website - Make it btw&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://github.com/luxploit/website/&#34;&gt;luxploit source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;suckless---the-manifest&#34;&gt;SUCKLESS - The manifest&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://gasparvardanyan.github.io/coding/&#34;&gt;Gaspar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://suckless.org/philosophy/&#34;&gt;Suckless&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!QUOTE]
+“An idiot admires complexity, a genius admires simplicity,
+a physicist tries to make it simple,
+for an idiot anything the more complicated it is the more he will admire it,
+if you make something so clusterfucked he can&amp;rsquo;t understand it he&amp;rsquo;s gonna think you&amp;rsquo;re a god
+cause you made it so complicated nobody can understand it.
+That&amp;rsquo;s how they write journals in Academics,
+they try to make it so complicated people think you&amp;rsquo;re a genius”
+― Terry Davis, Creator of Temple OS&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;88x31&#34;&gt;88x31&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://capstasher.neocities.org/88x31collection-page1&#34;&gt;capstasher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://seirdy.one/meta/badges/&#34;&gt;Classic web badges - Seirdy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://web.badges.world/&#34;&gt;Web Badges World | The ultimate archive of 80x15 pixel button art&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://cyber.dabamos.de/88x31/&#34;&gt;The 88x31 GIF Collection | Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &lt;a href=&#34;https://mesoscale.neocities.org/&#34;&gt;mesoscale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Why I started using hugo?</title>
+      <link>http://localhost:1313/posts/mine/</link>
+      <pubDate>Sat, 13 Sep 2025 13:59:09 +0530</pubDate>
+      
+      <guid>http://localhost:1313/posts/mine/</guid>
+      <description>&lt;p&gt;I just did bro dont ask me how?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I use &lt;code&gt;Arch Linux&lt;/code&gt; and I am a big fan of it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/about/&#34;&gt;HIIII&lt;/a&gt;&lt;/p&gt;</description>
+      <content>&lt;p&gt;I just did bro dont ask me how?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I use &lt;code&gt;Arch Linux&lt;/code&gt; and I am a big fan of it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/about/&#34;&gt;HIIII&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
