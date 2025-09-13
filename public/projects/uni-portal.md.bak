@@ -1,0 +1,53 @@
++++
+date = '2023-06-15T10:00:00+00:00'
+title = 'University Project Portal'
+author = 'tr1x_em'
+cover = "img/hello.jpg"
+description = "A full-stack web application for managing university projects, assignments, and student collaboration."
+tech_stack = ["PHP", "MySQL", "Bootstrap", "jQuery"]
+status = "Archived"
+github_url = "https://github.com/tr1x-em/uni-portal-archive"
++++
+
+# 🎓 University Project Portal
+
+A comprehensive web portal developed during university years for managing academic projects, assignments, and facilitating student collaboration. This project served as a learning platform for full-stack web development.
+
+## Features
+
+- **Project Management** - Create, track, and manage academic projects
+- **Assignment Submission** - Upload and submit assignments with deadlines
+- **Student Collaboration** - Team formation and group project coordination
+- **Grade Tracking** - Monitor academic progress and grades
+- **File Sharing** - Secure document and resource sharing
+- **Notification System** - Email alerts for deadlines and updates
+
+## Learning Outcomes
+
+This project was instrumental in learning fundamental web development concepts:
+
+- Database design and normalization
+- Server-side programming with PHP
+- Frontend development with responsive design
+- User authentication and authorization
+- File upload and management systems
+
+## Tech Stack
+
+- **PHP** - Server-side logic and business rules
+- **MySQL** - Database management and data persistence
+- **Bootstrap** - Responsive UI framework
+- **jQuery** - Dynamic frontend interactions
+
+## Historical Context
+
+Built during 2023 as part of university coursework. While the technology stack is now considered legacy, this project provided valuable experience in full-stack development fundamentals.
+
+## Status
+
+📦 **Archived** - No longer maintained, preserved for historical reference
+
+## Links
+
+- **Repository**: [GitHub Archive](https://github.com/tr1x-em/uni-portal-archive)
+- **Legacy Demo**: [Screenshots](https://github.com/tr1x-em/uni-portal-archive/tree/main/screenshots)

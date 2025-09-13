@@ -1,0 +1,39 @@
++++
+date = '2024-01-15T10:00:00+00:00'
+title = 'Personal Blog Engine'
+author = 'tr1x_em'
+cover = "img/hello.jpg"
+description = "A custom-built static site generator powered by Hugo with modern features and fast performance."
+tech_stack = ["Hugo", "Go Templates", "SCSS", "JavaScript"]
+status = "Live"
+github_url = "https://github.com/tr1x-em/blog"
+demo_url = "https://tr1x-em.dev"
++++
+
+# 🚀 Personal Blog Engine
+
+A custom-built static site generator that powers this very website. Built with Hugo and the re-terminal theme, featuring modern design and optimal performance.
+
+## Features
+
+- **Dark/light theme switching** - Seamless theme toggle for better user experience
+- **Responsive design** - Looks great on all devices and screen sizes
+- **Fast loading times** - Optimized for speed and performance
+- **SEO optimized** - Built-in SEO best practices and meta tags
+- **Modern UI/UX** - Clean, minimalist design with smooth animations
+
+## Tech Stack
+
+- **Hugo** - Static site generator for fast builds
+- **Go Templates** - Flexible templating system
+- **SCSS** - Enhanced CSS with variables and mixins
+- **JavaScript** - Interactive elements and animations
+
+## Status
+
+✅ **Live and maintained** - Actively developed and regularly updated
+
+## Links
+
+- **Live Site**: [tr1x-em.dev](https://tr1x-em.dev)
+- **Repository**: [GitHub](https://github.com/tr1x-em/blog)

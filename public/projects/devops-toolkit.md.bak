@@ -1,0 +1,45 @@
++++
+date = '2024-01-20T10:00:00+00:00'
+title = 'DevOps Automation Toolkit'
+author = 'tr1x_em'
+cover = "img/paper.jpeg"
+description = "A comprehensive collection of scripts and tools to streamline development workflows and server management."
+tech_stack = ["Python", "Bash", "Docker", "GitHub Actions"]
+status = "In Development"
+github_url = "https://github.com/tr1x-em/devops-toolkit"
++++
+
+# 🔧 DevOps Automation Toolkit
+
+A comprehensive collection of scripts and tools designed to streamline development workflows and automate server management tasks.
+
+## Features
+
+- **Automated deployment pipelines** - Zero-downtime deployments with rollback capabilities
+- **Server monitoring and alerting** - Real-time monitoring with intelligent alerting
+- **Database backup automation** - Scheduled backups with retention policies
+- **Container orchestration helpers** - Simplified Docker and Kubernetes management
+- **CI/CD integration** - Seamless integration with popular CI/CD platforms
+
+## Tech Stack
+
+- **Python** - Core automation scripts and API integrations
+- **Bash** - System-level scripting and server management
+- **Docker** - Containerization and deployment automation
+- **GitHub Actions** - Continuous integration and deployment
+
+## Use Cases
+
+- Automated server provisioning and configuration
+- Database backup and restore procedures
+- Application deployment and monitoring
+- Security scanning and compliance checks
+
+## Status
+
+🚧 **In active development** - New features added regularly
+
+## Links
+
+- **Repository**: [GitHub](https://github.com/tr1x-em/devops-toolkit)
+- **Documentation**: [Wiki](https://github.com/tr1x-em/devops-toolkit/wiki)
