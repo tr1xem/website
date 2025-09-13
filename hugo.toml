@@ -1,27 +1,24 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tr1xem.github.io'
 languageCode = 'en-us'
-title = 'tr1x_em : Blogs'
+title = 'tr1x_em - Developer & Tech Enthusiast'
 theme = "re-terminal"
-# Add it only if you keep the theme in the `themes` directory.
-# Remove it if you use the theme as a remote Hugo Module.
 pagination.pagerSize = 5
 
 [params]
 # ["orange", "blue", "red", "green", "pink", "paper"]
-themeColor = "green"
+themeColor = "red"
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  contentTypeName = "blogs"
 
 
-  showMenuItems = 3
+  showMenuItems = 4
   readingTime = true
-  [params.banner]
-    dismissible = false
-    text = "Check it out on GitHub"
-    url = "https://github.com/mirus-ua/hugo-theme-re-terminal"
+  # [params.banner]
+  #   dismissible = false
+  #   text = "Check it out on GitHub"
+  #   url = "https://github.com/mirus-ua/hugo-theme-re-terminal"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
 
   # show selector to switch language
   showLanguageSelector = false
@@ -42,7 +39,7 @@ themeColor = "green"
   showLastUpdated = false
 
   # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.png"
+  favicon = "/img/tr1x_em-round.png"
 
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
   # updatedDatePrefix = "Updated"
@@ -82,11 +79,11 @@ themeColor = "green"
 [languages]
   [languages.en.params]
     languageName = "English"
-    title = "re-Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
-    keywords = ""
-    copyright = ""
+    title = "tr1x_em"
+    subtitle = "Developer & Tech Enthusiast"
+    owner = "tr1x_em"
+    keywords = "developer,programming,tech,blog"
+    copyright = "© 2024-2025 tr1x_em"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -98,10 +95,10 @@ themeColor = "green"
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "re-Terminal"
+      logoText = "tr1x_em"
       logoHomeLink = "/"
 
-    [languages.en.menu]
+     [languages.en.menu]
       # Submenus is available since v2.1.0
       # [[languages.en.menu.main]]
       #   identifier = "submenuParent"
@@ -115,9 +112,17 @@ themeColor = "green"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "blog"
+        name = "Blog"
+        url = "/blogs"
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/contact"
 
 # [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
