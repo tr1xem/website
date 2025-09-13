@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on tr1x_em - Developer &amp; Tech Enthusiast</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>http://localhost:10000/projects/</link>
     <description>Recent content in Projects on tr1x_em - Developer &amp; Tech Enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="http://localhost:10000/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alienware Command Centre</title>
-      <link>http://localhost:1313/projects/awcc/</link>
+      <link>http://localhost:10000/projects/awcc/</link>
       <pubDate>Sat, 13 Sep 2025 10:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/awcc/</guid>
+      <guid>http://localhost:10000/projects/awcc/</guid>
       <description>&lt;p&gt;AWCC is an unofficial alternative to Alienware Command Centre of Windows for the Dell G series on Linux, supporting almost all features that the Windows version supports, including custom fan controls, light effects, g-mode, and autoboost&lt;/p&gt;
 &lt;h2 id=&#34;device-tested&#34;&gt;Device Tested&lt;/h2&gt;
 &lt;p&gt;Tested on:&lt;/p&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Flux - Let the fire flow</title>
-      <link>http://localhost:1313/projects/flux/</link>
+      <link>http://localhost:10000/projects/flux/</link>
       <pubDate>Sat, 13 Sep 2025 10:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/flux/</guid>
+      <guid>http://localhost:10000/projects/flux/</guid>
       <description>&lt;p&gt;Flux is a hackable shell for Hyprland powered by &lt;a href=&#34;https://github.com/tr1xem/ignis&#34;&gt;ignis&lt;/a&gt;. It provides a simple and intuitive interface for managing and controlling your desktop environment.&lt;/p&gt;
 &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl https://raw.githubusercontent.com/tr1xem/flux/refs/heads/main/install.sh | sh
@@ -122,10 +122,10 @@
     
     <item>
       <title>Modus </title>
-      <link>http://localhost:1313/projects/modus/</link>
+      <link>http://localhost:10000/projects/modus/</link>
       <pubDate>Sat, 13 Sep 2025 10:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/modus/</guid>
+      <guid>http://localhost:10000/projects/modus/</guid>
       <description>&lt;p&gt;A modular and extensible shell for Hyprland, written on Fabric. Heavily inspired by MacOS and IOS. Desgins taken from Apple&amp;rsquo;s Figma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Launcher&lt;/li&gt;

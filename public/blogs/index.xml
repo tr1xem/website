@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on tr1x_em - Developer &amp; Tech Enthusiast</title>
-    <link>http://localhost:1313/blogs/</link>
+    <link>http://localhost:10000/blogs/</link>
     <description>Recent content in Blogs on tr1x_em - Developer &amp; Tech Enthusiast</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Sep 2025 17:32:26 +0530</lastBuildDate><atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 17:32:26 +0530</lastBuildDate><atom:link href="http://localhost:10000/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dell G15 - Review</title>
-      <link>http://localhost:1313/blogs/dellg15/</link>
+      <link>http://localhost:10000/blogs/dellg15/</link>
       <pubDate>Sat, 13 Sep 2025 17:32:26 +0530</pubDate>
       
-      <guid>http://localhost:1313/blogs/dellg15/</guid>
+      <guid>http://localhost:10000/blogs/dellg15/</guid>
       <description>&lt;p&gt;Long Story Short I own a &lt;code&gt;Dell G15 5530&lt;/code&gt; laptop. Specs &lt;code&gt;RTX 4050&lt;/code&gt; and &lt;code&gt;i7 13650HX&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;I have been rocking Arch linux on it daily and it never disappoints.The Specs are great for 1080p gaming and each of the components works and fully support linux.
 The Device got amazing cooling system it never gets hots unlike other laptops but it makes a lot of sound on G-Mode.&lt;/p&gt;
@@ -29,10 +29,10 @@ The Device got amazing cooling system it never gets hots unlike other laptops bu
     
     <item>
       <title>Learning C&#43;&#43; - Yet Again</title>
-      <link>http://localhost:1313/blogs/mine/</link>
+      <link>http://localhost:10000/blogs/mine/</link>
       <pubDate>Sat, 13 Sep 2025 13:59:09 +0530</pubDate>
       
-      <guid>http://localhost:1313/blogs/mine/</guid>
+      <guid>http://localhost:10000/blogs/mine/</guid>
       <description>&lt;p&gt;This Time the plan is simple learn the syntax which i already know Solve some &lt;a href=&#34;https://adventofcode.com/&#34;&gt;Advent of Code 2024&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The Final target would be me rewriting whole of the AWCC again in C++ (i hope)&lt;/p&gt;
 &lt;p&gt;As far of the C++ i have learnt the basics of C++ and i am ready to start the advent of code challenges&lt;/p&gt;
