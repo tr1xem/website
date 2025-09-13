@@ -2,17 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blogs/</loc>
+    <lastmod>2025-09-13T17:32:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/dellg15/</loc>
+    <lastmod>2025-09-13T17:32:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-13T17:32:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/awcc/</loc>
+    <lastmod>2025-09-13T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/flux/</loc>
+    <lastmod>2025-09-13T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/modus/</loc>
+    <lastmod>2025-09-13T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/mine/</loc>
+    <lastmod>2025-09-13T13:59:09+05:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-13T13:59:09+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/todo/</loc>
     <lastmod>2025-09-13T13:59:09+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-13T13:59:09+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/mine/</loc>
     <lastmod>2025-09-13T13:59:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2024-01-15T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/showcase/</loc>
     <lastmod>2018-07-18T00:00:00+00:00</lastmod>
