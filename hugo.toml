@@ -12,7 +12,7 @@ themeColor = "red"
   contentTypeName = "blogs"
 
 
-  showMenuItems = 4
+  showMenuItems = 5
   readingTime = true
   # [params.banner]
   #   dismissible = false
@@ -123,6 +123,10 @@ themeColor = "red"
         identifier = "contact"
         name = "Contact"
         url = "/contact"
+      [[languages.en.menu.main]]
+        identifier = "philosophy"
+        name = "Coding Philosophy"
+        url = "/blogs/coding"
 
 # [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
