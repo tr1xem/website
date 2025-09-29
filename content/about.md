@@ -33,7 +33,7 @@ I'm a passionate developer and Linux enthusiast with a love for creating innovat
 
 I'm always expanding my skillset. Currently diving deeper into:
 
-- [CPP](https://www.cplusplus.com/)
+- [C++](https://www.cplusplus.com/)
 - [Python](https://www.python.org/)
 - [Linux](https://www.linux.org/)
 
