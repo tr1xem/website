@@ -11,6 +11,10 @@ draft: false
 
 I'm a passionate developer and Linux enthusiast with a love for creating innovative solutions and exploring the latest technologies. Welcome to my corner of the internet!
 
+## Setup
+
+- Dell G15 5530 (Intel i7-13650HX, RTX 4050)
+
 ## 💻 Tech Stack
 
 ### Languages
@@ -43,4 +47,3 @@ I love connecting with fellow developers and tech/linux enthusiasts. Feel free t
 - Just say hello!
 
 Check out my [projects](/projects) or [get in touch](/contact) - I'd love to hear from you!
-
