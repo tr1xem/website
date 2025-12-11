@@ -103,8 +103,7 @@ csp = [
 
 [extra.meta]
 favicon = "logo.png"
-apple_touch_icon = "logo.png"
-card = false
+card = "banner.png"
 
 
 [extra.nav]

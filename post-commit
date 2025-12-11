@@ -3,10 +3,11 @@
 unset GIT_INDEX_FILE
 
 gitdir="gitdir: ../.git/modules/public"
+website="trix.is-a.dev"
 
 if [ -z "$SKIP_POST_COMMIT" ]; then
-    (cd public && echo $gitdir >.git && git switch main && git reset) && \
+    (cd public && echo $gitdir >.git &&  echo $website > CNAME && git switch main && git reset) && \
     zola build && \
-    (cd public && echo $gitdir >.git && git add . && git commit -m "zola build") && \
+    (cd public && echo $gitdir >.git &&  echo $website > CNAME && git add . && git commit -m "zola build") && \
     git add public && SKIP_POST_COMMIT=1 git commit --amend --no-edit
 fi
