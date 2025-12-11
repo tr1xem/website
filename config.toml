@@ -102,7 +102,7 @@ csp = [
 ]
 
 [extra.meta]
-favicon = "logo.png"
+favicon = "favicon.ico"
 card = "banner.png"
 
 
