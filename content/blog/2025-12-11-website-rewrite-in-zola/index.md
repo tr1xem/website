@@ -35,9 +35,8 @@ stable things at all.
 
 Ametrine is the greatest theme i have ever seen, its so simple to use and the result you are seeing it here, ofc i did copypasta from Daudix's website too but yeah thats what open source is and as someone said already
 
-> "Original content is original only for a few seconds before getting old”
->
-> ~#Rule 69 of internet
+> "Original content is original only for a few seconds before getting old”<br>
+> ~Rule 69 of internet
 
 So if u you want to make a website and ur not some geeky frontend wizard, i suggest u to use zola and ametrine.
 
