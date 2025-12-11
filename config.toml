@@ -1,0 +1,143 @@
+# The URL the site will be built for
+title = "tr1x_em"
+description = "just my corner of internet"
+base_url = "https://trix.is-a.dev"
+author = "tr1x_em"
+
+theme = "ametrine"
+compile_sass = true
+build_search_index = true
+minify_html = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 10 },
+  { name = "categories", feed = true },
+]
+
+[markdown]
+highlight_code = true
+extra_syntaxes_and_themes = ["themes/ametrine/sublime"]
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
+  { theme = "monokai-pro-light", filename = "syntax-theme-light.css" },
+]
+render_emoji = false
+smart_punctuation = true
+lazy_async_image = false
+bottom_footnotes = true
+external_links_class = "external"
+github_alerts = true
+
+[link_checker]
+internal_level = "warn"
+
+[search]
+index_format = "elasticlunr_json"
+
+
+[extra]
+accent_color = ["hsl(5 100% 84%)", "hsl(4 48% 82%)"]
+categories = [
+  { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
+  { name = "Featured", description = "Posts that are somewhat decently written.", color = "yellow", icon = "star" },
+  { name = "Hot", description = "Posts that did numbers compared to others.", color = "red", icon = "fire" },
+  { name = "Test", description = "Categories can be set and customized entirely from config, woo-hoo!", color = "green", icon = "feather" },
+]
+
+issues_url = "https://github.com/tr1xem/website/issues/new"
+source_url = "https://github.com/tr1xem/website"
+show_copy_button = true
+show_reading_time = true
+show_backlinks = true
+date_format = "%d %B %Y"
+date_format_long = "%d %B %Y, %R (%Z)"
+date_locale = "en_IN"
+timezone = "Asia/Kolkata"
+show_comments_qr = true
+csp = [
+  { directive = "font-src", domains = [
+    "'self'",
+  ] },
+  { directive = "img-src", domains = [
+    "'self'",
+    "https:",
+    "data:",
+  ] },
+  { directive = "media-src", domains = [
+    "'self'",
+    "https:",
+  ] },
+  { directive = "script-src", domains = [
+    "cloud.umami.is",
+  ] },
+  { directive = "style-src", domains = [
+    "'self'",
+    "'unsafe-inline'",
+  ] },
+  { directive = "frame-src", domains = [
+    "www.youtube-nocookie.com",
+    "incr.easrng.net",
+    "vmst.io",
+    "drive.google.com",
+  ] },
+  { directive = "connect-src", domains = [
+    "*.umami.dev",
+    "cloud.umami.is",
+    "status.cafe",
+    "api.lanyard.rest",
+    "ws.audioscrobbler.com",
+    "discord.com",
+    "api.github.com",
+    "ntfy.sh",
+  ] },
+  { directive = "base-uri", domains = [
+    "'none'",
+  ] },
+  { directive = "form-action", domains = [
+    "'none'",
+  ] },
+]
+
+[extra.meta]
+favicon = "logo.png"
+apple_touch_icon = "logo.png"
+card = false
+
+
+[extra.nav]
+icon = "logo.png"
+# Usage of an icon is heavily adviced. In case if none is provided, first two
+# letters of the link name will be used instead.
+# Any icon name from https://phosphoricons.com can be used.
+links = [
+  { name = "Writing", category = [
+    { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
+    { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
+
+  ] },
+    { name = "Intresting ", category = [
+		{ url = "https://github.com/tr1xem", name = "Github", icon = "github-logo" },
+		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
+	] },
+]
+
+[extra.footer]
+# copyright = true
+copyright = "© tr1x_em, 2021-$YEAR"
+show_timestamp = true
+show_powered_by = true
+socials = [
+    { url = "https://discord.com/users/885063317079592961", icon = "discord" },
+    { url = "https://github.com/tr1xem", icon = "github" },
+    { url = "https://reddit.com/u/l_lawliet_9999", icon = "reddit" },
+    { url = "https://x.com/tr1x_em", icon = "x" },
+    { url = "mailto:admin@trix.is-a.dev", icon = "gmail" },
+]
+
+[extra.debug]
+layout = false
+no_styles = false
+no_emojis = false
