@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>tr1x_em - Nanolog</title>
+      <link>https://trix.is-a.dev/nanolog/</link>
+      <description>just my corner of internet</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://trix.is-a.dev/nanolog/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 11 Dec 2025 22:43:35 +0000</lastBuildDate>
+      <item>
+          <title>First Post</title>
+          <pubDate>Thu, 11 Dec 2025 22:43:35 +0000</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/first-post/</link>
+          <guid>https://trix.is-a.dev/nanolog/first-post/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/first-post/">&lt;p&gt;This is a first post in this microblog that is inspired by &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;getimiskon.xyz&#x2F;microblog.html&quot;&gt;gettie’s&lt;&#x2F;a&gt;; it’s kinda like a blog, but smaller. I will (or not) write some posts here that don’t exactly deserve their own blog post with a banner and such.&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and these posts need no front matter at all, only date in the file name and a title, which isn’t seen anywhere&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

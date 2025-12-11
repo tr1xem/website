@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>tr1x_em - Nanolog</title>
+    <subtitle>just my corner of internet</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://trix.is-a.dev/nanolog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://trix.is-a.dev/nanolog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-11T22:43:35+00:00</updated>
+    <id>https://trix.is-a.dev/nanolog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>First Post</title>
+        <published>2025-12-11T22:43:35+00:00</published>
+        <updated>2025-12-11T22:43:35+00:00</updated>
+        
+        <author>
+          <name>
+            
+              tr1x_em
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://trix.is-a.dev/nanolog/first-post/"/>
+        <id>https://trix.is-a.dev/nanolog/first-post/</id>
+        
+        <content type="html" xml:base="https://trix.is-a.dev/nanolog/first-post/">&lt;p&gt;This is a first post in this microblog that is inspired by &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;getimiskon.xyz&#x2F;microblog.html&quot;&gt;gettie’s&lt;&#x2F;a&gt;; it’s kinda like a blog, but smaller. I will (or not) write some posts here that don’t exactly deserve their own blog post with a banner and such.&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and these posts need no front matter at all, only date in the file name and a title, which isn’t seen anywhere&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
