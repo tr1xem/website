@@ -36,7 +36,7 @@ Tf do i write in this? i feel like i dont know about me
 <li>
 <article>
 
-**I'm originating from India,** currently residing in <abbr id="hills" title="If you know, you know">abyss</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
+**I'm originating from India,** currently residing in <abbr id="hill" title="If you know, you know">mountain valley</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
 
 </article>
 </li>
@@ -55,6 +55,7 @@ Tf do i write in this? i feel like i dont know about me
 - Souls like game <small>(cuz they are tough?)</small>
 - Meeting with new people :>
 - Loves anime <small>([Anilist](https://anilist.co/user/tr1xem/))</small>
+- Rasgulla <small>([Wikipedia](https://en.wikipedia.org/wiki/Rasgulla))</small>
 
 </article>
 </li>
