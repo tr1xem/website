@@ -5,19 +5,13 @@ before_install:
     - sudo apt-get install -y curl unzip rsync git
 
 install:
-    - ZOLA_URL=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest \
-      | jq -r '.assets[] | select(.name | test("x86_64-unknown-linux-gnu.zip$")) | .browser_download_url')
+    - curl -s -L https://github.com/getzola/zola/releases/download/v0.21.0/zola-v0.21.0-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
 
-    - curl -L "$ZOLA_URL" -o zola.zip
-    - unzip zola.zip -d $HOME/bin
-    - chmod +x $HOME/bin/zola
-    - export PATH="$HOME/bin:$PATH"
 git:
     submodules: true
 
 script:
-    # Build Zola into a SAFE TEMP DIRECTORY
-    - zola build --output-dir publish_tmp
+    - zola build --output-dir publish_tmp --force
 
 after_success: |
     [ $TRAVIS_BRANCH = main ] &&
