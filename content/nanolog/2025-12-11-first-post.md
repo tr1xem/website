@@ -1,6 +1,6 @@
 +++
 title = "First Post"
-date = "2025-12-11T15:43:00+05:30"
+date = "2025-12-11T15:40:00+05:30"
 +++
 This is a first post in this microblog that is inspired by [gettie's](https://getimiskon.xyz/microblog.html); it's kinda like a blog, but smaller. I will (or not) write some posts here that don't exactly deserve their own blog post with a banner and such.
 
