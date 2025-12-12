@@ -18,12 +18,15 @@ after_success: |
     [ $TRAVIS_PULL_REQUEST = false ] &&
     TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
 
-    rsync -av --delete --exclude='.git' --exclude="CNAME" publish_tmp/ public/
-    cd public
+
     git config --global user.name "tr1xem"
     git config --global user.email "admin@trix.is-a.dev"
     git checkout main
     git pull origin main
+    cd public/
+    cd ..
+    rsync -av --delete --exclude='.git' --exclude="CNAME" publish_tmp/ public/
+    cd public
     git add .
     git commit -m "Automated Deploy: $TIMESTAMP" || echo "No changes to deploy."
     git push https://${GH_TOKEN}@github.com/tr1xem/tr1xem.github.io.git main
