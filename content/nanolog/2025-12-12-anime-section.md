@@ -1,6 +1,6 @@
 +++
 title = "Adding Anime Section"
-date = 2025-12-12T06:43:35.000
+date = 2025-12-12T06:43:00.000
 +++
 
 Added a anime section to the home page, its fetching anime data from anilist.co and filtering out the top anime of the user.
