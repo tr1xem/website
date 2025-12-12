@@ -40,6 +40,10 @@ collections:
           - label: Updated
             name: updated
             widget: datetime
+            default: ""
+            date_format: "YYYY-MM-DD"
+            time_format: "HH:mm:ss"
+            format: "YYYY-MM-DD" # IST offset
             required: false
           - label: Taxonomies
             name: taxonomies
@@ -144,6 +148,10 @@ collections:
           - label: Date
             name: date
             widget: datetime
+            default: ""
+            date_format: "YYYY-MM-DD"
+            time_format: "HH:mm:ss"
+            format: "YYYY-MM-DDTHH:mm:ss+05:30" # IST offset
           - label: Body
             name: body
             widget: markdown

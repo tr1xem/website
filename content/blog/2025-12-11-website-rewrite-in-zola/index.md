@@ -2,15 +2,16 @@
 title = "Website Rewrite in Zola"
 description = "The long-awaited website rewrite using the new static site generator - Zola."
 authors = [ "tr1x_em" ]
+updated = "2025-12-12"
+
 [taxonomies]
-tags = ["Devlog", "Website"]
+tags = [ "Devlog", "Website" ]
 
 [extra]
-banner="preview.webp"
+accent_color = [ "hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)" ]
+banner = "preview.webp"
 toc = true
-accent_color = ["hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)"]
 +++
-
 # Backstory
 
 Who dosent need a website? so a year ago I thought I'd create a website for myself, and I did. But guess what? it was in pure HTML and CSS (prolly from some github) repo.
@@ -41,7 +42,7 @@ stable things at all.
 Ametrine is the greatest theme i have ever seen, its so simple to use and the result you are seeing it here, ofc i did copypasta from Daudix's website too but yeah thats what open source is and as someone said already
 
 > "Original content is original only for a few seconds before getting old”<br>
-> ~Rule 69 of internet
+> \~Rule 69 of internet
 
 So if u you want to make a website and ur not some geeky frontend wizard, i suggest u to use zola and ametrine.
 
@@ -49,16 +50,17 @@ So if u you want to make a website and ur not some geeky frontend wizard, i sugg
 
 I love how it renders tables
 
-| Page  | Repo          |
-| ----- | ------------- |
-| Home  | `pages`       |
-| Info  | `pages`       |
-| Works | `pages`       |
-| Blog  | `blog-source` |
+| Page | Repo |
+| --- | --- |
+| Home | `pages` |
+| Info | `pages` |
+| Works | `pages` |
+| Blog | `blog-source` |
 
 and code blocks
 
-```c++
+```c
+++
 #include <iostream>
 
 int main() {
