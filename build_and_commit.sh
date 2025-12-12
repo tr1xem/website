@@ -10,6 +10,6 @@ git commit -m "Automated Deploy: $TIMESTAMP"
 git push
 
 cd ..
-# git add .
-# git commit -m "Automated Commit: $TIMESTAMP"
-# git push
+git add .
+git commit -m "Automated Commit: $TIMESTAMP"
+git push

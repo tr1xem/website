@@ -10,9 +10,6 @@ install:
 git:
     submodules: true
 
-script:
-    - zola build --output-dir publish_tmp --force
-
 stages:
     - name: deploy
       if: commit_message =~ /[Uu]pdate/ AND branch = main AND type = push
@@ -22,6 +19,7 @@ jobs:
         - stage: deploy
           script: |
               TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
+              zola build --output-dir publish_tmp --force
               git config --global user.name "tr1xem"
               git config --global user.email "admin@trix.is-a.dev"
               cd public/
