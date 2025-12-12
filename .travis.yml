@@ -12,7 +12,10 @@ git:
 
 stages:
     - name: deploy
-      if: commit_message =~ /[Uu]pdate/ AND branch = main AND type = push
+      if: |
+          type = push AND \
+          branch = main AND \
+          (commit_message =~ /[Uu]pload/ OR commit_message =~ /[Nn]anolog:/)
 
 jobs:
     include:
