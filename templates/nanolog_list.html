@@ -54,13 +54,7 @@ block content %}
             <small>{{ page.title }}</small>
         </div>
         <div>
-            {% if config.extra.source_url %}
-            <a
-                href="{{ config.extra.source_url }}/edit/main/content/{{ page.relative_path }}"
-                target="_blank"
-                >Edit Post</a
-            >
-            {%- endif -%} {{ page.content | safe }}
+     {{ page.content | safe }}
         </div>
     </li>
     {%- endfor %}

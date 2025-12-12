@@ -28,7 +28,7 @@ h1 {
         padding-inline-start: 1rem;
 
         &:last-child {
-            margin-block-end: 0;
+            margin-block: 0;
         }
 
         &::before {
@@ -95,7 +95,8 @@ h1 {
                 }
             }
 
-            :last-child {
+            > * {
+                margin-block-start: 0;
                 margin-block-end: 0;
             }
         }
