@@ -1,14 +1,16 @@
 +++
-title = 'Coding Principles I Follow'
+title = "Coding Principles I Follow"
 description = "My philosophy on coding"
+authors = [ "tr1x_em", "Gaspar" ]
 updated = 2025-12-11
-[taxonomies]
-tags = ["coding", "neovim"]
-[extra]
-banner = "phil.webp"
-accent_color = ["hsl(270 13% 48%)", "hsl(290 20% 71%)"]
-+++
 
+[extra]
+accent_color = [ "hsl(270 13% 48%)", "hsl(290 20% 71%)" ]
+banner = "phil.webp"
+
+[taxonomies]
+tags = [ "coding", "neovim" ]
++++
 ## Minimalism
 
 In computing, minimalism refers to the application of minimalist philosophies and principles in the design and use of hardware and software. Minimalism, in this sense, means designing systems that use the least hardware and software resources possible.
@@ -54,7 +56,7 @@ The Unix philosophy, originated by Ken Thompson, is a set of cultural norms and 
 The Unix philosophy emphasizes building **simple**, **short**, **clear**, **modular**, and **extensible** code that can be **easily** maintained and repurposed by developers other than its creators. The Unix philosophy favors composability as opposed to monolithic design.
 
 > UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.
->
+> >
 > -- [Dennis Ritchie](http://genius.cat-v.org/dennis-ritchie/)
 
 [Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)

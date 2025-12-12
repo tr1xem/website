@@ -1,14 +1,15 @@
 +++
-updated = 2025-12-01
-title = 'Dell G15 - Review'
+title = "Dell G15 - Review"
 description = "A Honest review after 1 year"
-[taxonomies]
-tags = ["hardware","dell"]
+authors = [ "tr1x_em" ]
+updated = 2025-12-01
+
 [extra]
-accent_color = "red"
+accent_color = [ "hsl(0 100% 50%)", "hsl(10 70% 50%)" ]
 banner = "preview.webp"
 
-
+[taxonomies]
+tags = [ "hardware", "dell" ]
 +++
 
 Long Story Short I own a `Dell G15 5530` laptop. Specs `RTX 4050` and `i7 13650HX`

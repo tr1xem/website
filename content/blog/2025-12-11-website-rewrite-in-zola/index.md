@@ -1,12 +1,14 @@
 +++
 title = "Website Rewrite in Zola"
 description = "The long-awaited website rewrite using the new static site generator - Zola."
+authors = [ "tr1x_em" ]
 [taxonomies]
 tags = ["Devlog", "Website"]
+
 [extra]
 banner="preview.webp"
 toc = true
-accent_color = "blue"
+accent_color = ["hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)"]
 +++
 
 # Backstory
