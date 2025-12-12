@@ -1,11 +1,10 @@
-# Personal Website powered by Zola and Ametrine 
+# [trix.is-a.dev](https://trix.is-a.dev)
 
 [![Build Status](https://app.travis-ci.com/tr1xem/website.svg?token=jAwko6HWJsCsVywAEYcp&branch=main)](https://app.travis-ci.com/tr1xem/website)
 
-Hosted at: https://trix.is-a.dev/
+The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and [Ametrine](https://ametrine.daudix.one).
 
 # Preview
-
 
 <img width="1879" height="961" alt="image" src="https://github.com/user-attachments/assets/1ca84879-5b56-4902-8b05-185cadbaa714" />
 
