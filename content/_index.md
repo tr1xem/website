@@ -117,7 +117,7 @@ Back in ’06 I was still buffering… cosmic Wi-Fi was terrible
 
 <article class="anime fancy-list">
 
-**My All time favorites:**
+**All time favorites:**
 
 {{ anime_top() }}
 
@@ -174,6 +174,6 @@ Feel free to reach me out on any of these! Although I'm usually active on Discor
 
 </ul>
 
-# Projects
+## Projects
 
 #### Comming soon™
