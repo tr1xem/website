@@ -1,0 +1,31 @@
+language: minimal
+
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install -y curl unzip rsync git
+
+install:
+    - ZOLA_URL=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest \
+      | jq -r '.assets[] | select(.name | test("x86_64-unknown-linux-gnu.zip$")) | .browser_download_url')
+
+    - curl -L "$ZOLA_URL" -o zola.zip
+    - unzip zola.zip -d $HOME/bin
+    - chmod +x $HOME/bin/zola
+    - export PATH="$HOME/bin:$PATH"
+git:
+    submodules: true
+
+script:
+    # Build Zola into a SAFE TEMP DIRECTORY
+    - zola build --output-dir publish_tmp
+
+after_success: |
+    [ $TRAVIS_BRANCH = main ] &&
+    [ $TRAVIS_PULL_REQUEST = false ] &&
+    TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
+
+    rsync -av --delete --exclude='.git' publish_tmp/ public/
+    cd public
+    git add .
+    git commit -m "Automated Deploy: $TIMESTAMP" || echo "No changes to deploy."
+    git push
