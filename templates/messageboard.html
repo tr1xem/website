@@ -1,36 +1,26 @@
-{% extends "base.html" %} {% block content %}
-<div id="nanolog-post">
-    {%- if page.lower -%}
-    <a id="nanolog-higher" href="{{ page.lower.permalink }}#up">
-        <span
-            >{{ page.lower.date | date(format=config.extra.date_format_long |
-            default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone
-            | default(value="UTC"), locale=config.extra.date_locale) |
-            default(value="en_US") }}</span
-        >
-    </a>
-    {%- endif -%}
+{% extends "base.html" %} {% import "macros/icon.html" as macros_icon %} {%
+block content %}
+<h1 id="message-board">{{ section.title }}</h1>
 
-    <div id="nanolog-heading">
-        <h1>
-            {{ page.date | date(format=config.extra.date_format_long |
-            default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone
-            | default(value="UTC"), locale=config.extra.date_locale) |
-            default(value="en_US") }}
-        </h1>
-        <div id="nanolog-details">
-            <p><small>{{ page.title }}</small></p>
-        </div>
-    </div>
-    {{ page.content | safe }} {%- if page.higher -%}
-    <a id="nanolog-lower" href="{{ page.higher.permalink }}#down">
-        <span
-            >{{ page.higher.date | date(format=config.extra.date_format_long |
-            default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone
-            | default(value="UTC"), locale=config.extra.date_locale) |
-            default(value="en_US") }}</span
-        >
-    </a>
-    {%- endif -%}
-</div>
+{{ section.description | markdown | safe }}
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="tr1xem/website"
+        data-repo-id="R_kgDOPvKejQ"
+        data-category="Show and tell"
+        data-category-id="DIC_kwDOPvKejc4Czszy"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="catppuccin_mocha"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
 {% endblock content %}
+

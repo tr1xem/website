@@ -71,9 +71,10 @@ csp = [
     "https:",
   ] },
   { directive = "script-src", domains = [
-    "cloud.umami.is",
+    "giscus.app",
   ] },
   { directive = "style-src", domains = [
+    "giscus.app",
     "'self'",
     "'unsafe-inline'",
   ] },
@@ -82,6 +83,7 @@ csp = [
     "incr.easrng.net",
     "vmst.io",
     "drive.google.com",
+    "giscus.app",
   ] },
   { directive = "connect-src", domains = [
     "*.umami.dev",
