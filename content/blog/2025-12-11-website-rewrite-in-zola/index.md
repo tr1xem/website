@@ -32,7 +32,7 @@ I know its shit (sometime i even surprise myself with the results 🤡), but i w
 
 # Entry of Zola
 
-I was reading [Gradience Autopsy: Rise and Set - Daudix](https://daudix.one/blog/archiving-gradience/#top)<small> (all love to gradience forever) </small> and the looks caught my eye. and then i got to know about [Zola](https://www.getzola.org/). Zola to me is like hugo(XD idk how correct im)
+I was reading [Gradience Autopsy: Rise and Set - Daudix](https://daudix.one/blog/archiving-gradience/)<small> (all love to gradience forever) </small> and the looks caught my eye. and then i got to know about [Zola](https://www.getzola.org/). Zola to me is like hugo(XD idk how correct im)
 and with it i came to know about a guy named [Daudix](https://daudix.one/) and his theme for zola named [Ametrine](https://ametrine.daudix.one/) tho acc to him its not stable but as I being a arch user do not care about
 stable things at all.
 
