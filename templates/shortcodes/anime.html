@@ -1,0 +1,55 @@
+{%- set user = section.extra.anilist -%}
+
+
+{# JSON body built manually #}
+{%- set gql_query =
+    '{ "query": "query ($name: String) { MediaListCollection(userName: $name, type: ANIME, status: CURRENT) { lists { entries { progress media { id title { romaji english native } episodes siteUrl coverImage { large } } } } } }", "variables": { "name": "'
+    ~ user ~ '" } }'
+-%}
+
+{%- set anime_data = load_data(
+    url="https://graphql.anilist.co",
+    format="json",
+    method="POST",
+    body=gql_query,
+    content_type="application/json"
+) -%}
+
+{# Flatten lists[*].entries manually #}
+{% set entries = [] %}
+{% for list in anime_data.data.MediaListCollection.lists %}
+    {% set_global entries = entries | concat(with=list.entries) %}
+{% endfor %}
+
+<ul class="anime-list">
+    {%- for entry in entries -%}
+        {%- set show = entry.media -%}
+
+        {%- if loop.index == 9 -%}
+</ul>
+
+<input class="visually-hidden" id="show-more" type="checkbox" name="show-more" autocomplete="off" />
+<label for="show-more">
+    <span class="more">Show More…</span>
+    <span class="less">Show Less…</span>
+</label>
+
+<ul class="anime-extra">
+        {%- endif -%}
+
+        <li>
+            <a href="{{ show.siteUrl }}" title="{{ show.title.romaji }}">
+                <img
+                    class="transparent no-hover"
+                    alt="Cover art of {{ show.title.romaji }}."
+                    src="{{ show.coverImage.large }}"
+                    {% if config.markdown.lazy_async_image %}
+                        decoding="async" loading="lazy"
+                    {% endif %}
+                />
+            </a>
+        </li>
+
+    {%- endfor -%}
+</ul>
+

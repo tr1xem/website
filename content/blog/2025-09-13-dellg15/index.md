@@ -22,6 +22,8 @@ Looks are great its like a tank, Build is solid and screen is great.
 
 Overall the laptop is solid and great.
 
+{{ emoji(name="AngeryCat",big=true) }}
+
 ### Remind me i have to finish it
 
 Resources: [AWCC](https://aur.archlinux.org/packages/awcc-git) and [Arch Wiki](https://wiki.archlinux.org/title/Dell_G15_5530)

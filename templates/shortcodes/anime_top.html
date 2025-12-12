@@ -1,0 +1,64 @@
+{%- set user = section.extra.anilist -%}
+
+{%- set gql_query =
+    '{ "query": "query ($name: String) { MediaListCollection(userName: $name, type: ANIME) { lists { entries { score media { id title { romaji english native } coverImage { large } siteUrl episodes } } } } }", "variables": { "name": "'
+    ~ user ~ '" } }'
+-%}
+
+{%- set anime_data = load_data(
+    url="https://graphql.anilist.co",
+    format="json",
+    method="POST",
+    body=gql_query,
+    content_type="application/json"
+) -%}
+
+{% set entries = [] %}
+{% for list in anime_data.data.MediaListCollection.lists %}
+    {% set_global entries = entries | concat(with=list.entries) %}
+{% endfor %}
+
+{# Filter entries with score > 9 and episodes > 5 #}
+{% set top_entries = [] %}
+{% for e in entries %}
+    {# Ensure episodes is a number, default 0 if null #}
+    {% set eps = e.media.episodes | default(value=0) %}
+    {% if e.score > 9 and eps > 5 %}
+        {% set_global top_entries = top_entries | concat(with=[e]) %}
+    {% endif %}
+{% endfor %}
+
+
+
+<ul class="anime-list">
+    {%- for entry in top_entries -%}
+        {%- set show = entry.media -%}
+
+        {%- if loop.index == 9 -%}
+</ul>
+
+<input class="visually-hidden" id="show-more-top" type="checkbox" name="show-more-top" autocomplete="off" />
+<label for="show-more-top">
+    <span class="more">Show More…</span>
+    <span class="less">Show Less…</span>
+</label>
+
+<ul class="anime-extra">
+        {%- endif -%}
+
+        <li>
+            <a href="{{ show.siteUrl }}" title="{{ show.title.romaji }}">
+                <img
+                    class="transparent no-hover"
+                    alt="Cover art of {{ show.title.romaji }}."
+                    src="{{ show.coverImage.large }}"
+                    {% if config.markdown.lazy_async_image %}
+                        decoding="async" loading="lazy"
+                    {% endif %}
+                />
+            </a>
+        </li>
+
+    {%- endfor -%}
+</ul>
+

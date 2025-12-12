@@ -23,7 +23,10 @@ I did watched a pretty good,crisp and short video on how to use it and i was lik
 
 and it turned out like this
 
+<figure>
 {{ image(url="oldweb.png", alt="Old Website", no_hover=false ,spoiler=true) }}
+<figcaption>Old Website</figcaption>
+</figure>
 
 I know its shit (sometime i even surprise myself with the results 🤡), but i was like "its the most my superior brain could do". also im not at all motivated to do frontend and styling.
 

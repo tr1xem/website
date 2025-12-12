@@ -1,0 +1,170 @@
+@use "../../themes/ametrine/sass/abstracts/functions" as *;
+
+.fancy-list.anime {
+    position: relative;
+    padding: 0.5rem;
+
+    &:has(.anime-extra) {
+        padding-block-end: 2.875rem;
+    }
+
+    & > :first-child {
+        padding: 0.5rem;
+        padding-block-end: 0;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        margin-block: 0;
+    }
+
+    li {
+        display: flex;
+        position: relative;
+        transition:
+            all var(--transition),
+            transform var(--transition-bezier);
+        box-shadow: none !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+
+        &:last-child:hover {
+            margin-inline-end: 0;
+        }
+
+        &:hover {
+            transform: scale(1.5);
+            z-index: 1;
+            filter: var(--drop-shadow);
+        }
+
+        &:active {
+            transform: var(--active);
+        }
+
+        a {
+            display: inherit;
+            justify-content: center;
+            border-radius: inherit;
+        }
+    }
+
+    img {
+        border-radius: inherit;
+        width: 100%;
+    }
+    #show-more-top {
+        position: absolute;
+
+        &:focus-visible + label {
+            animation: focus-in var(--transition);
+            outline: 0.125rem solid var(--accent-color);
+            outline-offset: 0.125rem;
+        }
+
+        @supports not selector(:focus-visible) {
+            &:focus + label {
+                animation: focus-in var(--transition);
+                outline: 0.125rem solid var(--accent-color);
+                outline-offset: 0.125rem;
+            }
+        }
+
+        & + label {
+            display: flex;
+            position: absolute;
+            transition: var(--transition);
+            inset-block-end: 1rem;
+            inset-inline-start: 1rem;
+            color: var(--fg-muted-1);
+            font-weight: var(--font-weight-semi-bold);
+            font-size: var(--font-size-small);
+            line-height: 1;
+
+            &:hover {
+                color: var(--fg-muted-2);
+            }
+
+            .less {
+                display: none;
+            }
+        }
+
+        &:checked {
+            & + label {
+                .more {
+                    display: none;
+                }
+
+                .less {
+                    display: inline;
+                }
+            }
+
+            & ~ .anime-extra {
+                display: grid;
+            }
+        }
+    }
+
+    #show-more {
+        position: absolute;
+
+        &:focus-visible + label {
+            animation: focus-in var(--transition);
+            outline: 0.125rem solid var(--accent-color);
+            outline-offset: 0.125rem;
+        }
+
+        @supports not selector(:focus-visible) {
+            &:focus + label {
+                animation: focus-in var(--transition);
+                outline: 0.125rem solid var(--accent-color);
+                outline-offset: 0.125rem;
+            }
+        }
+
+        & + label {
+            display: flex;
+            position: absolute;
+            transition: var(--transition);
+            inset-block-end: 1rem;
+            inset-inline-start: 1rem;
+            color: var(--fg-muted-1);
+            font-weight: var(--font-weight-semi-bold);
+            font-size: var(--font-size-small);
+            line-height: 1;
+
+            &:hover {
+                color: var(--fg-muted-2);
+            }
+
+            .less {
+                display: none;
+            }
+        }
+
+        &:checked {
+            & + label {
+                .more {
+                    display: none;
+                }
+
+                .less {
+                    display: inline;
+                }
+            }
+
+            & ~ .anime-extra {
+                display: grid;
+            }
+        }
+    }
+
+    .anime-extra {
+        display: none;
+        margin-block-start: 0.5rem;
+    }
+}
