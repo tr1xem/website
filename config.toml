@@ -115,6 +115,7 @@ links = [
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
+    { url = "@/messageboard/_index.md", name = "Message Board", icon = "envelope-open" },
 
   ] },
     { name = "Projects ", category = [
