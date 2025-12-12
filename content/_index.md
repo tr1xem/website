@@ -14,7 +14,7 @@ contacts = [
 ]
 forges = [
 #{ name = "Codeberg", url = "https://codeberg.org/trx1em" },
-  { name = "GitHub", url = "https://github.com/tr1xem" },
+ { name = "GitHub", url = "https://github.com/tr1xem" },
  { name = "GitLab", url = "https://gitlab.com/trx1_em" },
 ]
 socials = [
@@ -174,6 +174,6 @@ Feel free to reach me out on any of these! Although I'm usually active on Discor
 
 </ul>
 
-> [!NOTE]
-> Still in WIP!
-> Read [blogs](@/blog/_index.md) till then
+# Projects
+
+#### Comming soon™
