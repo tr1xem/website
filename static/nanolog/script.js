@@ -306,6 +306,7 @@ document.getElementById("nanolog").addEventListener("click", function () {
     }
 });
 
+// Main
 document.addEventListener("DOMContentLoaded", () => {
     if (nanologEnabled === "true") {
         nanologButton.removeAttribute("hidden");
