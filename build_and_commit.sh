@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
 TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
-zola build
-cp git_files/.git.bak public/.git
-cp git_files/CNAME.bak public/CNAME
+zola build --output-dir publish_tmp
+rsync -av --delete --exclude='.git' --exclude='CNAME' publish_tmp/ public/
 cd public
 git add .
 git commit -m "Automated Deploy: $TIMESTAMP"

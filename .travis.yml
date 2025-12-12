@@ -24,7 +24,7 @@ after_success: |
     [ $TRAVIS_PULL_REQUEST = false ] &&
     TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
 
-    rsync -av --delete --exclude='.git' publish_tmp/ public/
+    rsync -av --delete --exclude='.git' --exclude="CNAME" publish_tmp/ public/
     cd public
     git add .
     git commit -m "Automated Deploy: $TIMESTAMP" || echo "No changes to deploy."
