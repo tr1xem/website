@@ -64,8 +64,7 @@ I love how it renders tables
 
 and code blocks
 
-```c
-++
+```cpp
 #include <iostream>
 
 int main() {

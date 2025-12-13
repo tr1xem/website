@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>tr1x_em - Nanolog</title>
+      <link>https://trix.is-a.dev/nanolog/</link>
+      <description>just my corner of internet</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://trix.is-a.dev/nanolog/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 13 Dec 2025 06:39:12 +0000</lastBuildDate>
+      <item>
+          <title>adding new stuff</title>
+          <pubDate>Sat, 13 Dec 2025 06:39:12 +0000</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/adding-new-stuff/</link>
+          <guid>https://trix.is-a.dev/nanolog/adding-new-stuff/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/adding-new-stuff/">&lt;p&gt;Just added ntfy (made a client in go for desktop so i get notification) and the animated title daudix helped me :&amp;gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Hiatus</title>
+          <pubDate>Fri, 12 Dec 2025 18:46:16 +0000</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/hiatus/</link>
+          <guid>https://trix.is-a.dev/nanolog/hiatus/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/hiatus/">&lt;p&gt;Enough of this thing now, I should focus on other things too would develop rest of the site ofcccccc but with some much needed breaks 😁&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Finally Setup CI</title>
+          <pubDate>Fri, 12 Dec 2025 20:20:00 +0530</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/finally-setup-ci/</link>
+          <guid>https://trix.is-a.dev/nanolog/finally-setup-ci/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/finally-setup-ci/">&lt;p&gt;Just setup the ci now all blogs can be autoposted ; ) was fun learning how to do it. Currently using &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.travis-ci.com&#x2F;&quot;&gt;Travis CI&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Message Board is now live</title>
+          <pubDate>Fri, 12 Dec 2025 16:00:00 +0530</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/message-board-is-now-live/</link>
+          <guid>https://trix.is-a.dev/nanolog/message-board-is-now-live/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/message-board-is-now-live/">&lt;p&gt;Finally, the message board is now live. Now everyone can share their messages at &lt;a href=&quot;&#x2F;messageboard&quot;&gt;Message Board&lt;&#x2F;a&gt;. LOL&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Adding Anime Section</title>
+          <pubDate>Fri, 12 Dec 2025 11:40:00 +0530</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/anime-section/</link>
+          <guid>https://trix.is-a.dev/nanolog/anime-section/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/anime-section/">&lt;p&gt;Added a anime section to the home page, its fetching anime data from anilist.co and filtering out the top anime of the user.
+Pretty happy with it :)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Website Creation</title>
+          <pubDate>Fri, 12 Dec 2025 07:40:00 +0530</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/did-more-than-expected/</link>
+          <guid>https://trix.is-a.dev/nanolog/did-more-than-expected/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/did-more-than-expected/">&lt;p&gt;Did more than expected, and it’s looking good so far.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>First Post</title>
+          <pubDate>Thu, 11 Dec 2025 15:40:00 +0530</pubDate>
+          <author>tr1x_em</author>
+          <link>https://trix.is-a.dev/nanolog/first-post/</link>
+          <guid>https://trix.is-a.dev/nanolog/first-post/</guid>
+          <description xml:base="https://trix.is-a.dev/nanolog/first-post/">&lt;p&gt;This is a first post in this microblog that is inspired by &lt;a class=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;getimiskon.xyz&#x2F;microblog.html&quot;&gt;gettie’s&lt;&#x2F;a&gt;; it’s kinda like a blog, but smaller.&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and these posts need no front matter at all, only date in the file name and a title, which isn’t seen anywhere&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

@@ -8,18 +8,18 @@ scripts = ["home/script.js"]
 anilist = "tr1xem"
 contacts = [
   { name = "Discord", url = "https://discord.com/users/885063317079592961", favorite = true },
-  { name = "Telegram", url = "https://t.me/tr1xem" },
+  { name = "Telegram", url = "https://t.me/tr1x_em" },
   { name = "Matrix", url = "https://matrix.to/#/@tr1xem:matrix.org" },
   { name = "Email", url = "mailto:admin@trix.is-a.dev" },
 ]
 forges = [
-#{ name = "Codeberg", url = "https://codeberg.org/trx1em" },
+#{ name = "Codeberg", url = "https://codeberg.org/tr1xem" },
  { name = "GitHub", url = "https://github.com/tr1xem" },
- { name = "GitLab", url = "https://gitlab.com/trx1_em" },
+ { name = "GitLab", url = "https://gitlab.com/tr1x_em" },
 ]
 socials = [
   { name = "Reddit", url = "https://www.reddit.com/u/l_lawliet_9999", favorite = true },
-  { name = "Mastodon", url = "https://mastodon.social/@tr1x_em" },
+  { name = "Mastodon", url = "https://mastodon.social/@tr1x_em",favorite = true },
   { name = "Bluesky", url = "https://bsky.app/profile/tr1xem.bsky.social" },
   { name = "Twitch", url = "https://www.twitch.tv/tr1x_em" },
   { name = "Twitter", url = "https://x.com/tr1x_em" },

@@ -10,8 +10,12 @@ tags = [ "devlog", "dev" ]
 
 [extra]
 styles = []
-accent_color = [ "hsl(313 0% 25.9%)", "hsl(184 100% 62.2%)" ]
+accent_color = [ "orange", "hsl(184 100% 62.2%)" ]
 banner = "ss3.png"
-banner_pixels = false
+banner_pixels = true
 +++
 In the blog i would be talking about my dev setup and workflow  This is <small>(little bit) </small> inspired by [Primagen's Course](https://frontendmasters.com/courses/developer-productivity-v2/)
+
+## Dotfiles management
+
+What are dotfiles? Well _dotfiles are hidden configuration files on Unix-based systems, such as Linux and macOS, that store settings, preferences, and configurations for various applications, tools, and the system environment._
