@@ -89,11 +89,15 @@ The thing I like inside my editor is AI based autocomplete, it comes in handy in
 
 I don't really care about it, I just use [Ghostty](https://ghostty.org/). I don't think it creates any difference, they are all the same.
 
+### Hyprscrolling
+
+I use Hyprscrolling to add features of a scrolling window manager to Hyprland. It's been a month since I started using it and it is great. But it totally depends on preferences, I just happen to like it.
+
 ## Container based development
 
 Now this I learnt recently, and it's already a core part of my workflow
 
-If you use [Systemd](https://en.wikipedia.org/wiki/Systemd) it comes with [Systemd-nspawn](https://wiki.archlinux.org/title/Systemd-nspawn) which technically creates a minimal Linux distribution (headless) which I would say is like an isolated part of your distro. It’s like the chroot command, but it is a chroot on steroids. By using containers, I can keep the host system minimal while maintaining separate, well-organized environments for different tasks. If you want to know more about this, you can refer to [Gasper's](https://gasparvardanyan.github.io/blog/arch-workstation-1/) blog on how he manages <small>(shout out to him as he taught me this too)</small>
+If you use [Systemd](https://en.wikipedia.org/wiki/Systemd) it comes with [Systemd-nspawn](https://wiki.archlinux.org/title/Systemd-nspawn) which technically creates a minimal Linux distribution (headless) which I would say is like an isolated part of your distro. It’s like the chroot command, but it is a chroot on steroids. By using containers, I can keep the host system minimal while maintaining separate, well-organized environments for different tasks. If you want to know more about this, you can refer to [Gaspar's](https://gasparvardanyan.github.io/blog/arch-workstation-3/) blog on how he manages his devlopment containers.<small>(shout out to him as he taught me this too)</small>
 
 ### Hornable mentions: Non Development tools
 
