@@ -39,7 +39,7 @@ socials = [
 
 <div id="title">
 
-tr1x_em
+# tr1x_em
 
 </div>
 Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; tr1x_em.
@@ -169,6 +169,25 @@ Feel free to reach me out on any of these! Although I'm usually active on Discor
 
 {{ online(type="contacts") }}
 
+</article>
+</li>
+
+<li>
+<article class="ntfy fancy-list">
+<strong id="ntfy" class="title">Send Me a Notification</strong>
+
+The moment you press "Send" I'll get a push notification. Crazy, right?
+
+<div>
+  <input id="ntfy-input" placeholder="Stolen from daudix.one"></input>
+  <button id="ntfy-send" class="suggested" title="Send">
+    {{ icon(name="paper-plane-right") }}
+    {{ icon(name="check") }}
+  </button>
+</div>
+<div class="tooltip" title="Powered by ntfy.sh. Messages are not end-to-end encrypted and are public. This is not a secure method of communication">
+  {{ icon(name="lock-open") }}
+</div>
 </article>
 </li>
 

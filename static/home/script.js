@@ -16,12 +16,43 @@ const lastFmLink = document.getElementById("player-go");
 const userID = 885063317079592961n;
 const discordStatus = document.getElementById("online-indicator");
 const discordStatusText = document.getElementById("online-indicator-text");
+
 const clock = document.getElementById("clock");
+
+const ntfyInput = document.getElementById("ntfy-input");
+const ntfySend = document.getElementById("ntfy-send");
+const ntfyid = "tr1x_em-website-baby";
 
 let lastDiscordStatus = "";
 let lastTime = "";
 let lastTrackID = null;
 // Functions
+// Ntfy
+
+function send(message) {
+    fetch("https://ntfy.sh/" + ntfyid, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain" },
+        body: message,
+    });
+}
+
+function sendNotification() {
+    if (!ntfyInput.value) return;
+    send(ntfyInput.value);
+
+    ntfySend.classList.add("sent");
+    ntfySend.firstChild.addEventListener(
+        "transitionend",
+        () => {
+            ntfySend.classList.remove("sent");
+        },
+        { once: true },
+    );
+
+    ntfyInput.value = "";
+}
+
 // Last.fm
 async function fetchLastFm() {
     try {
@@ -120,4 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchDiscordStatus();
     setInterval(fetchDiscordStatus, 10000);
+
+    ntfySend.addEventListener("click", sendNotification);
 });

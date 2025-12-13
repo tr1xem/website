@@ -1,13 +1,8 @@
 @use "../../themes/ametrine/sass/abstracts/functions" as *;
 
 #title {
-    font-family: "kalam";
     --shift: 0.1875rem;
-    color: var(--accent-color);
-    line-height: 1;
-
-    font-size: rpx(55);
-    display: flex;
+    display: block;
     transition: var(--transition-bezier);
     margin-block-start: 0;
     image-rendering: pixelated;
@@ -23,7 +18,9 @@
             drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #fde85f)
             drop-shadow(calc(var(--shift) * -1) var(--shift) 0 #ec4141);
 
-        color: #fae760;
+        #tr1x-em {
+            background-color: #9bdbf5;
+        }
     }
 
     &:active {
@@ -35,8 +32,35 @@
         filter: drop-shadow(var(--shift) var(--shift) 0 #1b98d1)
             drop-shadow(var(--shift) var(--shift) 0 #fde85f)
             drop-shadow(var(--shift) var(--shift) 0 #ec4141);
+
+        #tr1x-em {
+            background-color: #9bdbf5;
+        }
     }
-    //
+
+    #tr1x-em {
+        --mask: url("name.gif");
+        -webkit-user-select: none;
+        -webkit-mask-image: var(--mask);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-image: var(--mask);
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        transition: var(--transition-bezier);
+        margin: 0;
+        background-color: var(--accent-color);
+        aspect-ratio: 497 / 113; // Proper height regardless of the width
+        width: 100%;
+        overflow: hidden; // Make aspect ratio set above work
+        color: transparent;
+        user-select: none;
+        text-decoration: none;
+
+        @media (prefers-reduced-motion) {
+            --mask: url("name-static.gif");
+        }
+    }
 
     @media only screen and (max-width: 944px) {
         margin: 2rem auto 1rem;
