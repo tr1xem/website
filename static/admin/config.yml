@@ -41,23 +41,22 @@ collections:
             name: updated
             widget: datetime
             default: ""
-            date_format: "YYYY-MM-DD"
-            time_format: "HH:mm:ss"
-            format: "YYYY-MM-DD" # IST offset
             required: false
           - label: Taxonomies
             name: taxonomies
             widget: object
-            required: true
+            required: false
             fields:
                 - label: Tags
                   name: tags
                   widget: list
                   default: []
+                  required: true
                 - label: Categories
                   name: categories
                   widget: list
                   default: []
+                  required: false
           - label: Extra
             name: extra
             widget: object

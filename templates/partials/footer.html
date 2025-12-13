@@ -30,14 +30,7 @@
             }}
         </p>
 
-        {%- endif %}
-
-        <p>
-            <a class="link external" href="key/trix.pub">SSH Public Key</a>
-            <a class="link external" href="key/trix.asc">PGP Public Key</a>
-        </p>
-
-        {%- if config.extra.footer.show_fediring %}
+        {%- endif %} {%- if config.extra.footer.show_fediring %}
         <div class="webring">
             <a class="link external" href="https://fediring.net">Fediring</a>
             <a
@@ -69,22 +62,38 @@
         <p class="timestamp">{{ build_timestamp }}</p>
         {%- endif %}
     </div>
+    <div
+        style="
+            flex: 0 1 auto !important; // Don't grow, shrink if needed, auto width
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
 
-    {%- if config.extra.footer.socials -%}
-    <ul class="socials">
-        {%- for link in config.extra.footer.socials %} {%- if link.icon is
-        containing("%3Csvg") -%} {{- throw(message="Footer social '" ~ link.url
-        ~ "' is using SVG as an icon, which is deprecated. Use icon name from
-        https://simpleicons.org instead.") -}} {%- endif -%}
-        <li>
-            <a href="{{ link.url }}" rel="{{ rel_attributes }} me">
-                {%- set icon = load_data(path="icons/simple/" ~ link.icon ~
-                ".svg", required=false) -%} {% if not icon %} {%- set icon =
-                load_data(path="themes/ametrine/icons/simple/" ~ link.icon ~
-                ".svg", required=false) -%} {% endif %} {{- icon | safe -}}
-            </a>
-        </li>
-        {%- endfor -%}
-    </ul>
-    {%- endif -%}
+   "
+    >
+        {%- if config.extra.footer.socials -%}
+        <ul class="socials">
+            {%- for link in config.extra.footer.socials %} {%- if link.icon is
+            containing("%3Csvg") -%} {{- throw(message="Footer social '" ~
+            link.url ~ "' is using SVG as an icon, which is deprecated. Use icon
+            name from https://simpleicons.org instead.") -}} {%- endif -%}
+            <li>
+                <a href="{{ link.url }}" rel="{{ rel_attributes }} me">
+                    {%- set icon = load_data(path="icons/simple/" ~ link.icon ~
+                    ".svg", required=false) -%} {% if not icon %} {%- set icon =
+                    load_data(path="themes/ametrine/icons/simple/" ~ link.icon ~
+                    ".svg", required=false) -%} {% endif %} {{- icon | safe -}}
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+
+        {%- endif -%}
+
+        <p style="font-size: 0.9rem">
+            <a class="link external" href="key/trix.pub">SSH Public Key</a>
+            <a class="link external" href="key/trix.asc">PGP Public Key</a>
+        </p>
+    </div>
 </footer>

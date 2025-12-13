@@ -132,6 +132,7 @@ links = [
 
 [extra.footer]
 # copyright = true
+show_fediring = true
 copyright = "© tr1x_em, 2021-$YEAR"
 show_timestamp = true
 show_powered_by = true
@@ -142,8 +143,26 @@ socials = [
     { url = "https://x.com/tr1x_em", icon = "x" },
     { url = "mailto:admin@trix.is-a.dev", icon = "gmail" },
 ]
+[extra.fediverse]
+# Fediverse integration.
+# Used for:
+# - Commenting
+# - Custom emoji shortcode
+# - Website verification
+# - Author attribution
+#
+# Mastodon-powered commenting is based on
+# https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/
+#
+# Values can be overridden in the front-matter, e.g.
+# for multi-author blogs or guest posts.
+
+host = "mastodon.social"
+user = "tr1x_em"
+
 
 [extra.debug]
 layout = false
 no_styles = false
 no_emojis = false
+
