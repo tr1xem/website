@@ -2,10 +2,7 @@
 
 TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
 zola build --output-dir publish_tmp --force
-cd public
-git pull --rebase
-cd ..
-rsync -av --delete --exclude='.git' --exclude='CNAME' publish_tmp/ public/
+rsync -av --delete --exclude='.git'  publish_tmp/ public/
 cd public
 git add .
 git commit -m "Automated Deploy: $TIMESTAMP"
