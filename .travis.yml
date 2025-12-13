@@ -15,7 +15,13 @@ stages:
       if: |
           type = push AND \
           branch = main AND \
-          (commit_message =~ /[Uu]pload/ OR commit_message =~ /[Nn]anolog:/)
+          commit_message !~ /^[Dd]raft/ AND
+          (
+            commit_message =~ /Create/ OR
+            commit_message =~ /Delete/ OR
+            commit_message =~ /Upload/ OR
+            commit_message =~ /Nanolog:/
+          )
 
 jobs:
     include:
@@ -32,5 +38,5 @@ jobs:
               rsync -av --delete --exclude='.git' --exclude="CNAME" publish_tmp/ public/
               cd public
               git add .
-              git commit -m "Automated Deploy: $TIMESTAMP" || echo "No changes to deploy."
+              git commit -m "CI Deployment: $TIMESTAMP" || echo "No changes to deploy."
               git push https://${GH_TOKEN}@github.com/tr1xem/tr1xem.github.io.git main
