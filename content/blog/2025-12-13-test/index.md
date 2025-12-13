@@ -1,5 +1,5 @@
 +++
-title = "Test"
+title = "Draft Test"
 description = "Test"
 authors = []
 draft = true
