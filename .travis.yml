@@ -29,14 +29,15 @@ jobs:
         - stage: deploy
           script: |
               TIMESTAMP=$(date '+%Y-%m-%d %I:%M:%S %p')
+              git config --global user.email "admin@trix.is-a.dev"
+              git config --global user.name "tr1xem"
+              cd public/
+              git checkout main
+              git pull --rebase
+              cd ..
               zola build
               echo "gitdir: ../.git/modules/public" > public/.git
-              git config --global user.name "tr1xem"
-              git config --global user.email "admin@trix.is-a.dev"
               cd public/
-              git stash
-              git pull --rebase
-              git stash pop
               git add .
               git commit -m "CI Deployment: $TIMESTAMP" || echo "No changes to deploy."
               git push https://${GH_TOKEN}@github.com/tr1xem/tr1xem.github.io.git main
