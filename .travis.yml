@@ -19,6 +19,7 @@ stages:
           (
             commit_message =~ /Create/ OR
             commit_message =~ /Delete/ OR
+            commit_message =~ /Update/ OR
             commit_message =~ /Upload/ OR
             commit_message =~ /Nanolog:/
           )
