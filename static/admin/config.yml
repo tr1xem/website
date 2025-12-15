@@ -1,11 +1,25 @@
-# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
-
 backend:
     name: github
     repo: tr1xem/website
+    branch: main
+    skip_ci: true
 
 media_folder: static/media
 public_folder: /media
+
+media_libraries:
+    default:
+        config:
+            transformations:
+                raster_image:
+                    format: webp
+                    quality: 85
+                    width: 2048
+                    height: 2048
+                svg:
+                    optimize: true
+output:
+    omit_empty_optional_fields: true
 
 collections:
     - label: Blog
@@ -18,8 +32,8 @@ collections:
           - label: Drafts
             field: draft
             pattern: true
-      media_folder: ""
-      public_folder: ""
+      media_folder: "/content/blog/{{year}}-{{month}}-{{day}}-{{slug}}/"
+      public_folder: "."
       fields:
           - label: Title
             name: title
@@ -27,11 +41,12 @@ collections:
           - label: Description
             name: description
             widget: string
-            required: false
+            required: true
           - label: Authors
             name: authors
             widget: list
-            required: false
+            default: ["tr1x_em"]
+            required: true
           - label: Draft
             name: draft
             widget: boolean
@@ -40,8 +55,9 @@ collections:
           - label: Updated
             name: updated
             widget: datetime
-            default: ""
             required: false
+            optional: true
+            time_format: false
           - label: Taxonomies
             name: taxonomies
             widget: object
@@ -54,13 +70,21 @@ collections:
                   required: true
                 - label: Categories
                   name: categories
-                  widget: list
-                  default: []
+                  widget: select
+                  multiple: true
+                  options:
+                      - label: Archived
+                        value: Archived
+                      - label: Featured
+                        value: Featured
+                      - label: Hot
+                        value: Hot
+                      - label: Test
+                        value: Test
                   required: false
           - label: Extra
             name: extra
             widget: object
-            collapsed: true
             required: false
             fields:
                 - label: Stylesheets
@@ -92,26 +116,18 @@ collections:
                   widget: boolean
                   required: false
                   default: false
-
-                - label: Alerts
-                  name: alerts
-                  widget: object
-                  collapsed: true
+                - label: Archive
+                  name: archive
+                  widget: markdown
                   required: false
-                  fields:
-                      - label: Archive
-                        name: archive
-                        widget: markdown
-                        required: false
-                      - label: Trigger
-                        name: trigger
-                        widget: markdown
-                        required: false
-                      - label: Disclaimer
-                        name: disclaimer
-                        widget: markdown
-                        required: false
-
+                - label: Trigger
+                  name: trigger
+                  widget: markdown
+                  required: false
+                - label: Disclaimer
+                  name: disclaimer
+                  widget: markdown
+                  required: false
                 - label: Fediverse
                   name: fediverse
                   widget: object

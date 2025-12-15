@@ -1,4 +1,36 @@
 // Most of this code is copied from https://daudix.one/
+/* Splash Screen ============================================================ */
+
+const splash = document.getElementById("splash");
+const skip = document.getElementById("skip-splash");
+const STORAGE_KEY = "skipSplash";
+
+const skipped = localStorage.getItem(STORAGE_KEY) === "true";
+const targeted = location.hash === "#splash";
+
+if (targeted) {
+    splash.removeAttribute("hidden");
+    splash.querySelector(".content")?.focus();
+} else if (skipped) {
+    splash.setAttribute("hidden", "");
+} else {
+    splash.removeAttribute("hidden");
+}
+
+if (skip) {
+    skip.checked = skipped;
+    skip.addEventListener("change", () => {
+        localStorage.setItem(STORAGE_KEY, skip.checked);
+    });
+}
+
+window.addEventListener("hashchange", () => {
+    if (location.hash === "#splash") {
+        splash.removeAttribute("hidden");
+        splash.querySelector(".content")?.focus();
+    }
+});
+
 // Consts
 //
 const lastFmUser = "tr1x_em";
@@ -22,6 +54,10 @@ const clock = document.getElementById("clock");
 const ntfyInput = document.getElementById("ntfy-input");
 const ntfySend = document.getElementById("ntfy-send");
 const ntfyid = "tr1x_em-website-baby";
+
+const statusCafeContent = document.getElementById("statuscafe-content");
+const statusCafeFace = document.getElementById("statuscafe-face");
+const statusCafeTimeAgo = document.getElementById("statuscafe-time-ago");
 
 let lastDiscordStatus = "";
 let lastTime = "";
@@ -140,6 +176,8 @@ function updateClock() {
         lastTime = localTime;
     }
 }
+// status
+//
 
 // Main
 document.addEventListener("DOMContentLoaded", function () {

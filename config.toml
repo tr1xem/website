@@ -120,10 +120,6 @@ links = [
     { url = "@/messageboard/_index.md", name = "Message Board", icon = "envelope-open" },
 
   ] },
-    { name = "Projects ", category = [
-		{ url = "https://github.com/tr1xem/AWCC", name = "Alienware Command Centre", icon = "alien" },
-		{ url = "https://github.com/tr1xem/flux", name = "Flux", icon = "fire" },
-	] },
     { name = "Intresting ", category = [
 		{ url = "https://github.com/tr1xem", name = "Github", icon = "github-logo" },
 		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },

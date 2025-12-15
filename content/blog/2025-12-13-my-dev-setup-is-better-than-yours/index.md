@@ -3,6 +3,7 @@ title = "My dev setup is better than yours"
 description = "Deep insight about my dev env and workflow"
 authors = [ "tr1x_em" ]
 draft = false
+updated = 2025-12-14T10:15:00.000
 
 [taxonomies]
 tags = [ "devlog", "dev" ]
@@ -12,6 +13,7 @@ styles = []
 accent_color = [ "orange", "hsl(184 100% 62.2%)" ]
 banner = "banner.png"
 banner_pixels = false
+
 [extra.fediverse]
 host = ""
 user = ""
@@ -47,6 +49,10 @@ I prefer tilling window manager, Why? Because they remove the overhead of managi
 
 I use [Hyprland](https://hypr.land/), why? Because firstly it's a tilling WM, and secondly it has awesome customization and looks <small>(I love blur btw)</small> but any tilling wm of your choice would suffice. And no I don't care about Wayland vs Xorg, I have used sway,i3,DWM in the past, and it's just I want a good-looking desktop <small>(as you can see in banner)</small>. Talking about the photo, it's my own shell that's called [Flux](https://github.com/tr1xem/flux), which is made in [Ignis](https://github.com/ignis-sh/ignis). It's just suited according to my preference, but yeah it looks good (specially the depth effect). If you are a new user, I would recommend you reading the [Hyprland's Wiki](https://wiki.hypr.land/) as it's simple and straight forward <small>(and looks good)</small>
 
+#### What do I look in a shell?
+
+It could be also said as why I made flux, I have a 15.6 inch display<small>(which is quite average)</small> and to maximise the use of all space available on my screen I need a bar which is small but still shows important things. Also, I don't like the idea of having a bottom bar imagine the closest thing to you is a bar staring at you also it gives windows like feel to me. Besides, It has all network and miscellaneous controls built in, so I don't need any external app to manage all of this.
+
 ## Tools
 
 Now I will list down the tools I use on a daily basis.<small>(all the configs related to them are in my dotfiles repo)</small>
@@ -79,7 +85,7 @@ Basically, it lets you create more than one non-volatile <small>(sessions would 
 <figcaption>Opencode</figcaption>
 </fig>
 
-Personally, I don't like using AI in development side, as I don't think we are at that stage where AI could right a dependable piece of code. Neither do I like nor support the idea of <mark>Vibe Coding</mark>. But on other time like for creating a generic bash script or finding out grammatical mistakes I think [Opencode](https://opencode.ai/) is best, It's open source, the developer is super friendly, and it's not model bound that means you can use any model even bring your own local LLM.
+Personally, I don't like using AI in development side, as I don't think we are at that stage where AI could write a dependable piece of code. Neither do I like nor support the idea of <mark>Vibe Coding</mark>. But on other time like for creating a generic bash script or finding out grammatical mistakes I think [Opencode](https://opencode.ai/) is best, It's open source, the developer is super friendly, and it's not model bound that means you can use any model even bring your own local LLM.
 
 I personally don't like the idea of AI inside your editor like one half of your editor is full of prompts and things like this, I prefer an outside of editor and terminal based agent so I could just use tmux to create a window for it. It's just my preference of keeping editor and agents different, and I guess most of the people have the same?<small>(unless they are vibe coding?)</small>
 
@@ -91,7 +97,12 @@ I don't really care about it, I just use [Ghostty](https://ghostty.org/). I don'
 
 ### Hyprscrolling
 
-I use Hyprscrolling to add features of a scrolling window manager to Hyprland. It's been a month since I started using it and it is great. But it totally depends on preferences, I just happen to like it.
+<fig>
+{{ video(url="scrolling.webm", alt="Scrolling Layout",autoplay=true,controls=false,loop=true,muted=true) }}
+<figcaption>Scrolling Layout</figcaption>
+</fig>
+
+I use [Hyprscrolling](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprscrolling) plugin to add features of a scrolling window manager to Hyprland. It's been a month since I started using it and it's great. But it totally depends on preferences, I just happen to like it.
 
 ## Container based development
 
@@ -105,6 +116,7 @@ If you use [Systemd](https://en.wikipedia.org/wiki/Systemd) it comes with [Syste
 - [Tealdeer](https://github.com/tealdeer-rs/tealdeer) - Man pages are too long
 - [Cppman](https://github.com/aitjcize/cppman) - All CPP man pages offline
 - [Curd](https://github.com/Wraient/curd) - I use it every time I want to watch anime, truly the best.
+- [Vicinae](https://github.com/vicinaehq/vicinae) - Raycast for linux just try it
 
 ### Conclusion
 

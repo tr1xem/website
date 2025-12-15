@@ -25,11 +25,12 @@ socials = [
   { name = "Twitter", url = "https://x.com/tr1x_em" },
   { name = "YouTube", url = "https://www.youtube.com/@tr1x_em" },
 ]
-
-
-
-
-
+graphics = [
+	{ name = "4-by-3", text = "1024x768" },
+	{ name = "no-js", text = "No Essential\nJavaScript" },
+	{ name = "web-14", text = "14+", url = "https://www.mabsland.com/Adoption.html" },
+	{ name = "profanity", text = "Mild Profanity" },
+]
 +++
 
 <div class="container-fill">
@@ -46,7 +47,7 @@ Greetings! Welcome to my little corner on the World Wild Web and a second home o
 
 <div class="buttons start big">
   <a href="#about" class="suggested">About Me ↓</a>
-  <a href="/blog">Blogs →</a>
+  <a href="#splash">Splash →</a>
 </div>
 </div>
 </div>
@@ -156,6 +157,19 @@ Where and when to find me online.
 
 {{ online(type="forges") }}
 
+</article>
+</li>
+<li>
+<article class="linux-bunker fancy-list">
+<strong id="linux-bunker" class="title">Linux Bunker</strong>
+
+Cool place for linux nerds to chat,share and learn.
+
+<img src="/home/linuxbunker.png" class="transparent no-hover drop-shadow" />
+<a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
+<div>
+{{ icon(name="discord-logo") }}
+</div>
 </article>
 </li>
 
