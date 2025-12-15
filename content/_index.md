@@ -48,7 +48,6 @@ badges = [
  { name = "sourcemissing.gif" },
  { name = "valid-crashout.gif"},
  { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
- { name = "nofuckingthanks.gif" },
  { name = "savewalterwhite.gif", url = "http://www.savewalterwhite.com" },
  { name = "statuscafe.gif", url = "https://status.cafe" },
  { name = "ddg.gif", url = "https://duckduckgo.com" },
@@ -238,6 +237,15 @@ The moment you press "Send" I'll get a push notification. Crazy, right?
 
 </ul>
 
+## Projects
+
+I love contributing to FOSS projects and the idea of FOSS in general <small>(f\*ck proprietary)</small>. You can find more about it on my [Github](https://github.com/tr1xem) profile, but the one I'm most proud of is [Alienware Command Centre](https://github.com/tr1xem/AWCC) because it taught me the most and made me meet with some really nice guys.
+As [Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) said,
+
+> In open source, we feel strongly that to really do something well, you have to get a lot of people involved.
+
+I feel the same way, so if u want to discuss/contibute/tell me about any projects my inbox is always open for you :)
+
 ## IndieWeb
 
 Simply put, IndieWeb is anything on the web that is hand-crafted, feels personal and gives a retro feel.
@@ -245,7 +253,3 @@ Simply put, IndieWeb is anything on the web that is hand-crafted, feels personal
 Everything about it is awesome, from 88x31 buttons to webrings. It also feels cozy and is hella fun, quite refreshing after the sterile corporate web.
 
 {{ badges() }}
-
-## Projects
-
-#### Comming soon™

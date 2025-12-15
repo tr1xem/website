@@ -120,9 +120,9 @@ links = [
     { url = "@/messageboard/_index.md", name = "Message Board", icon = "envelope-open" },
 
   ] },
-    { name = "Intresting ", category = [
-		{ url = "https://github.com/tr1xem", name = "Github", icon = "github-logo" },
+    { name = "More about me", category = [
 		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
+		{ url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "Dev Workflow", icon = "linux-logo" },
 	] },
 ]
 
