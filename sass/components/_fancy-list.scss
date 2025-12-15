@@ -12,5 +12,10 @@
         border-radius: var(--rounded-corner-small);
         background-color: var(--bg-muted-1);
         padding: 0.5rem 0.75rem;
+        transition: all var(--transition);
+        &:hover {
+            transform: scale(1.05);
+            background-color: var(--bg-muted-2);
+        }
     }
 }

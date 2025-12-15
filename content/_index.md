@@ -31,6 +31,37 @@ graphics = [
 	{ name = "web-14", text = "14+", url = "https://www.mabsland.com/Adoption.html" },
 	{ name = "profanity", text = "Mild Profanity" },
 ]
+badges = [
+ { name = "blue-team.gif", url = "https://512kb.club" },
+ { name = "green-team.gif", url = "https://512kb.club" },
+ { name = "orange-team.gif", url = "https://512kb.club" },
+ { name = "dark-mode.gif", url = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
+ { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
+ { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
+ { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
+ { name = "linux.png", url = "https://kernel.org" },
+ { name = "neovim.png", url = "https://neovim.io" },
+ { name = "daudix.gif", url = "https://daudix.one" },
+ { name = "bestviewed16bit.gif" },
+ { name = "bring-back-the-headphone-jack.gif" },
+ { name = "firefox3.gif", url = "https://getfirefox.com" },
+ { name = "sourcemissing.gif" },
+ { name = "valid-crashout.gif"},
+ { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
+ { name = "nofuckingthanks.gif" },
+ { name = "savewalterwhite.gif", url = "http://www.savewalterwhite.com" },
+ { name = "statuscafe.gif", url = "https://status.cafe" },
+ { name = "ddg.gif", url = "https://duckduckgo.com" },
+ { name = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
+ { name = "sourcemissing.gif" },
+ { name = "georgemoody.gif"},
+ { name = "neo-fedi.gif" ,url="https://jointhefediverse.net" },
+ { name = "smoke.gif" },
+ { name = "yarrr.gif" },
+ { name = "ffmpeg.png", url = "https://ffmpeg.org" },
+ { name = "ublock-origin.webp", url = "https://github.com/gorhill/uBlock"},
+]
+
 +++
 
 <div class="container-fill">
@@ -165,7 +196,7 @@ Where and when to find me online.
 
 Cool place for linux nerds to chat,share and learn.
 
-<img src="/home/linuxbunker.png" class="transparent no-hover drop-shadow" />
+<img src="/home/linuxbunker.png" class="" />
 <a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
 <div>
 {{ icon(name="discord-logo") }}
@@ -206,6 +237,14 @@ The moment you press "Send" I'll get a push notification. Crazy, right?
 </li>
 
 </ul>
+
+## IndieWeb
+
+Simply put, IndieWeb is anything on the web that is hand-crafted, feels personal and gives a retro feel.
+
+Everything about it is awesome, from 88x31 buttons to webrings. It also feels cozy and is hella fun, quite refreshing after the sterile corporate web.
+
+{{ badges() }}
 
 ## Projects
 
