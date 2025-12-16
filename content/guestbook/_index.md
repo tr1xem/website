@@ -4,6 +4,7 @@ description = "Messages from the people who visit."
 template = "guestbook.html"
 generate_feeds = false
 [extra]
+card = "atabanner.png"
 styles = ["guestbook/style.css"]
 accent_color = ["hsl(284 43% 75%)", "hsl(284 43% 75%)"]
 +++

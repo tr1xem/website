@@ -93,7 +93,7 @@ Thing I love and hate doing the most. <small>(why writing a about section so tou
 <li>
 <article>
 
-Ore no na wa <span id="luffy">Monkey D Luffy</span>,**I originate from India,** currently residing in <abbr id="hill" title="If you know, you know">mountain valley</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
+Ore no na wa <span id="luffy" class="spoiler">Monkey D Luffy</span>,**I originate from India,** currently residing in <abbr id="hill" title="If you know, you know">mountain valley</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
 
 </article>
 </li>
