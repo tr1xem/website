@@ -80,12 +80,15 @@ csp = [
   ] },
   { directive = "frame-src", domains = [
     "www.youtube-nocookie.com",
+    "*.atabook.org",
+    "atabook.org",
     "incr.easrng.net",
     "vmst.io",
     "drive.google.com",
     "giscus.app",
   ] },
   { directive = "connect-src", domains = [
+  "cafe.frizzbees.dev",
     "*.umami.dev",
     "cloud.umami.is",
     "status.cafe",
@@ -117,7 +120,7 @@ links = [
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
-    { url = "@/messageboard/_index.md", name = "Message Board", icon = "envelope-open" },
+    { url = "@/guestbook/_index.md", name = "Guestbook", icon = "envelope-open" },
 
   ] },
     { name = "More about me", category = [
