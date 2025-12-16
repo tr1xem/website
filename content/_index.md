@@ -52,7 +52,6 @@ badges = [
  { name = "statuscafe.gif", url = "https://status.cafe" },
  { name = "ddg.gif", url = "https://duckduckgo.com" },
  { name = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
- { name = "sourcemissing.gif" },
  { name = "georgemoody.gif"},
  { name = "neo-fedi.gif" ,url="https://jointhefediverse.net" },
  { name = "smoke.gif" },
@@ -60,6 +59,7 @@ badges = [
  { name = "ffmpeg.png", url = "https://ffmpeg.org" },
  { name = "ublock-origin.webp", url = "https://github.com/gorhill/uBlock"},
  { name = "atabook.gif", url = "https://atabook.org"},
+ { name = "sankalp.png", url = "https://sankalptharu.com.np"},
 ]
 
 +++
