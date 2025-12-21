@@ -58,11 +58,7 @@ const ntfyid = "tr1x_em-website-baby";
 const statusCafeContent = document.getElementById("statuscafe-content");
 const statusCafeFace = document.getElementById("statuscafe-face");
 const statusCafeTimeAgo = document.getElementById("statuscafe-time-ago");
-const statusCafelink = document.getElementById("statuscafe-link");
 const username = "tr1x_em"; // change the username!!!
-const posts_url = "https://cafe.frizzbees.dev/get_posts/1?name=";
-const profile_url = "https://social.nekoweb.org/profile/?view=";
-const post_url = "https://social.nekoweb.org/post/?id=";
 
 const luffy = document.getElementById("luffy");
 const intro = new Audio("/home/luffy.mp3");
@@ -193,49 +189,21 @@ function luffyegg() {
 //Status
 //
 
-function timeAgo(timestampMs) {
-    const now = Date.now();
-    const diff = Math.floor((now - timestampMs) / 1000); // seconds
-
-    if (diff < 5) return "just now";
-    if (diff < 60) return `${diff} seconds ago`;
-
-    const minutes = Math.floor(diff / 60);
-    if (minutes < 60) return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
-
-    const hours = Math.floor(minutes / 60);
-    if (hours < 24) return `${hours} hour${hours > 1 ? "s" : ""} ago`;
-
-    const days = Math.floor(hours / 24);
-    if (days < 30) return `${days} day${days > 1 ? "s" : ""} ago`;
-
-    const months = Math.floor(days / 30);
-    if (months < 12) return `${months} month${months > 1 ? "s" : ""} ago`;
-
-    const years = Math.floor(days / 365);
-    return `${years} year${years > 1 ? "s" : ""} ago`;
-}
-
 async function fetchStatusCafe() {
     try {
-        const request = await fetch(posts_url + username);
+        const res = await fetch(
+            `https://status.cafe/users/${username}/status.json`,
+        );
+        const r = await res.json();
 
-        if (!request.ok) {
+        if (!r.content.length) {
             statusCafeContent.innerHTML = "No status yet.";
             return;
         }
 
-        let json = await request.json();
-        json = json[0];
-
-        timestamp = json["timestamp"] * 1000;
-        // time = new Date(timestamp).toUTCString();
-        const timeAgoText = timeAgo(timestamp);
-
-        statusCafeContent.innerHTML = json["post"];
-        statusCafeFace.innerHTML = "";
-        statusCafeTimeAgo.innerHTML = timeAgoText;
-        statusCafelink.href = profile_url + username;
+        statusCafeContent.innerHTML = r.content;
+        statusCafeFace.innerHTML = r.face;
+        statusCafeTimeAgo.innerHTML = r.timeAgo;
     } catch (error) {
         console.error("Error fetching status:", error);
     }
