@@ -1,0 +1,52 @@
+{% import "macros/icon.html" as macros_icon %}
+{% set data = load_data(path="static/github-pinned.json") %}
+{% set repos = data.data.user.pinnedItems.nodes %}
+
+{% if repos | length > 0 %}
+<div class="repo-container">
+    <strong class="title">
+        Pinned:
+    </strong>
+    <div class="repo-grid">
+  {% for repo in repos %}
+  <div class="github-repo-card">
+    <div class="repo-header">
+      {{- macros_icon::icon(name="book-bookmark") -}}
+      <a href="{{ repo.url }}" class="repo-name" target="_blank" rel="noopener">
+        {{ repo.name }}
+      </a>
+      <span class="repo-visibility">Public</span>
+    </div>
+
+    <p class="repo-description">
+      {{ repo.description | default(value="No description provided") }}
+    </p>
+
+    <div class="repo-stats">
+      {% if repo.primaryLanguage %}
+      <span class="repo-language">
+        <span class="language-color"
+              style="background-color: {{ repo.primaryLanguage.color }}"></span>
+        {{ repo.primaryLanguage.name }}
+      </span>
+      {% endif %}
+
+      <span class="repo-stars">
+        {{- macros_icon::icon(name="star") -}}
+        {{ repo.stargazerCount }}
+      </span>
+
+      <span class="repo-forks">
+        {{- macros_icon::icon(name="git-fork") -}}
+        {{ repo.forkCount }}
+      </span>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+</div>
+{% else %}
+  <p align="center">
+    <strong>No pinned repositories found.</strong>
+  </p>
+{% endif %}

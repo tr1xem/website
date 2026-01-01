@@ -241,12 +241,10 @@ The moment you press "Send" I'll get a push notification. Crazy, right?
 
 ## Projects
 
-I love contributing to FOSS projects and the idea of FOSS in general <small>(f\*ck proprietary)</small>. You can find more about it on my [Github](https://github.com/tr1xem) profile, but the one I'm most proud of is [Alienware Command Centre](https://github.com/tr1xem/AWCC) because it taught me the most and made me meet with some really nice guys.
-As [Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) said,
+I love contributing to FOSS projects and the idea of FOSS in general <small>(f\*ck proprietary)</small>. You can find more about my projects on my [Github](https://github.com/tr1xem) profile.
+As [Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) said,<q>"In open source, we feel strongly that to really do something well, you have to get a lot of people involved"</q>, I feel the same way, so if u want to discuss/contibute/tell me about any projects my inbox is always open for you :)
 
-> In open source, we feel strongly that to really do something well, you have to get a lot of people involved.
-
-I feel the same way, so if u want to discuss/contibute/tell me about any projects my inbox is always open for you :)
+{{ github() }}
 
 ## IndieWeb
 
