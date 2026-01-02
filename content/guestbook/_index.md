@@ -5,8 +5,9 @@ template = "guestbook.html"
 generate_feeds = false
 [extra]
 styles = ["guestbook/style.css"]
-accent_color = ["hsl(284 43% 75%)", "hsl(284 43% 75%)"]
+accent_color = ["hsl(197 84% 33%)", "hsl(197 84% 33%)"]
 
 [extra.meta]
-card = "atabanner.png"
+card = "banner.png"
+favicon = "favicon.ico"
 +++
