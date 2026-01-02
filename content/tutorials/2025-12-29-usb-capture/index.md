@@ -10,7 +10,7 @@ tags = [ "tutorials"]
 
 [extra]
 styles = []
-accent_color = [ "orange", "hsl(184 100% 62.2%)" ]
+accent_color = [ "orange", "hsl(200 100% 62.2%)" ]
 banner = "banner.png"
 
 +++
