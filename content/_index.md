@@ -13,16 +13,16 @@ contacts = [
   { name = "Email", url = "mailto:admin@trix.is-a.dev" },
 ]
 forges = [
-#{ name = "Codeberg", url = "https://codeberg.org/tr1xem" },
+{ name = "Codeberg", url = "https://codeberg.org/tr1x_em" },
  { name = "GitHub", url = "https://github.com/tr1xem" },
- { name = "GitLab", url = "https://gitlab.com/tr1x_em" },
+#{ name = "GitLab", url = "https://gitlab.com/tr1x_em" },
 ]
 socials = [
   { name = "Reddit", url = "https://www.reddit.com/u/l_lawliet_9999", favorite = true },
-  { name = "Mastodon", url = "https://mastodon.social/@tr1x_em",favorite = true },
+  { name = "Mastodon", url = "https://mastodon.social/@tr1x_em"},
   { name = "Bluesky", url = "https://bsky.app/profile/tr1xem.bsky.social" },
   { name = "Twitch", url = "https://www.twitch.tv/tr1x_em" },
-  { name = "Twitter", url = "https://x.com/tr1x_em" },
+  { name = "X", url = "https://x.com/tr1x_em" },
   { name = "YouTube", url = "https://www.youtube.com/@tr1x_em" },
 ]
 graphics = [
