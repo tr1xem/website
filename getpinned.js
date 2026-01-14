@@ -1,7 +1,7 @@
 const https = require("https");
 const fs = require("fs");
 
-const token = process.env.GITHUB_TOKEN; // must be set
+const token = process.env.ZOLATOKEN; // must be set
 const username = "tr1xem";
 
 const query = {
