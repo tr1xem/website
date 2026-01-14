@@ -8,7 +8,7 @@ updated = 2025-12-12
 tags = [ "devlog", "website" ]
 
 [extra]
-accent_color = [ "hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)" ]
+accent_color = [ "hsl(302.2, 100%, 43.1%)", "hsl(286.1, 100%, 43.1%)" ]
 banner = "preview.webp"
 toc = true
 
@@ -17,6 +17,7 @@ host = ""
 user = ""
 id = "115711108819112800"
 +++
+
 # Backstory
 
 Who dosent need a website? so a year ago I thought I'd create a website for myself, and I did. But guess what? it was in pure HTML and CSS (prolly from some github) repo.
@@ -55,12 +56,12 @@ So if u you want to make a website and ur not some geeky frontend wizard, i sugg
 
 I love how it renders tables
 
-| Page | Repo |
-| --- | --- |
-| Home | `pages` |
-| Info | `pages` |
-| Works | `pages` |
-| Blog | `blog-source` |
+| Page  | Repo          |
+| ----- | ------------- |
+| Home  | `pages`       |
+| Info  | `pages`       |
+| Works | `pages`       |
+| Blog  | `blog-source` |
 
 and code blocks
 
