@@ -27,7 +27,6 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-extra_syntaxes_and_themes = ["themes/ametrine/sublime"]
 highlight_theme = "css"
 highlight_themes_css = [
   { theme = "monokai-pro-dark", filename = "syntax-theme-dark.css" },
