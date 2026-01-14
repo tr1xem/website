@@ -75,7 +75,7 @@ badges = [
 # tr1x_em
 
 </div>
-Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; tr1x_em.
+नमस्ते! वर्ल्ड वाइल्ड वेब पर मेरे छोटे से कोने और मेरे दूसरे घर में आपका स्वागत है। आप मुझे मेरे ऑनलाइन हैंडल से जानते होंगे; tr1x_em.
 
 <div class="buttons start big">
   <a href="#about" class="suggested">About Me ↓</a>
