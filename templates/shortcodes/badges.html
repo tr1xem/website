@@ -1,7 +1,6 @@
 {% import "macros/icon.html" as macros_icon %}
 
 <div id="badges">
-<!-- <aside id="badges"> -->
 	<strong class="title">Badges</strong>
 		<small> (<abbr title="Also Known As"> AKA</abbr> 88x31 buttons) </small>
 	<p>
@@ -17,13 +16,12 @@
 		</p>
 		<ul>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="tr1x_em" src="{{ get_url(path='badges/tr1xem_1.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="tr1x_em" src="{{ get_url(path='badges/tr1xem.gif') }}" />
 				<span>Current</span>
 			</li>
 			<li>
-				<img width="88" height="31" class="pixels transparent no-hover" alt="tr1x_em-neocities" src="{{ get_url(path='badges/tr1xem_2.gif') }}" />
+				<img width="88" height="31" class="pixels transparent no-hover" alt="tr1x_em-neocities" src="{{ get_url(path='badges/tr1xem_neocites.gif') }}" />
 				<span>Neocities</span>
-			</li>
 			</li>
 		</ul>
 	</div>
@@ -32,22 +30,37 @@
 		<div class="badges-marquee">
 			<ul style="--duration: {{ section.extra.badges | length * 2 }}s">
 				{%- for badge in section.extra.badges -%}
-					<li>
+                    					<li>
 						{%- if badge.url -%}
 							<a href="{{ badge.url }}">
 						{%- endif -%}
+
+							{%- set img_src = "" -%}
+							{%- if badge.image -%}
+								{%- if badge.image is starting_with("http") -%}
+									{%- set img_src = badge.image -%}
+								{%- else -%}
+									{%- set img_src = get_url(path=badge.image) -%}
+								{%- endif -%}
+							{%- else -%}
+								{# Fallback for legacy/simple names, assumes badges/badges/ prefix unless http #}
+								{%- if badge.name is starting_with("http") -%}
+									{%- set img_src = badge.name -%}
+								{%- else -%}
+									{%- set img_src = get_url(path="badges/" ~ badge.name) -%}
+								{%- endif -%}
+							{%- endif -%}
+
 							<img
 								width="88"
 								height="31"
 								class="pixels transparent no-hover"
 								{%- if badge.alt -%}
-									{%- set badge_alt = badge.alt -%}
+									alt="{{ badge.alt }}"
 								{%- else -%}
-									{%- set badge_alt = badge.name | split(pat=".", limit=2) | first -%}
+									alt="{{ badge.name }}"
 								{%- endif -%}
-								alt="{{ badge_alt }}"
-								{% set badge_path = "badges/" ~ badge.name %}
-								src="{{ get_url(path=badge_path) }}"
+								src="{{ img_src }}"
 								{% if config.markdown.lazy_async_image %}
 									decoding="async" loading="lazy"
 								{% endif %}
@@ -56,6 +69,7 @@
 							</a>
 						{%- endif -%}
 					</li>
+
 				{%- endfor -%}
 				<li>
 					<iframe src="https://incr.easrng.net/badge?key={{ config.base_url | replace(from='https://', to='') }}"title="increment badge" class="pixels transparent no-hover"></iframe>

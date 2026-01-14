@@ -38,7 +38,7 @@ badges = [
  { name = "dark-mode.gif", url = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
  { name = "mobilefriendly.gif", url = "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design" },
  { name = "sankalp.png", url = "https://sankalptharu.com.np"},
- { name = "axe.gif", url = "https://axeni.de"},
+ { name = "https://axeni.de/images/88x31.gif", url = "https://axeni.de"},
  { name = "righttorepair.gif", url = "https://www.ifixit.com/Right-to-Repair" },
  { name = "saynotoweb3.gif", url = "https://yesterweb.org/no-to-web3/" },
  { name = "linux.png", url = "https://kernel.org" },
