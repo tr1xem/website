@@ -1,0 +1,34 @@
+$font-path: "/customfonts";
+
+@mixin font-face(
+    $family,
+    $file,
+    $weight: normal,
+    $style: normal,
+    $format: "woff2"
+) {
+    @font-face {
+        font-family: $family;
+
+        @if $format == "ttf" {
+            src: url("#{$font-path}/#{$file}.ttf") format("truetype");
+        } @else {
+            src:
+                url("#{$font-path}/#{$file}.woff2") format("woff2"),
+                url("#{$font-path}/#{$file}.woff") format("woff");
+        }
+
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+@include font-face("Hind", "hindi/Hind-Light", 300, normal, "ttf");
+@include font-face("Hind", "hindi/Hind-Regular", 400, normal, "ttf");
+@include font-face("Hind", "hindi/Hind-Medium", 500, normal, "ttf");
+@include font-face("Hind", "hindi/Hind-SemiBold", 600, normal, "ttf");
+@include font-face("Hind", "hindi/Hind-Bold", 700, normal, "ttf");
+
+:lang(hi) {
+    font-family: "Hind", sans-serif;
+}

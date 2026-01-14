@@ -75,18 +75,18 @@ badges = [
 # tr1x_em
 
 </div>
-नमस्ते! वर्ल्ड वाइल्ड वेब पर मेरे छोटे से कोने और मेरे दूसरे घर में आपका स्वागत है। आप मुझे मेरे ऑनलाइन हैंडल से जानते होंगे; tr1x_em.
+नमस्ते! वर्ल्ड वाइड वेब पर मेरे छोटे से कोने और मेरे दूसरे घर में आपका स्वागत है। आप मुझे मेरे ऑनलाइन हैंडल से जानते होंगे — tr1x_em.
 
 <div class="buttons start big">
-  <a href="#about" class="suggested">About Me ↓</a>
-  <a href="#splash">Splash →</a>
+  <a href="#about" class="suggested">मेरे बारे में ↓</a>
+  <a href="#splash">स्प्लैश →</a>
 </div>
 </div>
 </div>
 
-## About
+## मेरे बारे में
 
-Thing I love and hate doing the most. <small>(why writing a about section so tough for me?)</small>
+वह चीज़ जिसे करना मुझे सबसे ज़्यादा पसंद भी है ~~और सबसे ज़्यादा नापसंद भी।~~ <small>(खुद के बारे में लिखना सबसे मुश्किल होता है )</small>
 
 <ul class="masonry">
 
@@ -94,7 +94,7 @@ Thing I love and hate doing the most. <small>(why writing a about section so tou
 <li>
 <article>
 
-Ore no na wa <span id="luffy" class="spoiler">Monkey D Luffy</span>,**I originate from India,** currently residing in <abbr id="hill" title="If you know, you know">mountain valley</abbr>. That means that I'm a native hindi speaker, कर भला तो हो भला।
+मेरा नाम <span id="luffy" class="spoiler">Monkey D Luffy</span> है, **मैं भारत से हूँ,** और इस समय <abbr id="hill" title="If you know, you know">एक पहाड़ी घाटी</abbr> में रहता हूँ। इसका मतलब है कि मैं एक मूल हिंदी भाषी हूँ।
 
 </article>
 </li>
@@ -104,16 +104,16 @@ Ore no na wa <span id="luffy" class="spoiler">Monkey D Luffy</span>,**I originat
 <li>
 <article class="fancy-list">
 
-**Random things I like:**
+**कुछ चीज़ें जो मुझे पसंद हैं:**
 
-- Cyan <small>(its just peaceful)</small>
-- Tokyonight <small>(the best the theme ngl)</small>
-- Photography and editing <small>(amature)</small>
-- Neovim <small>(the superior text editor)</small>
-- Souls like game <small>(cuz they are tough?)</small>
-- Meeting with new people :>
+- Cyan <small>(काफ़ी सुकून देने वाला रंग है)</small>
+- Tokyonight <small>(सबसे बेहतरीन थीम, सच में)</small>
+- फ़ोटोग्राफी और एडिटिंग <small>(शौकिया)</small>
+- Neovim <small>(सबसे बेहतरीन टेक्स्ट एडिटर)</small>
+- Souls-like games <small>(क्योंकि ये मुश्किल होते हैं?)</small>
+- नए लोगों से मिलना :>
 - Anime <small>([Anilist](https://anilist.co/user/tr1xem/))</small>
-- Rasgulla <small>([Wikipedia](https://en.wikipedia.org/wiki/Rasgulla))</small>
+- रसगुल्ला!! <small>([Wikipedia](https://en.wikipedia.org/wiki/Rasgulla))</small>
 
 </article>
 </li>
@@ -123,18 +123,22 @@ Ore no na wa <span id="luffy" class="spoiler">Monkey D Luffy</span>,**I originat
 <li>
 <article>
 
-> "Only wimps use tape backup. REAL men just upload their important stuff on ftp and let the rest of the world mirror it."
-> _~Linus_ _Torvalds_
+> "दाहिने पाँव का जूता ठीक है, मगर बाएँ जूते में बड़ा छेद हो गया है जिसमें से अँगुली बाहर निकल आई है।
+> मेरी दृष्टि इस जूते पर अटक गई है। सोचता हूँ-फोटो खिंचाने की अगर यह पोशाक है, तो पहनने की कैसी होगी? नहीं, इस आदमी की अलग-अलग पोशाकें नहीं होंगी-इसमें पोशाकें बदलने का गुण नहीं है। यह जैसा है, वैसा ही फोटो में खिंच जाता है।
+> मैं चेहरे की तरफ़ देखता हूँ क्या तुम्हें मालूम है, मेरे साहित्यिक पुरखे कि तुम्हारा जूता फट गया है और अँगुली बाहर दिख रही है? क्या तुम्हें इसका ज़रा भी अहसास नहीं है? ज़रा लज्जा, संकोच या झेंप नहीं है? क्या तुम इतना भी नहीं जानते कि धोती को थोड़ा नीचे खींच लेने से अँगुली ढक सकती है? मगर फिर भी तुम्हारे चेहरे पर बड़ी बेपरवाही, बड़ा विश्वास है! फोटोग्राफर ने जब ‘रेडी-प्लीज़’ कहा होगा, तब परंपरा के अनुसार तुमने मुसकान लाने की कोशिश की होगी, दर्द के गहरे कुएँ के तल में कहीं पड़ी मुसकान को धीरे-धीरे खींचकर ऊपर निकाल रहे होंगे कि बीच में ही ‘क्लिक’ करके फोटोग्राफर ने ‘ थैंक यू’ कह दिया होगा। विचित्र है यह अधूरी मुसकान। यह मुसकान नहीं, इसमें उपहास है, व्यंग्य है!"
+>
+> _~मुंशी प्रेमचंद (कक्षा 9 - अध्याय "प्रेमचंद के फटे जूते")_
 
 </article>
 </li>
 <!-- Card End -->
+
 <li>
 <article class="fancy-list">
 
-**I am {{ age() }} moons old.**
+**मैं {{ age() }} चंद्र-दिन का हूँ।**
 
-Back in ’06 I was still buffering… cosmic Wi-Fi was terrible
+2006 में मैं अब भी बफ़र कर रहा था… तब कॉस्मिक Wi-Fi बहुत खराब था।
 
 </article>
 </li>
@@ -142,7 +146,7 @@ Back in ’06 I was still buffering… cosmic Wi-Fi was terrible
 <li>
 <article class="anime fancy-list">
 
-**Anime I'm currently watching:**
+**जो अनिमे मैं इस समय देख रहा हूँ:**
 
 {{ anime() }}
 
@@ -150,7 +154,7 @@ Back in ’06 I was still buffering… cosmic Wi-Fi was terrible
 
 <article class="anime fancy-list">
 
-**All time favorites:**
+**अब तक के सबसे पसंदीदा अनिमे:**
 
 {{ anime_top() }}
 
@@ -160,9 +164,9 @@ Back in ’06 I was still buffering… cosmic Wi-Fi was terrible
 
 </ul>
 
-## Online
+## ऑनलाइन
 
-Where and when to find me online.
+मुझे ऑनलाइन कहाँ और कब ढूँढ सकते हैं।
 
 <ul class="masonry">
 <li>
@@ -175,7 +179,7 @@ Where and when to find me online.
 
 <li>
 <article class="online fancy-list">
-<strong id="socials" class="title">Socials</strong>
+<strong id="socials" class="title">सोशल्स</strong>
 
 {{ online(type="socials") }}
 
@@ -185,17 +189,18 @@ Where and when to find me online.
 <li>
 
 <article class="online fancy-list">
-<strong id="forges" class="title">Forges</strong>
+<strong id="forges" class="title">फोर्जेस</strong>
 
 {{ online(type="forges") }}
 
 </article>
 </li>
+
 <li>
 <article class="linux-bunker fancy-list">
 <strong id="linux-bunker" class="title">Linux Bunker</strong>
 
-Cool place for linux nerds to chat,share and learn.
+लिनक्स में जिज्ञासु के लिए एक बढ़िया जगह — चैट करने, सीखने और शेयर करने के लिए।
 
 <img src="/home/linuxbunker.png" class="" />
 <a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
@@ -207,11 +212,11 @@ Cool place for linux nerds to chat,share and learn.
 
 <li>
 <article class="online fancy-list">
-<strong id="contacts" class="title">Contacts</strong>
+<strong id="contacts" class="title">संपर्क</strong>
 
-For me it's currently <time id="clock">09:41</time> <small>(UTC+5:30)</small> and I'm <span id="online-indicator"><i class="icon"></i><span id="online-indicator-text">Offline</span></span>.
+मेरे यहाँ इस समय <time id="clock">09:41</time> <small>(UTC+5:30)</small> है और मैं <span id="online-indicator"><i class="icon"></i><span id="online-indicator-text">ऑफ़लाइन</span></span> हूँ।
 
-Feel free to reach me out on any of these! Although I'm usually active on Discord, I'm happy to talk about tech and stuff always!!!
+इनमें से किसी भी माध्यम से बेझिझक संपर्क करें! वैसे मैं ज़्यादातर Discord पर एक्टिव रहता हूँ, और tech और बाकी चीज़ों पर बात करने में हमेशा खुश हूँ।
 
 {{ online(type="contacts") }}
 
@@ -220,18 +225,18 @@ Feel free to reach me out on any of these! Although I'm usually active on Discor
 
 <li>
 <article class="ntfy fancy-list">
-<strong id="ntfy" class="title">Send Me a Notification</strong>
+<strong id="ntfy" class="title">मुझे नोटिफ़िकेशन भेजें</strong>
 
-The moment you press "Send" I'll get a push notification. Crazy, right?
+जैसे ही आप "Send" दबाएँगे, मुझे तुरंत एक push notification मिल जाएगी। पागलपन है, है ना?
 
 <div>
-  <input id="ntfy-input" placeholder="Stolen from daudix.one"></input>
+  <input id="ntfy-input" placeholder="कुछ लिखें …"></input>
   <button id="ntfy-send" class="suggested" title="Send">
     {{ icon(name="paper-plane-right") }}
     {{ icon(name="check") }}
   </button>
 </div>
-<div class="tooltip" title="Powered by ntfy.sh. Messages are not end-to-end encrypted and are public. This is not a secure method of communication">
+<div class="tooltip" title="ntfy.sh द्वारा संचालित। संदेश end-to-end encrypted नहीं हैं और सार्वजनिक होते हैं। यह सुरक्षित संचार का तरीका नहीं है।">
   {{ icon(name="lock-open") }}
 </div>
 </article>
@@ -239,17 +244,21 @@ The moment you press "Send" I'll get a push notification. Crazy, right?
 
 </ul>
 
-## Projects
+## प्रोजेक्ट्स
 
-I love contributing to FOSS projects and the idea of FOSS in general <small>(f\*ck proprietary)</small>. You can find more about my projects on my [Github](https://github.com/tr1xem) profile.
-As [Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) said,<q>"In open source, we feel strongly that to really do something well, you have to get a lot of people involved"</q>, I feel the same way, so if u want to discuss/contibute/tell me about any projects my inbox is always open for you :)
+मुझे FOSS प्रोजेक्ट्स में योगदान देना और FOSS का विचार बहुत पसंद है <small>(proprietary सॉफ़्टवेयर को छोड़ो)</small>। मेरे प्रोजेक्ट्स के बारे में आप मेरे [Github](https://github.com/tr1xem) प्रोफ़ाइल पर देख सकते हैं।
+
+जैसा कि [Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) ने कहा है,
+<q>"ओपन सोर्स में हम मानते हैं कि किसी चीज़ को सच में अच्छे से करने के लिए बहुत सारे लोगों की भागीदारी ज़रूरी होती है।"</q>
+
+मैं भी यही मानता हूँ, इसलिए अगर आप किसी प्रोजेक्ट पर चर्चा करना चाहते हैं, योगदान देना चाहते हैं या बस बताना चाहते हैं — मेरा इनबॉक्स हमेशा खुला है :)
 
 {{ github() }}
 
 ## IndieWeb
 
-Simply put, IndieWeb is anything on the web that is hand-crafted, feels personal and gives a retro feel.
+सीधे शब्दों में कहें तो IndieWeb वह वेब है जो हाथ से बनाया गया हो, व्यक्तिगत महसूस हो और जिसमें रेट्रो वाली फील आए।
 
-Everything about it is awesome, from 88x31 buttons to webrings. It also feels cozy and is hella fun, quite refreshing after the sterile corporate web.
+88x31 बटन से लेकर वेब्रिंग तक — सब कुछ शानदार है। यह कॉर्पोरेट और बनावटी वेब से हटकर काफ़ी आरामदायक और मज़ेदार लगता है।
 
 {{ badges() }}

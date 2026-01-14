@@ -160,12 +160,12 @@ links = [
     { url = "@/blog/_index.md", name = "ब्लॉग", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "नैनोलॉग", icon = "note-pencil" },
     { url = "@/guestbook/_index.md", name = "गेस्टबुक", icon = "envelope-open" },
-    { url = "@/tutorials/_index.md", name = "ट्यूटोरियल्स", icon = "screwdriver" },
+    { url = "@/tutorials/_index.md", name = "ट्यूटोरियल", icon = "screwdriver" },
   ] },
 
   { name = "मेरे बारे में और", category = [
     { url = "@/blog/2025-09-22-coding-principles/index.md", name = "कोडिंग सिद्धांत", icon = "code" },
-    { url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "डेव वर्कफ़्लो", icon = "linux-logo" },
+    { url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "डेवलपर वर्कफ़्लो", icon = "linux-logo" },
   ] },
 ]
 

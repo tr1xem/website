@@ -3,6 +3,7 @@
 @use "layout/container-fill";
 @use "components/nanolog";
 @use "components/fancy-list";
+@use "fonts";
 
 article + p a {
     display: inline-block;
