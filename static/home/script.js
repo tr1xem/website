@@ -120,7 +120,31 @@ async function fetchLastFm() {
                 "home/image-missing.svg";
             lastFmLink.href = track.url;
 
+            const mediumCover = track.image.find(
+                (img) => img.size === "medium",
+            )?.["#text"];
+
+            const smallCover = track.image.find(
+                (img) => img.size === "small",
+            )?.["#text"];
+
+            const fallbackCover = "home/image-missing.svg";
+
+            lastFmCover.src = mediumCover || fallbackCover;
+
+            const hasRealCover =
+                Boolean(mediumCover) && mediumCover !== fallbackCover;
             lastFmPlayer.classList.toggle("playing", isPlaying);
+            lastFmPlayer.classList.toggle("has-cover", hasRealCover);
+            if (hasRealCover && smallCover) {
+                lastFmPlayer.style.setProperty(
+                    "--blurnail",
+
+                    `url("${smallCover}")`,
+                );
+            } else {
+                lastFmPlayer.style.removeProperty("--blurnail");
+            }
 
             updateMarquees();
         }
