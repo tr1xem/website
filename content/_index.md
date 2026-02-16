@@ -202,6 +202,7 @@ Cool place for linux nerds to chat,share and learn.
 <a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
 <div>
 {{ icon(name="discord-logo") }}
+{{ icon(name="matrix-logo") }}
 </div>
 </article>
 </li>
