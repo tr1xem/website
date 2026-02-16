@@ -7,8 +7,8 @@
             "name": "AWCC",
             "description": "An unofficial alternative to Alienware Command Centre of Windows for the Dell G series on linux",
             "url": "https://github.com/tr1xem/AWCC",
-            "stargazerCount": 81,
-            "forkCount": 10,
+            "stargazerCount": 103,
+            "forkCount": 11,
             "primaryLanguage": {
               "name": "C++",
               "color": "#f34b7d"
@@ -18,8 +18,8 @@
             "name": "alienfx-linux",
             "description": "Alienware systems lights control sdk",
             "url": "https://github.com/tr1xem/alienfx-linux",
-            "stargazerCount": 7,
-            "forkCount": 0,
+            "stargazerCount": 12,
+            "forkCount": 1,
             "primaryLanguage": {
               "name": "C++",
               "color": "#f34b7d"
@@ -40,8 +40,8 @@
             "name": "ignis",
             "description": "A widget framework for building desktop shells, written and configurable in Python",
             "url": "https://github.com/ignis-sh/ignis",
-            "stargazerCount": 646,
-            "forkCount": 41,
+            "stargazerCount": 647,
+            "forkCount": 42,
             "primaryLanguage": {
               "name": "Python",
               "color": "#3572A5"
