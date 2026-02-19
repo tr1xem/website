@@ -7,7 +7,7 @@
             "name": "AWCC",
             "description": "An unofficial alternative to Alienware Command Centre of Windows for the Dell G series on linux",
             "url": "https://github.com/tr1xem/AWCC",
-            "stargazerCount": 103,
+            "stargazerCount": 106,
             "forkCount": 11,
             "primaryLanguage": {
               "name": "C++",
@@ -18,7 +18,7 @@
             "name": "alienfx-linux",
             "description": "Alienware systems lights control sdk",
             "url": "https://github.com/tr1xem/alienfx-linux",
-            "stargazerCount": 12,
+            "stargazerCount": 13,
             "forkCount": 1,
             "primaryLanguage": {
               "name": "C++",

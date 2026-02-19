@@ -14,9 +14,13 @@ contacts = [
   { name = "Email", url = "mailto:admin@trix.is-a.dev" },
 ]
 forges = [
+{ name = "GitHub", url = "https://github.com/tr1xem" , favorite= true},
 { name = "Codeberg", url = "https://codeberg.org/tr1x_em" },
- { name = "GitHub", url = "https://github.com/tr1xem" },
 #{ name = "GitLab", url = "https://gitlab.com/tr1x_em" },
+]
+cp = [
+ { name = "Leetcode", url = "https://leetcode.com/u/tr1x_em/",favorite=true },
+{ name = "Codeforce", url = "https://codeforces.com/profile/tr1x_em" },
 ]
 socials = [
   { name = "Reddit", url = "https://www.reddit.com/u/l_lawliet_9999", favorite = true },
@@ -189,6 +193,14 @@ Where and when to find me online.
 <strong id="forges" class="title">Forges</strong>
 
 {{ online(type="forges") }}
+
+</article>
+</li>
+<li>
+<article class="online fancy-list">
+<strong id="forges" class="title">Competitive programming</strong>
+
+{{ online(type="cp") }}
 
 </article>
 </li>
