@@ -204,20 +204,6 @@ Where and when to find me online.
 
 </article>
 </li>
-<li>
-<article class="linux-bunker fancy-list">
-<strong id="linux-bunker" class="title">Linux Bunker</strong>
-
-Cool place for linux nerds to chat,share and learn.
-
-<img src="/home/linuxbunker.png" class="" />
-<a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
-<div>
-{{ icon(name="discord-logo") }}
-{{ icon(name="matrix-logo") }}
-</div>
-</article>
-</li>
 
 <li>
 <article class="online fancy-list">
@@ -232,6 +218,20 @@ Feel free to reach me out on any of these! Although I'm usually active on Discor
 </article>
 </li>
 
+<li>
+<article class="linux-bunker fancy-list">
+<strong id="linux-bunker" class="title">Linux Bunker</strong>
+
+Cool place for linux nerds to chat,share and learn.
+
+<img src="/home/linuxbunker.png" class="" />
+<a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
+<div>
+{{ icon(name="discord-logo") }}
+{{ icon(name="matrix-logo") }}
+</div>
+</article>
+</li>
 <li>
 <article class="ntfy fancy-list">
 <strong id="ntfy" class="title">Send Me a Notification</strong>

@@ -17,6 +17,10 @@ forges = [
  { name = "GitHub", url = "https://github.com/tr1xem" },
 #{ name = "GitLab", url = "https://gitlab.com/tr1x_em" },
 ]
+cp = [
+ { name = "Leetcode", url = "https://leetcode.com/u/tr1x_em/",favorite=true },
+{ name = "Codeforce", url = "https://codeforces.com/profile/tr1x_em" },
+]
 socials = [
   { name = "Reddit", url = "https://www.reddit.com/u/l_lawliet_9999", favorite = true },
   { name = "Mastodon", url = "https://mastodon.social/@tr1x_em"},
@@ -197,16 +201,11 @@ badges = [
 </li>
 
 <li>
-<article class="linux-bunker fancy-list">
-<strong id="linux-bunker" class="title">Linux Bunker</strong>
+<article class="online fancy-list">
+<strong id="forges" class="title">प्रतिस्पर्धी प्रोग्रामिंग</strong>
 
-लिनक्स में जिज्ञासु के लिए एक बढ़िया जगह — चैट करने, सीखने और शेयर करने के लिए।
+{{ online(type="cp") }}
 
-<img src="/home/linuxbunker.png" class="" />
-<a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
-<div>
-{{ icon(name="discord-logo") }}
-</div>
 </article>
 </li>
 
@@ -223,6 +222,20 @@ badges = [
 </article>
 </li>
 
+<li>
+<article class="linux-bunker fancy-list">
+<strong id="linux-bunker" class="title">Linux Bunker</strong>
+
+लिनक्स में जिज्ञासु के लिए एक बढ़िया जगह — चैट करने, सीखने और शेयर करने के लिए।
+
+<img src="/home/linuxbunker.png" class="" />
+<a href="https://discord.gg/tRFxkbQ3Zq" title="Join Server"></a>
+<div>
+{{ icon(name="discord-logo") }}
+{{ icon(name="matrix-logo") }}
+</div>
+</article>
+</li>
 <li>
 <article class="ntfy fancy-list">
 <strong id="ntfy" class="title">मुझे नोटिफ़िकेशन भेजें</strong>
