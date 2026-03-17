@@ -91,8 +91,8 @@ async function upload() {
         return;
     }
 
-    const owner = "daudix";
-    const repo = "daudix.one";
+    const owner = "tr1xem";
+    const repo = "website";
 
     const now = new Date();
     const date = now.toISOString().slice(0, 19) + "Z";
@@ -288,9 +288,9 @@ document.getElementById("nanolog").addEventListener("click", function () {
         console.log("Nanolog new post button revealed");
         localStorage.setItem("nanologEnabled", true);
         nanologButton.removeAttribute("hidden");
-        
+
         // Reveal all Edit Post links
-        document.querySelectorAll(".nanolog-edit-link").forEach(link => {
+        document.querySelectorAll(".nanolog-edit-link").forEach((link) => {
             link.removeAttribute("hidden");
         });
     }
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (nanologEnabled === "true") {
         nanologButton.removeAttribute("hidden");
         // Also reveal all Edit Post links
-        document.querySelectorAll(".nanolog-edit-link").forEach(link => {
+        document.querySelectorAll(".nanolog-edit-link").forEach((link) => {
             link.removeAttribute("hidden");
         });
     }
