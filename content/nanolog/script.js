@@ -288,11 +288,20 @@ document.getElementById("nanolog").addEventListener("click", function () {
         console.log("Nanolog new post button revealed");
         localStorage.setItem("nanologEnabled", true);
         nanologButton.removeAttribute("hidden");
+        
+        // Reveal all Edit Post links
+        document.querySelectorAll(".nanolog-edit-link").forEach(link => {
+            link.removeAttribute("hidden");
+        });
     }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
     if (nanologEnabled === "true") {
         nanologButton.removeAttribute("hidden");
+        // Also reveal all Edit Post links
+        document.querySelectorAll(".nanolog-edit-link").forEach(link => {
+            link.removeAttribute("hidden");
+        });
     }
 });
