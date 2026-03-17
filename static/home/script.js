@@ -38,6 +38,7 @@ const lastFmApiKey = "1747901e170276677d1d0447cf6519b0";
 const lastFmPlayer = document.getElementById("player");
 const lastFmCover = document.getElementById("cover");
 const lastFmTitle = document.getElementById("player-title");
+const lastFmCoverLarge = document.getElementById("cover-large");
 const lastFmTitleContainer = document.getElementById("player-title-container");
 const lastFmArtist = document.getElementById("player-artist");
 const lastFmArtistContainer = document.getElementById(
@@ -120,6 +121,10 @@ async function fetchLastFm() {
                 "home/image-missing.svg";
             lastFmLink.href = track.url;
 
+            const largeCover = track.image.find(
+                (img) => img.size === "large",
+            )?.["#text"];
+
             const mediumCover = track.image.find(
                 (img) => img.size === "medium",
             )?.["#text"];
@@ -131,6 +136,12 @@ async function fetchLastFm() {
             const fallbackCover = "home/image-missing.svg";
 
             lastFmCover.src = mediumCover || fallbackCover;
+
+            if (largeCover) {
+                lastFmCoverLarge.srcset = largeCover;
+            } else {
+                lastFmCoverLarge.srcset = "";
+            }
 
             const hasRealCover =
                 Boolean(mediumCover) && mediumCover !== fallbackCover;

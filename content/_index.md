@@ -267,3 +267,26 @@ Simply put, IndieWeb is anything on the web that is hand-crafted, feels personal
 Everything about it is awesome, from 88x31 buttons to webrings. It also feels cozy and is hella fun, quite refreshing after the sterile corporate web.
 
 {{ badges() }}
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="visually-hidden">
+  <defs>
+    <filter id="squiggly-1">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="1"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+    <filter id="squiggly-2">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="2"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence baseFrequency="0.1" numOctaves="3" result="noise1" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise1" scale="3" result="displaced1"/>
+      <feTurbulence baseFrequency="0.02" numOctaves="2" result="noise2" seed="3"/>
+      <feDisplacementMap in="displaced1" in2="noise2" scale="6"/>
+    </filter>
+  </defs>
+</svg>
