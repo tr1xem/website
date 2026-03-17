@@ -131,15 +131,16 @@
             inset-block-start: 0;
             inset-inline-start: 0;
             padding: 0.25rem 0;
+            white-space: nowrap;
         }
 
         #face-front {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             transform: perspective(var(--content-width)) rotateX(0deg);
         }
 
         #face-back {
-            font-size: 2.7rem;
+            font-size: 2.9rem;
             transform: perspective(var(--content-width)) rotateX(180deg);
 
             span {
