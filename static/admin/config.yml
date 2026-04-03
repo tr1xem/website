@@ -175,7 +175,7 @@ collections:
       fields:
           - label: Title
             name: title
-            value: "Nanolog - {{month}} {{date}}, {{year}}"
+            default: "Nanolog - {{month}} {{date}}, {{year}}"
             widget: string
             required: true
           - label: Date
