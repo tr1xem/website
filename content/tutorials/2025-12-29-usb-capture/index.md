@@ -1,18 +1,16 @@
 +++
 title = "USB Capture in Linux"
 description = "How to capture USB  in Linux"
-date = 2025-12-29T12:15:00.000
 authors = [ "tr1x_em" ]
 draft = false
+date = "2025-12-29T12:15:00.000"
 
 [taxonomies]
-tags = [ "tutorials"]
+tags = [ "tutorials" ]
 
 [extra]
-styles = []
 accent_color = [ "orange", "hsl(200 100% 62.2%)" ]
 banner = "banner.png"
-
 +++
 
 Today we will learn how to capture USB packets in Linux.
@@ -76,7 +74,7 @@ sudo udevadm trigger
 
 Run
 
-```
+```plain
 sudo modprobe usbmon
 ```
 

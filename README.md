@@ -20,16 +20,15 @@ The source code of my personal website. It is powered by [Zola](https://www.getz
 
 Currently hosted on Cloudflare Pages.
 
-Build command
+### Build command
 
 ```bash
-curl -L -s -o ./jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ./jq && if [ "$CF_PAGES_BRANCH" = "main" ]; then PATH=$PATH:. bash ./translate.sh && zola build; else zola build --base-url $CF_PAGES_URL; fi
+if [ "$CF_PAGES_BRANCH" = "main" ]; then  zola build; else zola build --base-url $CF_PAGES_URL; fi
 ```
 
-Env vars:
+### Env vars:
 
 ```bash
-GEMINI_KEY=KEY
 UNSTABLE_PRE_BUILD=asdf plugin add zola https://github.com/salasrod/asdf-zola || true && asdf install zola latest && asdf global zola latest
 # When using trixtine (for demoji)
 DISCORD_CLIENT_ID=****

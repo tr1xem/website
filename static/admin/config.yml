@@ -30,6 +30,7 @@ i18n:
 
 collections:
     - label: Blog
+      icon: post_add
       name: blog
       folder: /content/blog
       create: true
@@ -181,10 +182,163 @@ collections:
             i18n: true
             name: body
             widget: markdown
+    - label: Tutorials
+      name: tutorials
+      folder: /content/tutorials
+      create: true
+      icon: cognition_2
+      format: toml-frontmatter
+      path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+      i18n: true
+      thumbnail: "*.banner"
+      view_filters:
+          - label: Drafts
+            field: draft
+            pattern: true
+      media_folder: ""
+      public_folder: ""
+      fields:
+          - label: Title
+            name: title
+            widget: string
+            i18n: true
+          - label: Description
+            name: description
+            widget: string
+            i18n: true
+            required: true
+          - label: Authors
+            name: authors
+            widget: list
+            default: ["tr1x_em"]
+            required: true
+            i18n: duplicate
+          - label: Draft
+            name: draft
+            widget: boolean
+            default: false
+            i18n: duplicate
+            required: false
+          - label: Updated
+            name: updated
+            widget: datetime
+            i18n: duplicate
+            required: false
+            optional: true
+            time_format: false
+          - label: Taxonomies
+            name: taxonomies
+            widget: object
+            required: false
+            i18n: duplicate
+            fields:
+                - label: Tags
+                  name: tags
+                  widget: list
+                  i18n: duplicate
+                  default: []
+                  required: true
+                - label: Categories
+                  i18n: duplicate
+                  name: categories
+                  widget: select
+                  multiple: true
+                  options:
+                      - label: Archived
+                        value: Archived
+                      - label: Featured
+                        value: Featured
+                      - label: Hot
+                        value: Hot
+                      - label: Test
+                        value: Test
+                  required: false
+          - label: Extra
+            name: extra
+            widget: object
+            i18n: duplicate
+            required: false
+            fields:
+                - label: Stylesheets
+                  name: styles
+                  widget: list
+                  i18n: duplicate
+                  required: false
+                  default: []
 
+                - label: Accent Color
+                  name: accent_color
+                  widget: list
+                  i18n: duplicate
+                  required: false
+                  default: []
+                  max: 2
+                  field:
+                      label: Color
+                      name: color
+                      widget: string
+
+                - label: Banner
+                  name: banner
+                  widget: image
+                  i18n: duplicate
+                  multiple: false
+                  choose_url: false
+                  required: false
+
+                - label: Pixel-art Banner
+                  name: banner_pixels
+                  i18n: duplicate
+                  widget: boolean
+                  required: false
+                  default: false
+                - label: Archive
+                  name: archive
+                  i18n: duplicate
+                  widget: markdown
+                  required: false
+                - label: Trigger
+                  name: trigger
+                  i18n: duplicate
+                  widget: markdown
+                  required: false
+                - label: Disclaimer
+                  name: disclaimer
+                  i18n: duplicate
+                  widget: markdown
+                  required: false
+                - label: Fediverse
+                  name: fediverse
+                  i18n: duplicate
+                  widget: object
+                  collapsed: true
+                  required: false
+                  fields:
+                      - label: Host
+                        name: host
+                        i18n: duplicate
+                        default: "mastodon.social"
+                        widget: string
+                        required: false
+                      - label: User
+                        name: user
+                        default: "tr1x_em"
+                        i18n: duplicate
+                        widget: string
+                        required: false
+                      - label: ID
+                        name: id
+                        i18n: duplicate
+                        widget: string
+                        required: false
+          - label: Body
+            i18n: true
+            name: body
+            widget: markdown
     - label: Nanolog
       name: nanolog
       folder: /content/nanolog
+      icon: calendar_add_on
       create: true
       i18n: true
       format: toml-frontmatter
@@ -209,3 +363,61 @@ collections:
             i18n: true
             name: body
             widget: markdown
+    - name: indexs
+      icon: home
+      label: Index Pages
+      files:
+          - name: home
+            label: Home Page
+            i18n: true
+            file: content/_index.md
+            thumbnail: "*.banner"
+            fields:
+                - name: title
+                  label: Title
+                  i18n: true
+                - name: description
+                  label: Description
+                  i18n: true
+                - name: extra
+                  widget: object
+                  fields:
+                      - name: anilist
+                        label: Anilist Username
+                  i18n: true
+                - name: body
+                  i18n: true
+                  label: Body
+                  widget: markdown
+          - name: blog
+            label: Blog Page
+            i18n: true
+            file: content/blog/_index.md
+            thumbnail: "*.banner"
+            fields:
+                - name: title
+                  label: Title
+                  i18n: true
+                - name: description
+                  label: Description
+                  i18n: true
+                - name: body
+                  i18n: true
+                  label: Body
+                  widget: markdown
+          - name: tutorials
+            label: Tutorials Page
+            i18n: true
+            file: content/tutorials/_index.md
+            thumbnail: "*.banner"
+            fields:
+                - name: title
+                  label: Title
+                  i18n: true
+                - name: description
+                  label: Description
+                  i18n: true
+                - name: body
+                  i18n: true
+                  label: Body
+                  widget: markdown
