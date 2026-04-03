@@ -8,7 +8,9 @@
 		</a>
 	{%- endif -%}
 
-	<h1 id="nanolog-heading">{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</h1>
+	<h1 id="nanolog-heading">
+		{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}
+	</h1>
 	{{ page.content | safe }}
 
 	{%- if page.higher -%}
