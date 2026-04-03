@@ -1,6 +1,6 @@
 +++
-title = "Coding Principles I Follow"
-description = "My philosophy on coding"
+title = "मेरे द्वारा पालन किए जाने वाले कोडिंग सिद्धांत"
+description = "कोडिंग के प्रति मेरा दर्शन"
 authors = [ "tr1x_em", "Gaspar" ]
 updated = 2025-12-11
 
@@ -11,68 +11,68 @@ banner = "phil.webp"
 [taxonomies]
 tags = [ "coding", "neovim" ]
 +++
-## Minimalism
+## मिनिमलिज़्म (न्यूनतमवाद)
 
-In computing, minimalism refers to the application of minimalist philosophies and principles in the design and use of hardware and software. Minimalism, in this sense, means designing systems that use the least hardware and software resources possible.
+कंप्यूटिंग में, मिनिमलिज़्म का तात्पर्य हार्डवेयर और सॉफ़्टवेयर के डिज़ाइन और उपयोग में न्यूनतमवादी दर्शन और सिद्धांतों को लागू करने से है। इस संदर्भ में मिनिमलिज़्म का अर्थ ऐसे सिस्टम को डिज़ाइन करना है जो कम से कम संभव हार्डवेयर और सॉफ़्टवेयर संसाधनों का उपयोग करें।
 
-[Wikipedia](<https://en.wikipedia.org/wiki/Minimalism_(computing)>)
+[विकिपीडिया](<https://en.wikipedia.org/wiki/Minimalism_(computing)>)
 
-## Worse is better
+## वर्स इज़ बेटर (Worse is better)
 
-_In The Rise of Worse is Better, Gabriel claimed that "Worse-is-Better" is a model of software design and implementation which has the following characteristics (in approximately descending order of importance):_
+_द राइज़ ऑफ़ वर्स इज़ बेटर (The Rise of Worse is Better) में, गैब्रियल ने दावा किया कि "वर्स-इज़-बेटर" सॉफ़्टवेयर डिज़ाइन और कार्यान्वयन का एक मॉडल है जिसकी निम्नलिखित विशेषताएं हैं (महत्व के लगभग अवरोही क्रम में):_
 
-- **Simplicity**. The design must be simple, both in implementation and interface. It is more important for the implementation to be simple than the interface. Simplicity is the most important consideration in a design.
-- **Correctness**. The design should be correct in all observable aspects, but It is slightly better to be simple than correct.
-- **Consistency**. The design must not be overly inconsistent. Consistency can be sacrificed for simplicity in some cases, but it is better to drop those parts of the design that deal with less common circumstances than to introduce either complexity or inconsistency in the implementation.
-- **Completeness**. The design must cover as many important situations as is practical. All reasonably expected cases should be covered. Completeness can be sacrificed in favor of any other quality. In fact, completeness must be sacrificed whenever implementation simplicity is jeopardized. Consistency can be sacrificed to achieve completeness if simplicity is retained; especially worthless is consistency of interface.
+- **सरलता (Simplicity)**। डिज़ाइन सरल होना चाहिए, कार्यान्वयन और इंटरफ़ेस दोनों में। इंटरफ़ेस की तुलना में कार्यान्वयन का सरल होना अधिक महत्वपूर्ण है। डिज़ाइन में सरलता सबसे महत्वपूर्ण विचार है।
+- **शुद्धता (Correctness)**। डिज़ाइन सभी अवलोकन योग्य पहलुओं में सही होना चाहिए, लेकिन शुद्ध होने से थोड़ा अधिक बेहतर सरल होना है।
+- **संगति (Consistency)**। डिज़ाइन अत्यधिक असंगत नहीं होना चाहिए। कुछ मामलों में सरलता के लिए संगति का बलिदान दिया जा सकता है, लेकिन कार्यान्वयन में जटिलता या असंगति लाने के बजाय डिज़ाइन के उन हिस्सों को हटाना बेहतर है जो कम सामान्य परिस्थितियों से निपटते हैं।
+- **पूर्णता (Completeness)**। डिज़ाइन को व्यावहारिक रूप से सभी महत्वपूर्ण स्थितियों को कवर करना चाहिए। सभी उचित रूप से अपेक्षित मामलों को कवर किया जाना चाहिए। पूर्णता का बलिदान किसी भी अन्य गुणवत्ता के पक्ष में दिया जा सकता है। वास्तव में, जब भी कार्यान्वयन की सरलता खतरे में हो तो पूर्णता का बलिदान दिया जाना चाहिए। यदि सरलता बनी रहती है तो पूर्णता प्राप्त करने के लिए संगति का बलिदान दिया जा सकता है; विशेष रूप से इंटरफ़ेस की संगति व्यर्थ है।
 
-Gabriel argued that early **Unix** and **C**, developed by **Bell Labs**, are **examples** of this **design approach**.
+गैब्रियल ने तर्क दिया कि **बेल लैब्स (Bell Labs)** द्वारा विकसित शुरुआती **यूनिक्स (Unix)** और **सी (C)**, इस **डिज़ाइन दृष्टिकोण** के **उदाहरण** हैं।
 
-[Wikipedia](https://en.wikipedia.org/wiki/Worse_is_better)
+[विकिपीडिया](https://en.wikipedia.org/wiki/Worse_is_better)
 
-## KISS (keep it simple, stupid)
+## KISS (कीप इट सिंपल, स्टूपिड)
 
-The KISS principle states that most systems work **best** if they are kept **simple** rather than made **complicated**; therefore, **simplicity** should be a **key** goal in design, and unnecessary **complexity** should be **avoided**.
+KISS सिद्धांत बताता है कि अधिकांश सिस्टम तब **सबसे अच्छा** काम करते हैं जब उन्हें **जटिल** बनाने के बजाय **सरल** रखा जाता है; इसलिए, **सरलता** डिज़ाइन का एक **मुख्य** लक्ष्य होना चाहिए, और अनावश्यक **जटिलता** से **बचना** चाहिए।
 
-[Wikipedia](https://en.wikipedia.org/wiki/KISS_principle)
+[विकिपीडिया](https://en.wikipedia.org/wiki/KISS_principle)
 
-## The Suckless' philosophy (manifest)
+## सकलेस (Suckless) का दर्शन (घोषणापत्र)
 
-Many (open source) hackers are proud if they achieve large amounts of code, because they believe the more lines of code they've written, the more progress they have made. The more progress they have made, the more skilled they are. This is simply a delusion.
+कई (ओपन सोर्स) हैकर्स को बड़ी मात्रा में कोड हासिल करने पर गर्व होता है, क्योंकि उनका मानना है कि उन्होंने जितनी अधिक लाइनें कोड लिखी हैं, उन्होंने उतनी ही अधिक प्रगति की है। उन्होंने जितनी अधिक प्रगति की है, वे उतने ही कुशल हैं। यह केवल एक भ्रम है।
 
-Most hackers actually don't care much about code quality. Thus, if they get something working which seems to solve a problem, they stick with it. If this kind of software development is applied to the same source code throughout its entire life-cycle, we're left with large amounts of code, a totally screwed code structure, and a flawed system design. This is because of a lack of conceptual clarity and integrity in the development process.
+अधिकांश हैकर्स वास्तव में कोड की गुणवत्ता की परवाह नहीं करते हैं। इसलिए, यदि उन्हें कुछ ऐसा मिल जाता है जो काम करता है और समस्या का समाधान करता है, तो वे उसी पर टिके रहते हैं। यदि इस प्रकार का सॉफ़्टवेयर विकास उसके पूरे जीवन-चक्र में एक ही स्रोत कोड पर लागू किया जाता है, तो हमारे पास कोड की बड़ी मात्रा, पूरी तरह से खराब कोड संरचना और एक त्रुटिपूर्ण सिस्टम डिज़ाइन रह जाता है। यह विकास प्रक्रिया में वैचारिक स्पष्टता और अखंडता की कमी के कारण है।
 
-Code complexity is the mother of bloated, hard to use, and totally inconsistent software. With complex code, problems are solved in suboptimal ways, valuable resources are endlessly tied up, performance slows to a halt, and vulnerabilities become a commonplace. The only solution is to scrap the entire project and rewrite it from scratch.
+कोड की जटिलता ब्लोटेड (अनावश्यक भारी), उपयोग में कठिन और पूरी तरह से असंगत सॉफ़्टवेयर की जननी है। जटिल कोड के साथ, समस्याओं को उप-इष्टतम (suboptimal) तरीकों से हल किया जाता है, मूल्यवान संसाधन अंतहीन रूप से बंधे रहते हैं, प्रदर्शन धीमा हो जाता है, और कमजोरियां सामान्य हो जाती हैं। एकमात्र समाधान पूरे प्रोजेक्ट को खत्म करना और इसे शून्य से फिर से लिखना है।
 
-The bad news: quality rewrites rarely happen, because hackers are proud of large amounts of code. They think they understand the complexity in the code, thus there's no need to rewrite it. They think of themselves as masterminds, understanding what others can never hope to grasp. To these types, complex software is the ideal.
+बुरी खबर: गुणवत्तापूर्ण पुनर्लेखन शायद ही कभी होते हैं, क्योंकि हैकर्स को बड़ी मात्रा में कोड पर गर्व होता है। उन्हें लगता है कि वे कोड की जटिलता को समझते हैं, इसलिए इसे फिर से लिखने की कोई आवश्यकता नहीं है। वे खुद को मास्टरमाइंड मानते हैं, यह समझते हुए कि जिसे दूसरे कभी नहीं समझ पाएंगे। इन लोगों के लिए, जटिल सॉफ़्टवेयर ही आदर्श है।
 
-Ingenious ideas are simple. Ingenious software is simple. Simplicity is the heart of the Unix philosophy. The more code lines you have removed, the more progress you have made. As the number of lines of code in your software shrinks, the more skilled you have become and the less your software sucks.
+प्रतिभाशाली विचार सरल होते हैं। प्रतिभाशाली सॉफ़्टवेयर सरल होता है। सरलता यूनिक्स दर्शन का हृदय है। आपने जितनी अधिक कोड लाइनें हटाई हैं, आपने उतनी ही अधिक प्रगति की है। जैसे-जैसे आपके सॉफ़्टवेयर में कोड की लाइनों की संख्या कम होती जाती है, आप उतने ही कुशल होते जाते हैं और आपका सॉफ़्टवेयर उतना ही कम खराब होता है।
 
-[Website](https://suckless.org/philosophy/)
+[वेबसाइट](https://suckless.org/philosophy/)
 
-## The Unix philosophy
+## यूनिक्स दर्शन
 
-The Unix philosophy, originated by Ken Thompson, is a set of cultural norms and philosophical approaches to minimalist, modular software development.
-The Unix philosophy emphasizes building **simple**, **short**, **clear**, **modular**, and **extensible** code that can be **easily** maintained and repurposed by developers other than its creators. The Unix philosophy favors composability as opposed to monolithic design.
+केन थॉम्पसन द्वारा उत्पन्न यूनिक्स दर्शन, न्यूनतमवादी, मॉड्यूलर सॉफ़्टवेयर विकास के लिए सांस्कृतिक मानदंडों और दार्शनिक दृष्टिकोणों का एक समूह है।
+यूनिक्स दर्शन **सरल**, **छोटा**, **स्पष्ट**, **मॉड्यूलर**, और **विस्तार योग्य** कोड बनाने पर जोर देता है जिसे इसके रचनाकारों के अलावा अन्य डेवलपर्स द्वारा **आसानी** से बनाए रखा और पुन: उपयोग किया जा सके। यूनिक्स दर्शन अखंड (monolithic) डिज़ाइन के विपरीत संयोजन (composability) का पक्षधर है।
 
-> UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.
+> UNIX मूल रूप से एक सरल ऑपरेटिंग सिस्टम है, लेकिन इसकी सरलता को समझने के लिए आपको एक प्रतिभाशाली होना होगा।
 > >
-> -- [Dennis Ritchie](http://genius.cat-v.org/dennis-ritchie/)
+> -- [डेनिस रिची](http://genius.cat-v.org/dennis-ritchie/)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Unix_philosophy)
+[विकिपीडिया](https://en.wikipedia.org/wiki/Unix_philosophy)
 
-## DRY (don't repeat yourself)
+## DRY (डोंट रिपीट योरसेल्फ - खुद को न दोहराएं)
 
-> Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+> ज्ञान के हर टुकड़े का एक सिस्टम के भीतर एकल, स्पष्ट, आधिकारिक प्रतिनिधित्व होना चाहिए।
 
-[Wikipedia](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+[विकिपीडिया](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-## YAGNI (you aren't gonna need it)
+## YAGNI (यू आर नॉट गोना नीड इट - आपको इसकी आवश्यकता नहीं होगी)
 
-> Always implement things when you actually need them, never when you just foresee that you need them.
+> हमेशा चीजों को तभी लागू करें जब आपको वास्तव में उनकी आवश्यकता हो, कभी भी तब नहीं जब आप केवल यह अनुमान लगाते हैं कि आपको उनकी आवश्यकता हो सकती है।
 
-[Wikipedia](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+[विकिपीडिया](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
-## Coding Style
+## कोडिंग शैली
 
-As clean as possible. Strict syntax.
+जितना संभव हो उतना स्वच्छ। सख्त सिंटैक्स।

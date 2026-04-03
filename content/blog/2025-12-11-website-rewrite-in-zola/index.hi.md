@@ -1,6 +1,6 @@
 +++
-title = "Website Rewrite in Zola"
-description = "The long-awaited website rewrite using the new static site generator - Zola."
+title = "ज़ोला (Zola) में वेबसाइट का पुनर्लेखन"
+description = "नए स्टेटिक साइट जनरेटर - ज़ोला (Zola) का उपयोग करके लंबे समय से प्रतीक्षित वेबसाइट का पुनर्लेखन।"
 authors = [ "tr1x_em" ]
 updated = 2025-12-12
 
@@ -8,7 +8,7 @@ updated = 2025-12-12
 tags = [ "devlog", "website" ]
 
 [extra]
-accent_color = [ "hsl(218.57143 7% 39%)", "hsl(192.85715 18% 70%)" ]
+accent_color = [ "hsl(302.2, 100%, 43.1%)", "hsl(286.1, 100%, 43.1%)" ]
 banner = "preview.webp"
 toc = true
 
@@ -17,90 +17,88 @@ host = ""
 user = ""
 id = "115711108819112800"
 +++
-# Backstory
 
-Who dosent need a website? so a year ago I thought I'd create a website for myself, and I did. But guess what? it was in pure HTML and CSS (prolly from some github) repo.
-But i really felt a need to have a better looking website, in which i could showcase my projects, and maybe even write a blog.
+# पृष्ठभूमि
 
-So a frnd of mine [Gasper](https://gasparvardanyan.github.io/)<small>(a very cool guy)</small> suggested me to use [Hugo](https://gohugo.io/) and i was like "wts hugo?".
-I did watched a pretty good,crisp and short video on how to use it and i was like "okay, i'll give it a try".
+वेबसाइट की जरूरत किसे नहीं होती? तो एक साल पहले मैंने सोचा कि मैं अपने लिए एक वेबसाइट बनाऊंगा, और मैंने बनाई भी। लेकिन पता है क्या? वह पूरी तरह से HTML और CSS में थी (शायद किसी गिटहब रिपो से ली गई थी)।
+लेकिन मुझे वास्तव में एक बेहतर दिखने वाली वेबसाइट की आवश्यकता महसूस हुई, जिसमें मैं अपने प्रोजेक्ट्स को प्रदर्शित कर सकूं, और शायद एक ब्लॉग भी लिख सकूं।
+
+तो मेरे एक दोस्त [Gasper](https://gasparvardanyan.github.io/)<small>(एक बहुत ही कूल व्यक्ति)</small> ने मुझे [Hugo](https://gohugo.io/) इस्तेमाल करने का सुझाव दिया और मैं सोचने लगा "ये Hugo क्या है?"।
+मैंने इसे कैसे उपयोग करें, इस पर एक बहुत अच्छा, स्पष्ट और संक्षिप्त वीडियो देखा और मैंने सोचा "ठीक है, मैं इसे आजमाऊंगा"।
 
 {{youtube(id="ZFL09qhKi5I")}}
 
-^ the goat video for hugo in my opinion.
+^ मेरी राय में Hugo के लिए यह सबसे बेहतरीन वीडियो है।
 
-and it turned out like this
+और यह कुछ ऐसा बना
 
 <figure>
 {{ image(url="oldweb.png", alt="Old Website", no_hover=false ,spoiler=true) }}
-<figcaption>Old Website</figcaption>
+<figcaption>पुरानी वेबसाइट</figcaption>
 </figure>
 
-I know its shit (sometime i even surprise myself with the results 🤡), but i was like "its the most my superior brain could do". also im not at all motivated to do frontend and styling.
+मुझे पता है कि यह बेकार है (कभी-कभी मैं खुद इसके नतीजों को देखकर हैरान हो जाता हूं 🤡), लेकिन मैंने सोचा "मेरे श्रेष्ठ दिमाग ने जो किया है, यह वही है"। साथ ही, मेरा फ्रंटएंड और स्टाइलिंग करने का बिल्कुल भी मन नहीं करता।
 
-# Entry of Zola
+# ज़ोला (Zola) का आगमन
 
-I was reading [Gradience Autopsy: Rise and Set - Daudix](https://daudix.one/blog/archiving-gradience/)<small> (all love to gradience forever) </small> and the looks caught my eye. and then i got to know about [Zola](https://www.getzola.org/). Zola to me is like hugo(XD idk how correct im)
-and with it i came to know about a guy named [Daudix](https://daudix.one/) and his theme for zola named [Ametrine](https://ametrine.daudix.one/) tho acc to him its not stable but as I being a arch user do not care about
-stable things at all.
+मैं [Gradience Autopsy: Rise and Set - Daudix](https://daudix.one/blog/archiving-gradience/)<small> (Gradience के लिए हमेशा प्यार) </small> पढ़ रहा था और इसके लुक्स ने मेरा ध्यान खींचा। और फिर मुझे [Zola](https://www.getzola.org/) के बारे में पता चला। मेरे लिए Zola, Hugo जैसा ही है (XD मुझे नहीं पता कि मैं कितना सही हूं)
+और इसके साथ मुझे [Daudix](https://daudix.one/) नाम के एक व्यक्ति और Zola के लिए उनकी थीम [Ametrine](https://ametrine.daudix.one/) के बारे में पता चला, हालांकि उनके अनुसार यह स्थिर (stable) नहीं है, लेकिन एक आर्च (Arch) यूजर होने के नाते मुझे स्थिर चीजों की बिल्कुल भी परवाह नहीं है।
 
-Ametrine is the greatest theme i have ever seen, its so simple to use and the result you are seeing it here, ofc i did copypasta from Daudix's website too but yeah thats what open source is and as someone said already
+Ametrine अब तक की सबसे बेहतरीन थीम है जिसे मैंने देखा है, इसका उपयोग करना इतना आसान है और परिणाम आप यहां देख रहे हैं, बेशक मैंने Daudix की वेबसाइट से भी कॉपी-पेस्ट किया है लेकिन हां, ओपन सोर्स यही है और जैसा कि किसी ने पहले ही कहा है
 
-> "Original content is original only for a few seconds before getting old”<br>
-> \~Rule 69 of internet
+> "मूल सामग्री (Original content) पुरानी होने से पहले केवल कुछ सेकंड के लिए ही मूल होती है”<br>
+> \~इंटरनेट का नियम 69
 
-So if u you want to make a website and ur not some geeky frontend wizard, i suggest u to use zola and ametrine.
+तो अगर आप एक वेबसाइट बनाना चाहते हैं और आप कोई गिर्की फ्रंटएंड जादूगर नहीं हैं, तो मैं आपको ज़ोला और एमेट्रिन (Ametrine) का उपयोग करने का सुझाव दूंगा।
 
-# Some Crazy Featuers and Styling
+# कुछ बेहतरीन फीचर्स और स्टाइलिंग
 
-I love how it renders tables
+मुझे यह पसंद है कि यह टेबल्स को कैसे रेंडर करता है
 
-| Page | Repo |
-| --- | --- |
-| Home | `pages` |
-| Info | `pages` |
-| Works | `pages` |
-| Blog | `blog-source` |
+| पेज  | रिपो          |
+| ----- | ------------- |
+| होम  | `pages`       |
+| जानकारी  | `pages`       |
+| कार्य | `pages`       |
+| ब्लॉग | `blog-source` |
 
-and code blocks
+और कोड ब्लॉक्स
 
-```cpp
+cpp
 #include <iostream>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
-```
 
-and these github like alerts
+
+और ये गिटहब जैसे अलर्ट्स
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> उपयोगी जानकारी जो उपयोगकर्ताओं को पता होनी चाहिए, सामग्री को जल्दी से देखते समय भी।
 
 > [!TIP]
-> Helpful advice for doing things better or more easily.
+> चीजों को बेहतर या आसानी से करने के लिए उपयोगी सलाह।
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> अपने लक्ष्य को प्राप्त करने के लिए उपयोगकर्ताओं को पता होनी चाहिए महत्वपूर्ण जानकारी।
 
 > [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
+> तत्काल ध्यान देने योग्य जानकारी ताकि समस्याओं से बचा जा सके।
 
 > [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
+> कुछ क्रियाओं के जोखिमों या नकारात्मक परिणामों के बारे में सलाह।
 
-Buttons are good too
+बटन भी अच्छे हैं
 
-<button class="suggested">Do Something…</button>
-<a class="button external" href="https://example.org">Example</a>
+<button class="suggested">कुछ करें…</button>
+<a class="button external" href="https://example.org">उदाहरण</a>
 
-and many more check it out yourself at [Ametrine's](https://ametrine.daudix.one/) website
+और भी बहुत कुछ, इसे खुद [Ametrine](https://ametrine.daudix.one/) की वेबसाइट पर देखें
 
-# Conclusion
+# निष्कर्ष
 
-It's been an interesting journey for sure; trying to use Hugo, losing my mind, regretting life choices,
-learning wierd stuff and using my 1 brain cell to think about how tf do i make it look good, burning out, coming back, learning more weird thing, procrastinating, coming back, rewriting half of the styles, and finally
-finding out i had no need for it (it hurts a bit 😭). But yep i guess now this would be my main website for a long time : )
+यह निश्चित रूप से एक दिलचस्प यात्रा रही है; Hugo का उपयोग करने की कोशिश करना, अपना मानसिक संतुलन खोना, जीवन के फैसलों पर पछताना, अजीब चीजें सीखना और यह सोचने के लिए अपने 1 ब्रेन सेल का उपयोग करना कि इसे अच्छा कैसे दिखाऊं, थक जाना (burnout), वापस आना, और अधिक अजीब चीजें सीखना, टालमटोल करना, वापस आना, आधी स्टाइल्स को फिर से लिखना, और अंत में यह पता चलना कि मुझे इसकी कोई जरूरत ही नहीं थी (यह थोड़ा दुख देता है 😭)। लेकिन हां, मुझे लगता है कि अब यह लंबे समय तक मेरी मुख्य वेबसाइट होगी : )
 
-Gald i found [Ametrine](https://ametrine.daudix.one/) and [Daudix](https://daudix.one/)
+खुशी है कि मुझे [Ametrine](https://ametrine.daudix.one/) और [Daudix](https://daudix.one/) मिले।

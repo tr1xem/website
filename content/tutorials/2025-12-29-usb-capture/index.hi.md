@@ -1,6 +1,6 @@
 +++
-title = "USB Capture in Linux"
-description = "How to capture USB  in Linux"
+title = "Linux में USB कैप्चर"
+description = "Linux में USB कैप्चर कैसे करें"
 date = 2025-12-29T12:15:00.000
 authors = [ "tr1x_em" ]
 draft = false
@@ -15,77 +15,76 @@ banner = "banner.png"
 
 +++
 
-Today we will learn how to capture USB packets in Linux.
+आज हम सीखेंगे कि Linux में USB पैकेट कैसे कैप्चर किए जाते हैं।
 
-Follow along the video and copy commands from here
+वीडियो के साथ चलें और यहाँ से कमांड्स कॉपी करें
 
 {{ youtube(id="UcMSPA5Q57Y") }}
 
 > [!NOTE]
-> All package name are for archlinux so for any other distro you
-> might need to search google what it is
+> सभी पैकेज के नाम Archlinux के लिए हैं, इसलिए किसी अन्य डिस्ट्रो (distro) के लिए आपको Google पर खोजना पड़ सकता है कि वे क्या हैं।
 
-### STEP 1
+### चरण 1
 
-#### Install wireshark or wireshark-qt
+#### wireshark या wireshark-qt इंस्टॉल करें
 
-Do it according to your distro, then
+इसे अपने डिस्ट्रो के अनुसार करें, फिर
 
-**ONE TIME PROCESS**
+**एक बार की प्रक्रिया (ONE TIME PROCESS)**
 
-- Add yourself to wireshark group - (**IMPORTANT**)
+- खुद को wireshark ग्रुप में जोड़ें - (**महत्वपूर्ण**)
 
-```bash
+bash
 sudo groupadd wireshark
 sudo usermod -a -G wireshark $USER
-```
 
-### STEP 2
 
-#### Install usbmon
+### चरण 2
 
-Do it according to your distro, then
+#### usbmon इंस्टॉल करें
 
-**ONE TIME PROCESS**
+इसे अपने डिस्ट्रो के अनुसार करें, फिर
 
-- Add yourself to usbmon group - (**IMPORTANT**)
+**एक बार की प्रक्रिया (ONE TIME PROCESS)**
 
-```bash
+- खुद को usbmon ग्रुप में जोड़ें - (**महत्वपूर्ण**)
+
+bash
 sudo groupadd usbmon
 sudo usermod -a -G usbmon $USER
-```
 
-Then run this : (**IMPORTANT**)
 
-It would let u capture usb packets without root permissions
+फिर इसे चलाएं: (**महत्वपूर्ण**)
 
-```bash
+यह आपको रूट अनुमति (root permissions) के बिना USB पैकेट कैप्चर करने देगा
+
+bash
 sudo tee /etc/udev/rules.d/99-usbmon.rules <<'EOF'
 SUBSYSTEM=="usbmon", GROUP="wireshark", MODE="0640"
 EOF
 sudo udevadm control --reload-rules
 sudo udevadm trigger
-```
+
 
 > [!NOTE]
-> You might need to logout and login again
+> आपको लॉग आउट करके दोबारा लॉग इन करने की आवश्यकता हो सकती है।
 
-### STEP 3
+### चरण 3
 
-#### Load usbmon module
+#### usbmon मॉड्यूल लोड करें
 
-Run
+चलाएं
 
-```
+
 sudo modprobe usbmon
-```
 
-It would load the kernel module
 
-## STEP 4 - 6
+यह कर्नेल मॉड्यूल को लोड कर देगा।
 
-- Capture USB packets
-- Do the thing thats told to you
-- Name the file and send it.
+## चरण 4 - 6
 
-Voila, you have captured your USB packets 🫡
+- USB पैकेट कैप्चर करें
+- वह काम करें जो आपको बताया गया है
+- फ़ाइल को नाम दें और इसे भेजें।
+
+वोइला (Voila), आपने अपने USB पैकेट कैप्चर कर लिए हैं 🫡

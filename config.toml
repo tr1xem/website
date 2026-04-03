@@ -17,7 +17,7 @@ taxonomies = [
 
 [languages.hi]
 title = "tr1x_em"
-description = "स्वागत है, यहाँ आप मेरे बारे में और जान सकते हैं।"
+description = "स्वागत है, यहाँ आप मेरे बारे में और जान सकते हैं, और हाँ, मैं लिखता भी हूँ!!"
 generate_feeds = true
 taxonomies = [
     {name = "categories", feed = true},
@@ -124,7 +124,13 @@ csp = [
 ]
 
 [extra.hi]
-font = "fonts/mangal.ttf"
+accent_color = ["hsl(5 100% 84%)", "hsl(4 48% 82%)"]
+categories = [
+{ name = "Archived", description = "पुराने होने के कारण संग्रह (archive) किए गए पोस्ट।", color = "purple", icon = "box-arrow-down" },
+{ name = "Featured", description = "वे पोस्ट जो काफी अच्छे ढंग से लिखे गए हैं।", color = "yellow", icon = "star" },
+{ name = "Hot", description = "वे पोस्ट जो दूसरों की तुलना में अधिक लोकप्रिय रहे।", color = "red", icon = "fire" },
+{ name = "Test", description = "परीक्षण 1 2 3 4", color = "green", icon = "feather" },
+]
 [extra.meta]
 favicon = "favicon.ico"
 card = "banner.png"
@@ -155,17 +161,17 @@ icon = "logo.png"
 # letters of the link name will be used instead.
 # Any icon name from https://phosphoricons.com can be used.
 links = [
-  { name = "लेखन", category = [
+  { name = "लेखन (Writing)", category = [
     { url = "@/blog/_index.md", name = "ब्लॉग", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "नैनोलॉग", icon = "note-pencil" },
-    { url = "@/guestbook/_index.md", name = "गेस्टबुक", icon = "envelope-open" },
+    { url = "@/guestbook/_index.md", name = "अतिथि पुस्तिका", icon = "envelope-open" },
     { url = "@/tutorials/_index.md", name = "ट्यूटोरियल", icon = "screwdriver" },
-  ] },
 
-  { name = "मेरे बारे में और", category = [
-    { url = "@/blog/2025-09-22-coding-principles/index.md", name = "कोडिंग सिद्धांत", icon = "code" },
-    { url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "डेवलपर वर्कफ़्लो", icon = "linux-logo" },
   ] },
+    { name = "मेरे बारे में और जानें", category = [
+        { url = "@/blog/2025-09-22-coding-principles/index.md", name = "कोडिंग सिद्धांत", icon = "code" },
+        { url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "डेवलपर वर्कफ़्लो", icon = "linux-logo" },
+    ] },
 ]
 
 [extra.footer]

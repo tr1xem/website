@@ -7,8 +7,8 @@
             "name": "AWCC",
             "description": "An unofficial alternative to Alienware Command Centre of Windows for the Dell G series on linux",
             "url": "https://github.com/tr1xem/AWCC",
-            "stargazerCount": 125,
-            "forkCount": 13,
+            "stargazerCount": 138,
+            "forkCount": 14,
             "primaryLanguage": {
               "name": "C++",
               "color": "#f34b7d"
@@ -18,7 +18,7 @@
             "name": "alienfx-linux",
             "description": "Alienware systems lights and fan control sdk",
             "url": "https://github.com/tr1xem/alienfx-linux",
-            "stargazerCount": 17,
+            "stargazerCount": 18,
             "forkCount": 1,
             "primaryLanguage": {
               "name": "C++",
@@ -30,7 +30,7 @@
             "description": "A hackable shell for Hyprland powered by ignis",
             "url": "https://github.com/tr1xem/flux",
             "stargazerCount": 58,
-            "forkCount": 1,
+            "forkCount": 0,
             "primaryLanguage": {
               "name": "Python",
               "color": "#3572A5"
@@ -40,8 +40,8 @@
             "name": "ignis",
             "description": "A widget framework for building desktop shells, written and configurable in Python",
             "url": "https://github.com/ignis-sh/ignis",
-            "stargazerCount": 652,
-            "forkCount": 42,
+            "stargazerCount": 656,
+            "forkCount": 43,
             "primaryLanguage": {
               "name": "Python",
               "color": "#3572A5"
@@ -51,7 +51,7 @@
             "name": "hyprfabricated",
             "description": "A hackable shell for Hyprland, powered by Fabric.",
             "url": "https://github.com/tr1xem/hyprfabricated",
-            "stargazerCount": 180,
+            "stargazerCount": 181,
             "forkCount": 10,
             "primaryLanguage": {
               "name": "Python",
@@ -63,7 +63,7 @@
             "description": "Powered by Zola and Ametrine.",
             "url": "https://github.com/tr1xem/website",
             "stargazerCount": 0,
-            "forkCount": 2,
+            "forkCount": 3,
             "primaryLanguage": {
               "name": "SCSS",
               "color": "#c6538c"

@@ -1,6 +1,6 @@
 +++
-title = "Dell G15 - Review"
-description = "A Honest review after 1 year"
+title = "Dell G15 - समीक्षा"
+description = "1 साल बाद एक ईमानदार समीक्षा"
 authors = [ "tr1x_em" ]
 updated = 2025-12-01
 
@@ -12,19 +12,19 @@ banner = "preview.webp"
 tags = [ "hardware", "dell" ]
 +++
 
-Long Story Short I own a `Dell G15 5530` laptop. Specs `RTX 4050` and `i7 13650HX`
+संक्षेप में कहूँ तो मेरे पास `Dell G15 5530` लैपटॉप है। इसके स्पेक्स `RTX 4050` और `i7 13650HX` हैं।
 
-I have been rocking Arch linux on it daily and it never disappoints.The Specs are great for 1080p gaming and each of the components works and fully support linux.
-The Device got amazing cooling system it never gets hots unlike other laptops but it makes a lot of sound on G-Mode.
+मैं इस पर रोज़ाना Arch Linux का इस्तेमाल कर रहा हूँ और इसने कभी निराश नहीं किया। इसके स्पेक्स 1080p गेमिंग के लिए बेहतरीन हैं और सभी कंपोनेंट्स काम करते हैं और पूरी तरह से लिनक्स को सपोर्ट करते हैं।
+डिवाइस का कूलिंग सिस्टम अद्भुत है, यह अन्य लैपटॉप की तरह कभी गर्म नहीं होता, लेकिन G-Mode पर यह काफी शोर करता है।
 
-CPU is power hungry so it is recommended to use it with turbo boost off (in most of the game the fps drop is not that big) but it gets significantly cooler.
+CPU काफी पावर लेता है, इसलिए इसे टर्बो बूस्ट बंद करके इस्तेमाल करने की सलाह दी जाती है (ज़्यादातर गेम्स में FPS में गिरावट उतनी बड़ी नहीं होती) लेकिन यह काफी ठंडा रहता है।
 
-Looks are great its like a tank, Build is solid and screen is great.
+दिखने में यह शानदार है, एक टैंक की तरह। इसकी बनावट मज़बूत है और स्क्रीन भी बेहतरीन है।
 
-Overall the laptop is solid and great.
+कुल मिलाकर, यह लैपटॉप मज़बूत और बहुत अच्छा है।
 
 {{ emoji(name="AngeryCat",big=true) }}
 
-### Remind me i have to finish it
+### मुझे याद दिलाना कि मुझे इसे पूरा करना है
 
-Resources: [AWCC](https://aur.archlinux.org/packages/awcc-git) and [Arch Wiki](https://wiki.archlinux.org/title/Dell_G15_5530)
+संसाधन: [AWCC](https://aur.archlinux.org/packages/awcc-git) और [Arch Wiki](https://wiki.archlinux.org/title/Dell_G15_5530)

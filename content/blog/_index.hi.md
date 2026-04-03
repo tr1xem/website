@@ -1,6 +1,6 @@
 +++
 title = "Progressive Enhancement"
-description = "My writings, I suppose."
+description = "मेरे लेख, शायद।"
 sort_by = "date"
 template = "article_list.html"
 page_template = "article.html"
@@ -13,6 +13,7 @@ no_header = true
 {% crt() %}
 
 ```
+
                                                  *******
                                  ~             *---*******
                                 ~             *-----*******
@@ -35,8 +36,8 @@ _O|/O___O|/O_OO|/O__O|/O__O|/O__________________________O|/O__________
 
 # Progressive Enhancement
 
-Here I write about my projects, updates on them, life, things that bother me, and pretty much anything else that spins around in my head and gets to be written down and is not _too_ cringy (optional).
+यहाँ मैं अपने प्रोजेक्ट्स, उनके अपडेट्स, जीवन, मुझे परेशान करने वाली चीज़ों, और लगभग हर उस चीज़ के बारे में लिखता हूँ जो मेरे दिमाग में घूमती है, जिसे लिख लिया जाता है और जो बहुत ज़्यादा _अजीब_ (cringy) नहीं होती (वैकल्पिक)।
 
-So, grab a cup of your favorite beverage, take a seat, and enjoy the read! <small>(or don't, my writing is rather boring)</small>
+तो, अपने पसंदीदा पेय का एक कप लें, बैठें, और पढ़ने का आनंद लें! <small>(या मत लें, मेरा लेखन काफी उबाऊ है)</small>
 
-Also Just so u know <span class="spoiler">I use Arch Btw </span>
+वैसे, बस आपकी जानकारी के लिए <span class="spoiler">मैं Arch इस्तेमाल करता हूँ, btw</span>
