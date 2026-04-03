@@ -1,22 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="nanolog-post">
-	{%- if page.lower -%}
-		<a id="nanolog-higher" href="{{ page.lower.permalink }}#up">
-			<span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
-		</a>
-	{%- endif -%}
+{# The 'h-entry' class tells Bridgy this is a social post #}
+<div id="nanolog-post" class="h-entry">
+    {%- if page.lower -%}
+        <a id="nanolog-higher" href="{{ page.lower.permalink }}#up">
+            <span>{{ page.lower.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
+        </a>
+    {%- endif -%}
 
-	<h1 id="nanolog-heading">
-		{{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}
-	</h1>
-	{{ page.content | safe }}
+    {# 'p-name' and 'dt-published' identify the title/date for Bluesky #}
+    <h1 id="nanolog-heading" class="p-name">
+        <time class="dt-published" datetime="{{ page.date }}">
+            {{ page.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}
+        </time>
+    </h1>
 
-	{%- if page.higher -%}
-		<a id="nanolog-lower" href="{{ page.higher.permalink }}#down">
-			<span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
-		</a>
-	{%- endif -%}
+    {# 'e-content' is what actually gets sent to your Bluesky feed #}
+    <div class="e-content">
+        {{ page.content | safe }}
+    </div>
+
+    {# This hidden link tells Bridgy: "Post this specific page to Bluesky" #}
+    <a class="u-bridgy-bsky" href="https://brid.gy/publish/bluesky" style="display:none;"></a>
+
+    {%- if page.higher -%}
+        <a id="nanolog-lower" href="{{ page.higher.permalink }}#down">
+            <span>{{ page.higher.date | date(format=config.extra.date_format_long | default(value="%B %d, %Y, %R (%Z)"), timezone=config.extra.timezone | default(value="UTC"), locale=config.extra.date_locale) | default(value="en_US") }}</span>
+        </a>
+    {%- endif -%}
 </div>
 {% endblock content %}
