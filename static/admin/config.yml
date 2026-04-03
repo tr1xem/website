@@ -163,10 +163,12 @@ collections:
                       - label: Host
                         name: host
                         i18n: duplicate
+                        default: "mastodon.social"
                         widget: string
                         required: false
                       - label: User
                         name: user
+                        default: "tr1x_em"
                         i18n: duplicate
                         widget: string
                         required: false
