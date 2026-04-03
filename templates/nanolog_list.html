@@ -12,10 +12,12 @@
 
 {{ section.description | markdown | safe }}
 
-<div id="nanolog-modal">
+	<div id="nanolog-modal">
 	<div id="nanolog-modal-content">
 		<div class="overshoot">
-			<textarea id="post-content" placeholder="What’s on your mind?" maxlength="500"></textarea>
+			<input id="post-title" type="text" placeholder="Title (optional)">
+			<div class="separator"></div>
+			<textarea id="post-content" placeholder="What's on your mind?" maxlength="500"></textarea>
 		</div>
 		<div class="buttons">
 			<div id="char-count">0/500</div>
