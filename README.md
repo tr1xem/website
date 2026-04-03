@@ -31,4 +31,7 @@ Env vars:
 ```bash
 GEMINI_KEY=KEY
 UNSTABLE_PRE_BUILD=asdf plugin add zola https://github.com/salasrod/asdf-zola || true && asdf install zola latest && asdf global zola latest
+# When using trixtine (for demoji)
+DISCORD_CLIENT_ID=****
+DISCORD_BOT_TOKEN=***
 ```
