@@ -39,7 +39,8 @@ Dotfiles प्रबंधन के लिए, मैं [GNU Stow](https://ww
 ## टिलिंग विंडो मैनेजर का उपयोग क्यों करें?
 
 <fig>
-{{ image(url="ss3.png", alt="Flux") }}
+ 
+![Flux](ss3.png)
 <figcaption>Flux</figcaption>
 </fig>
 
@@ -60,7 +61,8 @@ _डेस्कटॉप वातावरण एक ग्राफिकल 
 ### एडिटर: Neovim क्यों?
 
 <fig>
-{{ image(url="neovim.png", alt="Neovim") }}
+ 
+![Neovim](neovim.png)
 <figcaption>Neovim</figcaption>
 </fig>
 
@@ -70,7 +72,8 @@ _डेस्कटॉप वातावरण एक ग्राफिकल 
 ### टर्मिनल मल्टीप्लेक्सर: Tmux क्यों?
 
 <fig>
-{{ image(url="tmux.png", alt="Tmux") }}
+ 
+![Tmux](tmux.png)
 <figcaption>Tmux</figcaption>
 </fig>
 
@@ -81,7 +84,8 @@ _एक टर्मिनल मल्टीप्लेक्सर एक स
 ### AI सहायता: Opencode और Supermaven
 
 <fig>
-{{ image(url="opencode.png", alt="Opencode") }}
+ 
+![Opencode](opencode.png)
 <figcaption>Opencode</figcaption>
 </fig>
 

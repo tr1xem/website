@@ -2,7 +2,6 @@
 title = "Website Rewrite in Zola"
 description = "The long-awaited website rewrite using the new static site generator - Zola."
 authors = [ "tr1x_em" ]
-updated = 2025-12-12
 
 [taxonomies]
 tags = [ "devlog", "website" ]
@@ -13,8 +12,6 @@ banner = "preview.webp"
 toc = true
 
 [extra.fediverse]
-host = ""
-user = ""
 id = "115711108819112800"
 +++
 
@@ -32,10 +29,10 @@ I did watched a pretty good,crisp and short video on how to use it and i was lik
 
 and it turned out like this
 
-<figure>
+<fig>
 {{ image(url="oldweb.png", alt="Old Website", no_hover=false ,spoiler=true) }}
 <figcaption>Old Website</figcaption>
-</figure>
+</fig>
 
 I know its shit (sometime i even surprise myself with the results 🤡), but i was like "its the most my superior brain could do". also im not at all motivated to do frontend and styling.
 
@@ -56,12 +53,12 @@ So if u you want to make a website and ur not some geeky frontend wizard, i sugg
 
 I love how it renders tables
 
-| Page  | Repo          |
-| ----- | ------------- |
-| Home  | `pages`       |
-| Info  | `pages`       |
-| Works | `pages`       |
-| Blog  | `blog-source` |
+| Page | Repo |
+| --- | --- |
+| Home | `pages` |
+| Info | `pages` |
+| Works | `pages` |
+| Blog | `blog-source` |
 
 and code blocks
 

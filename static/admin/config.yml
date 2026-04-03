@@ -1,3 +1,6 @@
+app_title: tr1x_em - Content Manager
+logo:
+    src: /favicon.ico
 backend:
     name: github
     repo: tr1xem/website
@@ -20,6 +23,10 @@ media_libraries:
                     optimize: true
 output:
     omit_empty_optional_fields: true
+i18n:
+    structure: multiple_files
+    locales: [en, hi]
+    omit_default_locale_from_file_path: true
 
 collections:
     - label: Blog
@@ -28,6 +35,7 @@ collections:
       create: true
       format: toml-frontmatter
       path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+      i18n: true
       thumbnail: "*.banner"
       view_filters:
           - label: Drafts
@@ -38,10 +46,12 @@ collections:
       fields:
           - label: Title
             name: title
+            i18n: true
             widget: string
           - label: Description
             name: description
             widget: string
+            i18n: true
             required: true
           - label: Authors
             name: authors
@@ -148,6 +158,7 @@ collections:
                         widget: string
                         required: false
           - label: Body
+            i18n: true
             name: body
             widget: markdown
 
@@ -155,6 +166,7 @@ collections:
       name: nanolog
       folder: /content/nanolog
       create: true
+      i18n: true
       format: toml-frontmatter
       extension: md
       path: "{{year}}-{{month}}-{{day}}T{{hour}}-{{minute}}-{{second}}Z"
@@ -163,13 +175,15 @@ collections:
       fields:
           - label: Title
             name: title
-            default: "Nanolog - {month} {date}, {year}"
+            value: "Nanolog - {{month}} {{date}}, {{year}}"
             widget: string
+            required: true
           - label: Date
             name: date
             widget: datetime
             picker_utc: true
             required: true
           - label: Body
+            i18n: true
             name: body
             widget: markdown

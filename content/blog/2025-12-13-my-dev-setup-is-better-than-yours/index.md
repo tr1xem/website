@@ -3,20 +3,16 @@ title = "My dev setup is better than yours"
 description = "Deep insight about my dev env and workflow"
 authors = [ "tr1x_em" ]
 draft = false
-updated = 2025-12-14T10:15:00.000
 
 [taxonomies]
 tags = [ "devlog", "dev" ]
 
 [extra]
-styles = []
 accent_color = [ "orange", "hsl(184 100% 62.2%)" ]
 banner = "banner.png"
 banner_pixels = false
 
 [extra.fediverse]
-host = ""
-user = ""
 id = "115712672665196586"
 +++
 
@@ -39,10 +35,10 @@ Here is my dotfiles repo: [Link](https://github.com/tr1xem/dotfiles)
 ## Why use a Tilling Window Manager?
 
 <fig>
-{{ image(url="ss3.png", alt="Flux") }}
+
+![Flux](ss3.png)
 <figcaption>Flux</figcaption>
 </fig>
-
 _A desktop environment is a graphical user interface (GUI) that runs on top of an operating system, providing users with a visually intuitive way to interact with the system._
 
 I prefer tilling window manager, Why? Because they remove the overhead of managing windows from me, and generally it's keyboard driven and as you know the more you can remove the need for a mouse the more productive and smooth your workflow gets.
@@ -60,7 +56,8 @@ Now I will list down the tools I use on a daily basis.<small>(all the configs re
 ### Editor: Why Neovim?
 
 <fig>
-{{ image(url="neovim.png", alt="Neovim") }}
+
+![Neovim](neovim.png)
 <figcaption>Neovim</figcaption>
 </fig>
 
@@ -70,7 +67,8 @@ If you ask me, what's one thing that made my dev experience 100x better? It's le
 ### Terminal Multiplexer: Why Tmux?
 
 <fig>
-{{ image(url="tmux.png", alt="Tmux") }}
+ 
+![Tmux](tmux.png)
 <figcaption>Tmux</figcaption>
 </fig>
 
@@ -81,7 +79,8 @@ Basically, it lets you create more than one non-volatile <small>(sessions would 
 ### AI Assistance: Opencode and Supermaven
 
 <fig>
-{{ image(url="opencode.png", alt="Opencode") }}
+ 
+![Opencode](opencode.png)
 <figcaption>Opencode</figcaption>
 </fig>
 
