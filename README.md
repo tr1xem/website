@@ -15,3 +15,20 @@ The source code of my personal website. It is powered by [Zola](https://www.getz
 <img width="1886" height="984" alt="image" src="https://github.com/user-attachments/assets/420ee9d9-66cb-4941-8a45-fbf104d37807" />
 
 <img width="1877" height="987" alt="image" src="https://github.com/user-attachments/assets/5785c3cb-a483-448a-96dc-6a52f4ac654c" />
+
+# Building
+
+Currently hosted on Cloudflare Pages.
+
+Build command
+
+```bash
+curl -L -s -o ./jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ./jq && if [ "$CF_PAGES_BRANCH" = "main" ]; then PATH=$PATH:. bash ./translate.sh && zola build; else zola build --base-url $CF_PAGES_URL; fi
+```
+
+Env vars:
+
+```bash
+GEMINI_KEY=KEY
+UNSTABLE_PRE_BUILD=asdf plugin add zola https://github.com/salasrod/asdf-zola || true && asdf install zola latest && asdf global zola latest
+```

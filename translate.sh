@@ -8,7 +8,8 @@ TARGET_PATHS=(
     "content/tutorials/*"
     "content/*.md"
 )
-MODEL="gemini-1.5-flash"
+MODEL="gemini-3.1-flash-lite-preview"
+
 
 
 JQ_BIN=$(command -v jq || echo "./jq")
