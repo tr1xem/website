@@ -46,8 +46,8 @@ collections:
       fields:
           - label: Title
             name: title
-            i18n: true
             widget: string
+            i18n: true
           - label: Description
             name: description
             widget: string
@@ -58,14 +58,17 @@ collections:
             widget: list
             default: ["tr1x_em"]
             required: true
+            i18n: duplicate
           - label: Draft
             name: draft
             widget: boolean
             default: false
+            i18n: duplicate
             required: false
           - label: Updated
             name: updated
             widget: datetime
+            i18n: duplicate
             required: false
             optional: true
             time_format: false
@@ -73,13 +76,16 @@ collections:
             name: taxonomies
             widget: object
             required: false
+            i18n: duplicate
             fields:
                 - label: Tags
                   name: tags
                   widget: list
+                  i18n: duplicate
                   default: []
                   required: true
                 - label: Categories
+                  i18n: duplicate
                   name: categories
                   widget: select
                   multiple: true
@@ -96,17 +102,20 @@ collections:
           - label: Extra
             name: extra
             widget: object
+            i18n: duplicate
             required: false
             fields:
                 - label: Stylesheets
                   name: styles
                   widget: list
+                  i18n: duplicate
                   required: false
                   default: []
 
                 - label: Accent Color
                   name: accent_color
                   widget: list
+                  i18n: duplicate
                   required: false
                   default: []
                   max: 2
@@ -118,43 +127,52 @@ collections:
                 - label: Banner
                   name: banner
                   widget: image
+                  i18n: duplicate
                   multiple: false
                   choose_url: false
                   required: false
 
                 - label: Pixel-art Banner
                   name: banner_pixels
+                  i18n: duplicate
                   widget: boolean
                   required: false
                   default: false
                 - label: Archive
                   name: archive
+                  i18n: duplicate
                   widget: markdown
                   required: false
                 - label: Trigger
                   name: trigger
+                  i18n: duplicate
                   widget: markdown
                   required: false
                 - label: Disclaimer
                   name: disclaimer
+                  i18n: duplicate
                   widget: markdown
                   required: false
                 - label: Fediverse
                   name: fediverse
+                  i18n: duplicate
                   widget: object
                   collapsed: true
                   required: false
                   fields:
                       - label: Host
                         name: host
+                        i18n: duplicate
                         widget: string
                         required: false
                       - label: User
                         name: user
+                        i18n: duplicate
                         widget: string
                         required: false
                       - label: ID
                         name: id
+                        i18n: duplicate
                         widget: string
                         required: false
           - label: Body
@@ -177,9 +195,11 @@ collections:
             name: title
             default: "Nanolog - {{month}} {{date}}, {{year}}"
             widget: string
+            i18n: true
             required: true
           - label: Date
             name: date
+            i18n: duplicate
             widget: datetime
             picker_utc: true
             required: true
