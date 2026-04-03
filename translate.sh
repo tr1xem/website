@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 API_KEY=$GEMINI_KEY
 LANG_PREFIX="hi"
