@@ -56,6 +56,10 @@ index_format = "elasticlunr_json"
 
 
 [extra]
+feed_sections = [
+  { name = "Nanolog", path = "@/nanolog/_index.md" },
+  { name = "Blog", path = "@/blog/_index.md" },
+]
 accent_color = ["hsl(5 100% 84%)", "hsl(4 48% 82%)"]
 categories = [
   { name = "Archived", description = "Posts that have been archived due to their age.", color = "purple", icon = "box-arrow-down" },
