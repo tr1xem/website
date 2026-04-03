@@ -170,8 +170,8 @@ collections:
       format: toml-frontmatter
       extension: md
       path: "{{year}}-{{month}}-{{day}}T{{hour}}-{{minute}}-{{second}}Z"
-      media_folder: ""
-      public_folder: ""
+      media_folder: "/static/nanolog/media"
+      public_folder: "/nanolog/media"
       fields:
           - label: Title
             name: title
