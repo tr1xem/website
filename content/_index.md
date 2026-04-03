@@ -80,7 +80,7 @@ badges = [
 # tr1x_em
 
 </div>
-Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle; tr1x_em.
+Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle <mark>@tr1x_em</mark>
 
 <div class="buttons start big">
   <a href="#about" class="suggested">About Me ↓</a>

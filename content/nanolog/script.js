@@ -30,16 +30,15 @@ function slugify(text) {
     return text
         .trim()
         .toLowerCase()
-        .normalize("NFD") // Handle unicode characters
-        .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
-        .replace(/[^a-z0-9\s-]/g, "") // Remove non-alphanumeric chars except spaces and hyphens
-        .replace(/\s+/g, "-") // Replace spaces with hyphens
-        .replace(/-+/g, "-") // Remove consecutive hyphens
-        .replace(/^-+|-+$/g, ""); // Remove leading/trailing hyphens
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-+|-+$/g, "");
 }
 
 function showAlert(message, type = "info") {
-    // Enhanced alert system - you could replace this with a toast notification
     const alertTypes = {
         success: "✓",
         error: "✗",
@@ -84,7 +83,6 @@ async function upload() {
     const content = document.getElementById("post-content")?.value || "";
     const token = localStorage.getItem("githubToken");
 
-    // Validate inputs
     const errors = validateInputs(content, token);
     if (errors.length > 0) {
         showAlert(errors.join("\n"), "error");
@@ -160,10 +158,8 @@ ${content}
     }
 }
 
-// Enhanced initialization with error handling
 document.addEventListener("DOMContentLoaded", () => {
     try {
-        // Load saved token
         const storedToken = localStorage.getItem("githubToken");
         const tokenInput = document.getElementById("github-token");
 
@@ -171,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
             tokenInput.value = storedToken;
         }
 
-        // Add event listeners with error handling
         const saveTokenBtn = document.getElementById("save-token-btn");
         const publishBtn = document.getElementById("publish-btn");
 
@@ -187,9 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.warn("Publish button not found");
         }
 
-        // Add keyboard shortcuts
         document.addEventListener("keydown", (e) => {
-            // Ctrl/Cmd + Enter to publish
             if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
                 e.preventDefault();
                 upload();
@@ -218,12 +211,11 @@ textarea.addEventListener("input", () => {
     }
 });
 
-var nanologModal = document.getElementById("nanolog-modal"); // Full-screen modal
-var nanologModalContent = document.getElementById("nanolog-modal-content"); // Actual modal box
-var nanologInput = document.getElementById("post-content"); // Nanolog input
-var nanologButton = document.getElementById("nanolog-button"); // Nanolog button
+var nanologModal = document.getElementById("nanolog-modal");
+var nanologModalContent = document.getElementById("nanolog-modal-content");
+var nanologInput = document.getElementById("post-content");
+var nanologButton = document.getElementById("nanolog-button");
 
-// Open nanolog modal when clicking the post button
 if (nanologButton) {
     nanologButton.addEventListener("click", function () {
         nanologModal.classList.add("active");
@@ -238,7 +230,6 @@ if (nanologButton) {
     });
 }
 
-// Open nanolog modal on "/" key press
 window.addEventListener("keydown", (event) => {
     if (
         event.key === "n" &&
@@ -258,26 +249,22 @@ window.addEventListener("keydown", (event) => {
     }
 });
 
-// Close nanolog modal on Escape key
 window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         nanologModal.classList.remove("active");
     }
 });
 
-// Close nanolog modal when clicking outside nanolog-modal-content
 nanologModal.addEventListener("click", function (e) {
     if (!nanologModalContent.contains(e.target)) {
         nanologModal.classList.remove("active");
     }
 });
 
-// Prevent clicks inside modal content from closing it
 nanologModalContent.addEventListener("click", function (e) {
-    e.stopPropagation(); // Stops event from reaching nanologModal click handler
+    e.stopPropagation();
 });
 
-// Reveal new post button after clicking the Nanolog heading 10 times
 let nanologClickCount = 0;
 const nanologEnabled = localStorage.getItem("nanologEnabled");
 
@@ -289,7 +276,6 @@ document.getElementById("nanolog").addEventListener("click", function () {
         localStorage.setItem("nanologEnabled", true);
         nanologButton.removeAttribute("hidden");
 
-        // Reveal all Edit Post links
         document.querySelectorAll(".nanolog-edit-link").forEach((link) => {
             link.removeAttribute("hidden");
         });
@@ -299,7 +285,7 @@ document.getElementById("nanolog").addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", () => {
     if (nanologEnabled === "true") {
         nanologButton.removeAttribute("hidden");
-        // Also reveal all Edit Post links
+
         document.querySelectorAll(".nanolog-edit-link").forEach((link) => {
             link.removeAttribute("hidden");
         });
