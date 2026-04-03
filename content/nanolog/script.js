@@ -94,11 +94,21 @@ async function upload() {
 
     const now = new Date();
     const date = now.toISOString().slice(0, 19) + "Z";
-
-    const filename = `${date}.md`;
+    
+    // Replace colons with dashes for filename compatibility
+    const filename = `${date.replace(/:/g, '-')}.md`;
     const path = `content/nanolog/${filename}`;
 
+    // Format the date for the title (e.g., "March 20, 2026")
+    const titleDate = now.toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    });
+
     const markdown = `+++
+title = "Nanolog - ${titleDate}"
+date = ${date}
 +++
 
 ${content}
