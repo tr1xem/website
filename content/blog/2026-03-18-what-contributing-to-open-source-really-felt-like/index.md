@@ -2,7 +2,7 @@
 title = "What Contributing to Open Source Really Felt Like"
 description = "An honest reflection on my open source journey collaboration, community, and the challenges of managing expectations."
 authors = [ "tr1x_em" ]
-draft = false
+draft = true
 
 [taxonomies]
 categories = [ "Archived", "Featured", "Hot", "Test" ]
