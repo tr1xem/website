@@ -80,7 +80,8 @@ badges = [
 # tr1x_em
 
 </div>
-Greetings! Welcome to my little corner on the World Wild Web and a second home of mine. You might know me by my online handle <mark>@tr1x_em</mark>
+CEO @ TheKeybinds™ (multi-billion) Stuck in {{ demoji(name="neovim") }} Wishing it was {{ demoji(name="emacs") }}
+
 
 <div class="buttons start big">
   <a href="#about" class="suggested">About Me ↓</a>

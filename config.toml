@@ -191,6 +191,10 @@ socials = [
     { url = "https://x.com/tr1x_em", icon = "x" },
     { url = "mailto:admin@trix.is-a.dev", icon = "gmail" },
 ]
+keys = [
+    { name = "SSH Public Key", url = "/key/trix.pub" },
+    { name = "PGP Public Key", url = "/key/trix.asc" },
+]
 
 [extra.footer.hi]
 copyright = "© tr1x_em, 2021-$YEAR"

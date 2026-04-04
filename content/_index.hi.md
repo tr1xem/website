@@ -79,7 +79,7 @@ badges = [
 # tr1x_em
 
 </div>
-नमस्ते! वर्ल्ड वाइड वेब पर मेरे छोटे से कोने और मेरे दूसरे घर में आपका स्वागत है। आप मुझे मेरे ऑनलाइन हैंडल से जानते होंगे <mark>@tr1x_em</mark>
+CEO @ TheKeybinds™ (multi-billion) Stuck in {{ demoji(name="neovim") }} Wishing it was {{ demoji(name="emacs") }}
 
 <div class="buttons start big">
   <a href="#about" class="suggested">मेरे बारे में ↓</a>
