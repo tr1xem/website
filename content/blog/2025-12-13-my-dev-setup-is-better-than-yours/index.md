@@ -32,16 +32,18 @@ I recommend you watching the following video if you want to learn more about sto
 
 Here is my dotfiles repo: [Link](https://github.com/tr1xem/dotfiles)
 
-## Why use a Tilling Window Manager?
+## Why use a Tiling Window Manager?
 
 <fig>
 
 ![Flux](ss3.png)
+
 <figcaption>Flux</figcaption>
 </fig>
-_A desktop environment is a graphical user interface (GUI) that runs on top of an operating system, providing users with a visually intuitive way to interact with the system._
 
-I prefer tilling window manager, Why? Because they remove the overhead of managing windows from me, and generally it's keyboard driven and as you know the more you can remove the need for a mouse the more productive and smooth your workflow gets.
+_A desktop environment is a graphical user interface (GUI) that runs on top of an operating system, providing users with a visually intuitive way to interact with the system_.
+
+I prefer tiling window manager, Why? Because they remove the overhead of managing windows from me, and generally it's keyboard driven and as you know the more you can remove the need for a mouse the more productive and smooth your workflow gets.
 
 I use [Hyprland](https://hypr.land/), why? Because firstly it's a tilling WM, and secondly it has awesome customization and looks <small>(I love blur btw)</small> but any tilling wm of your choice would suffice. And no I don't care about Wayland vs Xorg, I have used sway,i3,DWM in the past, and it's just I want a good-looking desktop <small>(as you can see in banner)</small>. Talking about the photo, it's my own shell that's called [Flux](https://github.com/tr1xem/flux), which is made in [Ignis](https://github.com/ignis-sh/ignis). It's just suited according to my preference, but yeah it looks good (specially the depth effect). If you are a new user, I would recommend you reading the [Hyprland's Wiki](https://wiki.hypr.land/) as it's simple and straight forward <small>(and looks good)</small>
 
@@ -58,6 +60,7 @@ Now I will list down the tools I use on a daily basis.<small>(all the configs re
 <fig>
 
 ![Neovim](neovim.png)
+
 <figcaption>Neovim</figcaption>
 </fig>
 
@@ -67,8 +70,9 @@ If you ask me, what's one thing that made my dev experience 100x better? It's le
 ### Terminal Multiplexer: Why Tmux?
 
 <fig>
- 
+
 ![Tmux](tmux.png)
+
 <figcaption>Tmux</figcaption>
 </fig>
 
@@ -79,8 +83,9 @@ Basically, it lets you create more than one non-volatile <small>(sessions would 
 ### AI Assistance: Opencode and Supermaven
 
 <fig>
- 
+
 ![Opencode](opencode.png)
+
 <figcaption>Opencode</figcaption>
 </fig>
 

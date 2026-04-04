@@ -3,20 +3,16 @@ title = "मेरा dev सेटअप आपसे बेहतर है"
 description = "मेरे dev वातावरण और वर्कफ़्लो के बारे में गहरी जानकारी"
 authors = [ "tr1x_em" ]
 draft = false
-updated = 2025-12-14T10:15:00.000
 
 [taxonomies]
 tags = [ "devlog", "dev" ]
 
 [extra]
-styles = []
 accent_color = [ "orange", "hsl(184 100% 62.2%)" ]
 banner = "banner.png"
 banner_pixels = false
 
 [extra.fediverse]
-host = ""
-user = ""
 id = "115712672665196586"
 +++
 
