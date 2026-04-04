@@ -56,6 +56,7 @@ badges = [
 # { name = "valid-atom.gif", url = "https://validator.w3.org/feed/" },
  { name = "savewalterwhite.gif", url = "http://www.savewalterwhite.com" },
  { name = "statuscafe.gif", url = "https://status.cafe" },
+ { name =  "Shubh", image = "https://cshubh.com/images/shubh.png", url = "https://cshubh.com/"},
  { name = "ddg.gif", url = "https://duckduckgo.com" },
  { name = "iso.gif", url = "https://www.w3.org/QA/Tips/iso-date" },
 # { name = "georgemoody.gif"},
