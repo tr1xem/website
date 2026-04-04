@@ -349,7 +349,6 @@ collections:
       fields:
           - label: Title
             name: title
-            default: "Nanolog - {{month}} {{date}}, {{year}}"
             widget: string
             i18n: true
             required: true

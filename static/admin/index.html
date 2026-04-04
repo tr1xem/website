@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="robots" content="noindex" />
-		<title>Content Manager</title>
-	</head>
-	<body>
-		<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+        <title>Content Manager</title>
+    </head>
+    <body>
+        <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+        <script>
+            console.log("[tr1x_em]: Nanolog Script: Watching for /collections/nanolog/new)");
+
+            const injectWithRetry = (section, attempts = 0) => {
+                const titleInput = section.querySelector('input');
+
+                if (titleInput) {
+
+                    if (titleInput.value !== "") return;
+
+                    const today = new Date().toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                    const defaultValue = `Nanolog - ${today}`;
+
+                    console.log("[tr1x_em]: Nanolog Script: Target found. Injecting: " + defaultValue);
+
+                    titleInput.value = defaultValue;
+
+
+                    ['input', 'change', 'blur', 'focus'].forEach(evt => {
+                        titleInput.dispatchEvent(new Event(evt, { bubbles: true }));
+                    });
+
+                    console.log("[tr1x_em]: Nanolog Script: Success!");
+                } else if (attempts < 20) {
+
+                    setTimeout(() => injectWithRetry(section, attempts + 1), 50);
+                } else {
+                    console.error("[tr1x_em]: Nanolog Script: Timed out waiting for input inside Title section.");
+                }
+            };
+
+            const observer = new MutationObserver(() => {
+
+                const url = window.location.href;
+                const isNanologPage = url.includes('collections/nanolog');
+                const isNewEntry = url.includes('/new');
+
+                if (!isNanologPage || !isNewEntry) {
+                    return;
+                }
+
+                const titleSection = document.querySelector('section[data-key-path="title"]');
+
+                if (titleSection && !titleSection.dataset.autoFilled) {
+
+                    titleSection.dataset.autoFilled = "true";
+                    injectWithRetry(titleSection);
+                }
+
+
+                if (!titleSection) {
+                    document.querySelectorAll('section').forEach(s => delete s.dataset.autoFilled);
+                }
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+        </script>
+    </body>
 </html>
