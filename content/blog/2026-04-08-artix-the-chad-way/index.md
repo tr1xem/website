@@ -178,7 +178,7 @@ basestrap $INST_MNT base vim grub connman connman-openrc openrc elogind-openrc
 then install
 
 ```plain
-basestrap $INST_MNT $INST_LINVAR $INST_LINVAR-headers archzfs-dkms sudo efibootmgr wget
+basestrap $INST_MNT $INST_LINVAR $INST_LINVAR-headers archzfs-dkms sudo efibootmgr wget intel-ucode
 # If your computer has hardware that requires firmware to run
 basestrap $INST_MNT linux-firmware sof-firmware
 ```
@@ -305,7 +305,7 @@ NOTE: ZFS SHOULD BE BEFORE FILE SYSTEM else you would get rootfs error
 and then add your keyfile to mkinctopi
 
 ```plain
-FILES=(/etc/zfs/rpool.key)
+FILES=(/etc/zfs/rpool.key /boot/intel-ucode.img)
 ```
 
 Regenrate intrafms
