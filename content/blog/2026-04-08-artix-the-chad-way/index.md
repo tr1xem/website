@@ -2,7 +2,7 @@
 title = "Artix The CHAD WAY"
 description = "Install artix with zfs and zfsbootmenu THEE CHAD WAY"
 authors = [ "tr1x_em" ]
-draft = false
+draft = true
 +++
 
 # Setting up boot options
