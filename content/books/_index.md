@@ -9,6 +9,8 @@ generate_feeds = true
 [extra]
 no_header = true
 accent_color = [ "hsl(196 67.4% 44.5%)" , "hsl(196 67.4% 44.5%)" ]
+[extra.meta]
+card = "banner.png"
 +++
 
 {% crt() %}

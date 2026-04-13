@@ -86,6 +86,10 @@ CEO @ TheKeybinds™ (multi-billion) Stuck in {{ demoji(name="neovim") }} Wishin
   <a href="#about" class="suggested">मेरे बारे में ↓</a>
   <a href="#splash">स्प्लैश →</a>
 </div>
+<div id="scroll-down">
+{{ icon(name="caret-down") }}
+{{ icon(name="caret-down") }}
+</div>
 </div>
 </div>
 
