@@ -59,6 +59,7 @@ index_format = "elasticlunr_json"
 feed_sections = [
   { name = "Nanolog", path = "@/nanolog/_index.md" },
   { name = "Blog", path = "@/blog/_index.md" },
+  { name = "Books", path = "@/books/_index.md" },
 ]
 accent_color = ["hsl(5 100% 84%)", "hsl(4 48% 82%)"]
 categories = [
@@ -149,13 +150,12 @@ links = [
   { name = "Writing", category = [
     { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
     { url = "@/nanolog/_index.md", name = "Nanolog", icon = "note-pencil" },
-    { url = "@/guestbook/_index.md", name = "Guestbook", icon = "envelope-open" },
-    { url = "@/tutorials/_index.md", name = "Tutorials", icon = "screwdriver" },
+    { url = "@/books/_index.md", name = "Book Review", icon = "book" },
 
   ] },
-    { name = "More about me", category = [
-		{ url = "@/blog/2025-09-22-coding-principles/index.md", name = "Coding Principles", icon = "code" },
-		{ url = "@/blog/2025-12-13-my-dev-setup-is-better-than-yours/index.md", name = "Dev Workflow", icon = "linux-logo" },
+    { name = "Extra", category = [
+    { url = "@/guestbook/_index.md", name = "Guestbook", icon = "envelope-open" },
+    { url = "@/tutorials/_index.md", name = "Tutorials", icon = "screwdriver" },
 	] },
 ]
 

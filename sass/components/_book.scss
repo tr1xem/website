@@ -1,0 +1,105 @@
+.book-hero {
+    display: grid;
+    grid-template-columns: minmax(10rem, 14rem) 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    margin-block-end: 1.25rem;
+
+    @media only screen and (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.book-cover {
+    position: sticky;
+    inset-block-start: 1rem;
+
+    @media only screen and (max-width: 640px) {
+        position: static;
+    }
+
+    img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border-radius: var(--rounded-corner);
+        box-shadow: var(--edge-highlight);
+    }
+}
+
+.book-meta {
+    h1 {
+        margin-block-start: 0;
+    }
+}
+
+.book-author {
+    margin-block: 0.25rem 0;
+    color: var(--fg-muted-1);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.book-theme {
+    margin-block: 0.25rem 0;
+    color: var(--fg-muted-2);
+}
+
+.book-tldr {
+    margin-block: 1rem;
+
+    h2 {
+        margin-block: 0 0.5rem;
+    }
+}
+
+/* Force spoiler disclaimer to be red (theme's warning class sets yellow). */
+.book-spoiler-warning {
+    --accent-h: var(--red-h) !important;
+    --accent-s: var(--red-s) !important;
+    --accent-l: var(--red-l) !important;
+    --accent-color: var(--red-fg) !important;
+}
+
+.book-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-block-start: 0.75rem;
+    color: var(--fg-muted-1);
+}
+
+.book-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.book-star {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--accent-color);
+    -webkit-mask-image: var(--icon-star);
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: var(--icon-star);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.book-star.empty {
+    opacity: 0.25;
+}
+
+.book-star.half {
+    background-image: linear-gradient(to right, var(--accent-color) 50%, var(--fg-muted-2) 50%);
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.book-rating-number {
+    font-size: var(--font-size-small);
+    color: var(--fg-muted-2);
+}

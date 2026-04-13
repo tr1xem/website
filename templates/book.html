@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+
+<article class="book">
+  <header class="book-hero">
+    {%- if page.extra.banner -%}
+      {%- set cover = resize_image(path=page.colocated_path ~ page.extra.banner, width=480, height=720, op="fill", format="webp") -%}
+      <div class="book-cover">
+        <img
+          class="transparent no-hover"
+          src="{{ cover.url | safe }}"
+          alt="Cover of {{ page.title }}"
+          {% if config.markdown.lazy_async_image %}decoding="async" loading="lazy"{% endif %}
+        />
+      </div>
+    {%- endif -%}
+
+    <div class="book-meta">
+      <h1>{{ page.title }}</h1>
+
+      {%- if page.authors -%}
+        <p class="book-author">By {{ page.authors | join(sep=", ") }}</p>
+      {%- endif -%}
+
+      {%- if page.extra.book_theme -%}
+        <p class="book-theme">{{ page.extra.book_theme }}</p>
+      {%- endif -%}
+
+      {%- if page.extra.rating is defined -%}
+        {%- set rating = page.extra.rating | float -%}
+        {# Round to nearest 0.5 star. (positive ratings only) #}
+        {%- set half_steps = ((rating * 2.0) + 0.5) | int -%}
+        {%- if half_steps < 0 -%}
+          {%- set half_steps = 0 -%}
+        {%- elif half_steps > 10 -%}
+          {%- set half_steps = 10 -%}
+        {%- endif -%}
+        {%- set rounded_rating = (half_steps / 2.0) -%}
+
+        <div class="book-rating" aria-label="Rating {{ rounded_rating }}/5">
+          <div class="book-stars" aria-hidden="true">
+            {%- for i in range(start=1, end=6) -%}
+              {%- set star_steps = i * 2 -%}
+              {%- if half_steps >= star_steps -%}
+                <span class="book-star full"></span>
+              {%- elif half_steps == (star_steps - 1) -%}
+                <span class="book-star half"></span>
+              {%- else -%}
+                <span class="book-star empty"></span>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <span class="book-rating-number">{{ rounded_rating }}/5</span>
+        </div>
+      {%- endif -%}
+    </div>
+  </header>
+
+  {%- if page.extra.spoiler | default(value=false) -%}
+    <blockquote class="markdown-alert markdown-alert-warning book-spoiler-warning">
+      <p><strong>Spoiler warning:</strong> this review contains spoilers.</p>
+    </blockquote>
+  {%- endif -%}
+
+  {%- if page.extra.tldr -%}
+    <section class="book-tldr">
+      <h2>TL;DR</h2>
+      <p>{{ page.extra.tldr }}</p>
+    </section>
+  {%- endif -%}
+
+  {%- include "partials/statements.html" -%}
+  {{ page.content | safe }}
+  {%- include "partials/backlinks.html" -%}
+</article>
+
+{%- if page.extra.fediverse.id -%}
+  {%- include "partials/comments.html" -%}
+{%- endif -%}
+
+{%- if page.lower or page.higher -%}
+  <hr />
+  {%- include "partials/article_nav.html" -%}
+{%- endif -%}
+{% endblock content %}
