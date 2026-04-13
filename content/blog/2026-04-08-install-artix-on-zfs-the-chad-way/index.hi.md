@@ -7,8 +7,9 @@ redirect_to = "@/content/blog/2026-04-08-install-artix-on-zfs-the-chad-way/index
 categories = [ "Featured" ]
 
 [extra]
+accent_color = [ "hsl(270 13% 48%)", "hsl(290 20% 71%)" ]
 banner = "banner.png"
-disclaimer = "This page contains blackjack and hookers, and bad jokes such as this one."
+disclaimer = "यह पृष्ठ में ब्लैकजैक और हुकर्स, और इस तरह के खराब चुटकुले शामिल हैं।"
 
 [extra.fediverse]
 host = "mastodon.social"

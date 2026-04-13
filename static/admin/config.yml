@@ -123,6 +123,7 @@ collections:
                   field:
                       label: Color
                       name: color
+                      i18n: duplicate
                       widget: string
 
                 - label: Banner
@@ -141,22 +142,22 @@ collections:
                   default: false
                 - label: Archive
                   name: archive
-                  i18n: duplicate
+                  i18n: true
                   widget: markdown
                   required: false
                 - label: Trigger
                   name: trigger
-                  i18n: duplicate
+                  i18n: true
                   widget: markdown
                   required: false
                 - label: Disclaimer
                   name: disclaimer
-                  i18n: duplicate
+                  i18n: true
                   widget: markdown
                   required: false
                 - label: Fediverse
                   name: fediverse
-                  i18n: duplicate
+                  i18n: true
                   widget: object
                   collapsed: true
                   required: false
