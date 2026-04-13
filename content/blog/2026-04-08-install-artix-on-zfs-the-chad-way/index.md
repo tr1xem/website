@@ -13,6 +13,11 @@ accent_color = [ "hsl(270 13% 48%)", "hsl(290 20% 71%)" ]
 banner = "banner.png"
 banner_pixels = false
 disclaimer = "This page contains blackjack and hookers, and bad jokes such as this one."
+
+[extra.fediverse]
+host = "mastodon.social"
+user = "tr1x_em"
+id = "116396462736866565"
 +++
 
 # Introduction

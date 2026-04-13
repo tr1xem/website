@@ -9,6 +9,11 @@ categories = [ "Featured" ]
 [extra]
 banner = "banner.png"
 disclaimer = "This page contains blackjack and hookers, and bad jokes such as this one."
+
+[extra.fediverse]
+host = "mastodon.social"
+user = "tr1x_em"
+id = "116396462736866565"
 +++
 
 # परिचय
