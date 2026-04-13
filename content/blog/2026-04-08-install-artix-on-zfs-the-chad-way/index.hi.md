@@ -9,7 +9,7 @@ categories = [ "Featured" ]
 [extra]
 accent_color = [ "hsl(270 13% 48%)", "hsl(290 20% 71%)" ]
 banner = "banner.png"
-disclaimer = "यह पृष्ठ में ब्लैकजैक और हुकर्स, और इस तरह के खराब चुटकुले शामिल हैं।"
+disclaimer = "This page contains blackjack and hookers, and bad jokes such as this one."
 
 [extra.fediverse]
 host = "mastodon.social"
