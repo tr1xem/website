@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{%- if paginator.pages -%}
+  {%- set number_of_posts = paginator.total_pages -%}
+{%- elif section.pages -%}
+  {%- set number_of_posts = section.pages | length -%}
+{%- endif -%}
+
+{%- if not section.extra.no_header -%}
+  <h1>{{ section.title }}</h1>
+{%- endif -%}
+
+{{ section.content | safe }}
+
+{%- set pages_to_check = [] -%}
+{%- if paginator.pages -%}
+  {%- set pages_to_check = paginator.pages -%}
+{%- elif section.pages -%}
+  {%- set pages_to_check = section.pages -%}
+{%- endif -%}
+
+{%- set reading_books = [] -%}
+{%- for page in pages_to_check -%}
+  {%- set currently = page.extra.currently_reading | default(value=false) -%}
+  {%- if currently == true -%}
+    {%- set_global reading_books = reading_books | concat(with=page) -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if reading_books | length > 0 -%}
+<div class="currently-reading-section">
+  <span class="currently-reading-label">{{- macros_icon::icon(name="book-open-text") -}}</span>
+  <span>Currently reading: </span>
+  {%- for book in reading_books -%}
+    <a href="{{ book.permalink | safe }}" class="currently-reading-link">
+      {{ book.title }}
+      {%- if book.extra.reading_progress -%}
+        <span class="progress">({{ book.extra.reading_progress }}%)</span>
+      {%- endif -%}
+    </a>{% if not loop.last %}, {% endif %}
+  {%- endfor -%}
+</div>
+{%- endif -%}
+
+{% include "partials/book_list.html" %}
+{% include "partials/paginator.html" %}
+{% endblock content %}

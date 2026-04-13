@@ -478,6 +478,22 @@ collections:
                   i18n: true
                   required: false
 
+                - label: Currently Reading
+                  name: currently_reading
+                  widget: boolean
+                  i18n: duplicate
+                  required: false
+                  default: false
+
+                - label: Reading Progress (%)
+                  name: reading_progress
+                  widget: number
+                  i18n: duplicate
+                  required: false
+                  min: 0
+                  max: 100
+                  value_type: int
+
                 - label: Fediverse
                   name: fediverse
                   i18n: duplicate

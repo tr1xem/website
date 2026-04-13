@@ -12,6 +12,7 @@ book_theme = "Perspective over morality"
 rating = 5
 spoiler = false
 tldr = "A philosophical critique of traditional morality that argues there are no absolute “good” or “evil,” only perspectives shaped by power, culture, and human interpretation."
+currently_reading = false
 +++
 
 ## Review

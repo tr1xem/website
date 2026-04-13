@@ -28,6 +28,16 @@
         <p class="book-theme">{{ page.extra.book_theme }}</p>
       {%- endif -%}
 
+      {%- if page.extra.currently_reading -%}
+        <div class="book-currently-reading">
+          {{- macros_icon::icon(name="book-open-text") -}}
+          <span>Currently Reading</span>
+          {%- if page.extra.reading_progress -%}
+            <span class="progress">{{ page.extra.reading_progress }}%</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
       {%- if page.extra.rating is defined -%}
         {%- set rating = page.extra.rating | float -%}
         {# Round to nearest 0.5 star. (positive ratings only) #}
@@ -58,23 +68,35 @@
     </div>
   </header>
 
-  {%- if page.extra.spoiler | default(value=false) -%}
-    <blockquote class="markdown-alert markdown-alert-warning book-spoiler-warning">
-      <p><strong>Spoiler warning:</strong> this review contains spoilers.</p>
-    </blockquote>
+  {%- if page.extra.currently_reading -%}
+    <div class="book-coming-soon">
+      {{- macros_icon::icon(name="book-open-text") -}}
+      <span>Currently reading — review coming soon!</span>
+    </div>
+  {%- else -%}
+
+    {%- if page.extra.spoiler | default(value=false) -%}
+      <blockquote class="markdown-alert markdown-alert-warning book-spoiler-warning">
+        <p><strong>Spoiler warning:</strong> this review contains spoilers.</p>
+      </blockquote>
+    {%- endif -%}
+
+    {%- if page.extra.tldr -%}
+      <section class="book-tldr">
+        <h2>TL;DR</h2>
+        <p>{{ page.extra.tldr }}</p>
+      </section>
+    {%- endif -%}
+
+    {%- include "partials/statements.html" -%}
+    {{ page.content | safe }}
+{%- include "partials/backlinks.html" -%}
+
   {%- endif -%}
 
-  {%- if page.extra.tldr -%}
-    <section class="book-tldr">
-      <h2>TL;DR</h2>
-      <p>{{ page.extra.tldr }}</p>
-    </section>
-  {%- endif -%}
-
-  {%- include "partials/statements.html" -%}
-  {{ page.content | safe }}
-  {%- include "partials/backlinks.html" -%}
-</article>
+  {%- if page.extra.currently_reading -%}
+    {# Hide comments and nav when still reading #}
+  {%- else -%}
 
 {%- if page.extra.fediverse.id -%}
   {%- include "partials/comments.html" -%}
@@ -84,4 +106,6 @@
   <hr />
   {%- include "partials/article_nav.html" -%}
 {%- endif -%}
+
+  {%- endif -%}
 {% endblock content %}

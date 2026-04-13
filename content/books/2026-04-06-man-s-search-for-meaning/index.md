@@ -12,11 +12,13 @@ book_theme = "Meaning through suffering"
 rating = 5
 spoiler = true
 tldr = "Life’s primary drive is not pleasure, but meaning, and that even in the worst conditions, individuals retain the freedom to choose their attitude, which can sustain psychological survival."
+currently_reading = false
+reading_progress = 0
 +++
 
 ## Review
 
-In this book the author writes about his life experience about being in the Nazi concentration camp where he lost hist wife too. 
+In this book the author writes about his life experience about being in the Nazi concentration camp where he lost hist wife too.
 
 Frankl state that even in extreme suffering, humans retain a final freedom: **the ability to choose their attitude**. He saw the in the concentration camp people with a sense of meaning ultimately survived. According to him meaning could be found in three ways:
 

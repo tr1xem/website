@@ -2,7 +2,7 @@
 title = "Books"
 description = "Collections of books I have read"
 sort_by = "date"
-template = "article_list.html"
+template = "book_list.html"
 page_template = "book.html"
 paginate_by = 10
 generate_feeds = true
