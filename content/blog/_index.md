@@ -36,4 +36,4 @@ Here I write about my projects, updates on them, life, things that bother me, an
 
 So, grab a cup of your favorite beverage, take a seat, and enjoy the read! <small>(or don't, my writing is rather boring)</small>
 
-Also Just so u know <span class="spoiler">I use Arch Btw </span>
+Also Just so u know <span class="spoiler">I use Artix Btw </span>
