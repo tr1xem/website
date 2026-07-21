@@ -9,7 +9,7 @@ tags = [ "non-tech", "life" ]
 
 [extra]
 accent_color = [ "hsl(72, 3.94%, 24.9%)", "hsl(37.14, 48.84%, 83.14%)" ]
-banner = "pasted-image-1784652885717.webp"
+banner = "pasted-image-1784654359575.webp"
 banner_pixels = false
 
 [extra.fediverse]
