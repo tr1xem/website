@@ -10,7 +10,7 @@ banner = "pasted-image-1776080217950.webp"
 hide_banner = true
 rating = 4
 spoiler = false
-currently_reading = true
+currently_reading = false
 reading_progress = 20
 +++
 
