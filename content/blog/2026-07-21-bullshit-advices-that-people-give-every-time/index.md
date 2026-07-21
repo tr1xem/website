@@ -1,5 +1,5 @@
 +++
-title = "Bullsh*t advises that people give every time"
+title = "Bullsh*t advices that people give every time"
 description = "Have you ever heard someone saying \"It happens for a reason\" and thought to yourself really? wtf does it even mean in the current situation if yes trust me a lot of us does here them."
 authors = [ "tr1x_em" ]
 draft = false
