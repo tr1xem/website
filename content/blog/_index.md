@@ -1,6 +1,6 @@
 +++
-title = "Progressive Enhancement"
-description = "My writings, I suppose."
+title = "Blogs"
+description = "I write because I write."
 sort_by = "date"
 template = "article_list.html"
 page_template = "article.html"
@@ -30,10 +30,10 @@ _O|/O___O|/O_OO|/O__O|/O__O|/O__________________________O|/O__________
 
 {% end %}
 
-# Blog
+# Blogs
 
-Here I write about my projects, updates on them, life, things that bother me, and pretty much anything else that spins around in my head and gets to be written down and is not _too_ cringy (optional).
+I like logging things and ideas I get on daily basis, generally I used to write my thoughts down in orgmode<small>(in [neovim](https://github.com/nvim-orgmode/orgmode))</small> which were private btw but as in morden internet nothing is private anymore
+{{ demoji(name="facecry") }} so why not just format and post it here too maybe It would be helpful to some people {{ demoji(name="xdd") }}
 
-So, grab a cup of your favorite beverage, take a seat, and enjoy the read! <small>(or don't, my writing is rather boring)</small>
+So Enjoyyyyyyyyyyy what comes next {{ demoji(name="xdd") }}
 
-Also Just so u know <span class="spoiler">I use Artix Btw </span>
