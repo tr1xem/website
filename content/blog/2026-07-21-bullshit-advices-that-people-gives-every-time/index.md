@@ -11,6 +11,11 @@ tags = [ "non-tech", "life" ]
 accent_color = [ "hsl(72, 3.94%, 24.9%)", "hsl(37.14, 48.84%, 83.14%)" ]
 banner = "pasted-image-1784652885717.webp"
 banner_pixels = false
+
+[extra.fediverse]
+host = "mastodon.social"
+user = "tr1x_em"
+id = "116959054111393392"
 +++
 
 <a id="org57b0550"></a>
