@@ -1,6 +1,6 @@
 +++
 title = "Blogs"
-description = "I write because I write."
+description = "मैं लिखता हूँ क्योंकि मैं लिखता हूँ।"
 sort_by = "date"
 template = "article_list.html"
 page_template = "article.html"
