@@ -7,8 +7,8 @@
             "name": "AWCC",
             "description": "An unofficial alternative to Alienware Command Centre of Windows for the Dell G series on linux",
             "url": "https://github.com/tr1xem/AWCC",
-            "stargazerCount": 138,
-            "forkCount": 14,
+            "stargazerCount": 180,
+            "forkCount": 21,
             "primaryLanguage": {
               "name": "C++",
               "color": "#f34b7d"
@@ -18,8 +18,8 @@
             "name": "alienfx-linux",
             "description": "Alienware systems lights and fan control sdk",
             "url": "https://github.com/tr1xem/alienfx-linux",
-            "stargazerCount": 18,
-            "forkCount": 1,
+            "stargazerCount": 25,
+            "forkCount": 3,
             "primaryLanguage": {
               "name": "C++",
               "color": "#f34b7d"
@@ -40,8 +40,8 @@
             "name": "ignis",
             "description": "A widget framework for building desktop shells, written and configurable in Python",
             "url": "https://github.com/ignis-sh/ignis",
-            "stargazerCount": 656,
-            "forkCount": 43,
+            "stargazerCount": 671,
+            "forkCount": 45,
             "primaryLanguage": {
               "name": "Python",
               "color": "#3572A5"
@@ -51,7 +51,7 @@
             "name": "hyprfabricated",
             "description": "A hackable shell for Hyprland, powered by Fabric.",
             "url": "https://github.com/tr1xem/hyprfabricated",
-            "stargazerCount": 181,
+            "stargazerCount": 180,
             "forkCount": 10,
             "primaryLanguage": {
               "name": "Python",
