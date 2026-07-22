@@ -2,7 +2,7 @@
 
 [![Build Status](https://app.travis-ci.com/tr1xem/website.svg?token=jAwko6HWJsCsVywAEYcp&branch=main)](https://app.travis-ci.com/tr1xem/website)
 
-The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and [Ametrine](https://ametrine.daudix.one).
+The source code of my personal website. It is powered by [Zola](https://www.getzola.org) and [Trixtine](https://github.com/tr1xem/trixtine)(which is fork of [Ametrine](https://ametrine.daudix.one)).
 
 # Preview
 
