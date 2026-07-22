@@ -22,8 +22,7 @@ id = "116959054111393392"
 
 Have you ever heard someone saying "It happens for a reason" and thought to yourself really? wtf does it even mean in the current situation if yes trust me a lot of us does here them. In the following blog we would explore more of these BS advice that people give as believing them of being "positive" or "good" but in real life they are just BS.
 
-
-And if you want to read more about a certain phenomenon or a effect i have linked up the references below each advice. So happy reading {{ demoji(name="xdd" }} lets break some common thinking barriers today.
+And if you want to read more about a certain phenomenon or a effect i have linked up the references below each advice. So happy reading {{ demoji(name="xdd") }} lets break some common thinking barriers today.
 
 <a id="org57b0550"></a>
 
