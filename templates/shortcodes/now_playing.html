@@ -1,10 +1,21 @@
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 
 <article id="player">
     <div id="cover-container">
         <picture>
-            <source id="cover-large" srcset="home/image-loading.svg" media="(min-resolution: 2dppx)" />
-            <img id="cover" width="64" height="64" class="transparent no-hover" src="/home/image-loading.svg" alt="" />
+            <source
+                id="cover-large"
+                srcset="home/image-loading.svg"
+                media="(min-resolution: 2dppx)"
+            />
+            <img
+                id="cover"
+                width="64"
+                height="64"
+                class="transparent no-hover"
+                src="/home/image-loading.svg"
+                alt=""
+            />
         </picture>
         <div id="cd-container">
             <img
@@ -31,6 +42,6 @@
         </div>
     </div>
     <a id="player-go" href="#main-content" title="View on Last.fm">
-        {{- macros_icon::icon(name="caret-right") -}}
+        {{- macros::icon(name="caret-right") -}}
     </a>
 </article>

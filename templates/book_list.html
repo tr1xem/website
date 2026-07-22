@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "ametrine/templates/base.html" %}
 
 {% block content %}
 
@@ -31,7 +31,7 @@
 
 {%- if reading_books | length > 0 -%}
 <div class="currently-reading-section">
-  <span class="currently-reading-label">{{- macros_icon::icon(name="book-open-text") -}}</span>
+  <span class="currently-reading-label">{{- macros::icon(name="book-open-text") -}}</span>
   <span>Currently reading: </span>
   {%- for book in reading_books -%}
     <a href="{{ book.permalink | safe }}" class="currently-reading-link">
@@ -44,6 +44,6 @@
 </div>
 {%- endif -%}
 
-{% include "partials/book_list.html" %}
-{% include "partials/paginator.html" %}
+{% include "ametrine/templates/partials/article_list.html" %}
+{% include "ametrine/templates/partials/paginator.html" %}
 {% endblock content %}

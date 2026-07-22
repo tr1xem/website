@@ -1,4 +1,4 @@
-{% import "macros/icon.html" as macros_icon %}
+{% import "macros/macros.html" as macros %}
 {% set data = load_data(path="static/github-pinned.json") %}
 {% set repos = data.data.user.pinnedItems.nodes %}
 
@@ -11,7 +11,7 @@
   {% for repo in repos %}
   <div class="github-repo-card">
     <div class="repo-header">
-      {{- macros_icon::icon(name="book-bookmark") -}}
+      {{- macros::icon(name="book-bookmark") -}}
       <a href="{{ repo.url }}" class="repo-name" target="_blank" rel="noopener">
         {{ repo.name }}
       </a>
@@ -32,12 +32,12 @@
       {% endif %}
 
       <span class="repo-stars">
-        {{- macros_icon::icon(name="star") -}}
+        {{- macros::icon(name="star") -}}
         {{ repo.stargazerCount }}
       </span>
 
       <span class="repo-forks">
-        {{- macros_icon::icon(name="git-fork") -}}
+        {{- macros::icon(name="git-fork") -}}
         {{ repo.forkCount }}
       </span>
     </div>

@@ -139,4 +139,4 @@ The neat, perfect idea of "closure"—where you completely understand why you we
 
 # Conclusions
 
-These are few of the common BS that people commonly gave to me at some point of my life {{ demoji(name="laughger") }} (which as you have guessed were pretty useless). If you liked my blog or want to share some of common life advice people have given to you which didn't really made any sense you can comment it below I would be more than happy to listen.See yaaaa meet you in the next blog.
+These are few of the common BS that people commonly gave to me at some point of my life {{ demoji(name="laughers") }} (which as you have guessed were pretty useless). If you liked my blog or want to share some of common life advice people have given to you which didn't really made any sense you can comment it below I would be more than happy to listen.See yaaaa meet you in the next blog.
