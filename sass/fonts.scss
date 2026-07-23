@@ -37,7 +37,7 @@ $commit-mono-version: "1.143";
 @include font-face("Hind", "hindi/Hind-Bold", 700, normal, "ttf");
 
 :lang(hi) {
-    font-family: "Hind", sans-serif;
+    --font-sans-serif: "Hind", sans-serif;
 }
 
 // Golos Text

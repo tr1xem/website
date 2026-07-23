@@ -194,6 +194,7 @@ keys = [
     { name = "SSH Public Key", url = "/key/trix.pub" },
     { name = "PGP Public Key", url = "/key/trix.asc" },
 ]
+note = "<small>[SSH Public Key](/key/trix.pub) & [PGP Public Key](/key/trix.asc)</small>"
 
 [extra.footer.hi]
 copyright = "© tr1x_em, 2021-$YEAR"
